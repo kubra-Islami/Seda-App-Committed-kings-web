@@ -13,9 +13,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/kubra-Islami/Seda-App-Committed-kings-web/issues"
   },
-  "homepage": "https://github.com/kubra-Islami/Seda-App-Committed-kings-web#readme"
+  "homepage": "https://github.com/kubra-Islami/Seda-App-Committed-kings-web#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "git-filter-repo": "^0.0.30",
+    "openai": "^5.23.1"
+  }
 }
