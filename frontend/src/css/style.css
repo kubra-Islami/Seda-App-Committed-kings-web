@@ -1,5 +1,13 @@
 /*       استایل‌های کلی سایت          */
 
+:root{
+    --purple-darker-1-color: rgb(30, 30, 118);
+    --purple-darker-2-color: rgb(75, 75, 195);
+    --purple-color: rgb(112, 127, 245);
+    --purple-light:rgb(161, 149, 249);
+    --pink:rgb(242, 161, 242);
+}
+
 body {
     font-family: 'Vazir', Arial, sans-serif;
     direction: rtl;
