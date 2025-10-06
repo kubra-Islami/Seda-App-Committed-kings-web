@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>کوییز امنیت دیجیتال</title>
+
+
+  <link rel="stylesheet" href="frontend/guiz/quiz.css">
+</head>
+<body>
+  <div class="quiz-card">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress"></div>
+    </div>
+    <h1>کوییز: امنیت دیجیتال</h1>
+
+    <div class="question-text" id="question-text"></div>
+    <div class="options" id="options"></div>
+
+    <div class="score-card" id="score-card">
+      <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
+      <div class="message" id="message"></div>
+      <button class="home-btn" onclick="window.location.href='../index.html'">
+        بازگشت به صفحه اصلی
+      </button>
+    </div>
+  </div>
+
+  <!-- تعریف سؤالات همین صفحه -->
+  <script>
+    window.quizQuestions = [
+      {
+        text: "رمز عبور قوی شامل چیست؟",
+        options: ["اعداد ساده", "حروف+اعداد+نماد", "اسم خود", "۴ رقم"],
+        correct: 1
+      },
+      {
+        text: "کدام رفتار امنیتی است؟",
+        options: ["دادن رمز به دوست", "استفاده از رمز متفاوت", "نوشتن رمز روی کاغذ", "رمز ساده"],
+        correct: 1
+      },
+      {
+        text: "در هنگام دریافت ایمیل مشکوک چه باید کرد؟",
+        options: ["باز کردن فوری", "نادیده گرفتن و حذف", "ارسال برای دیگران", "کلیک روی لینک"],
+        correct: 1
+      },
+      {
+        text: "در شبکه‌های اجتماعی چه باید کرد؟",
+        options: ["انتشار اطلاعات شخصی", "حریم خصوصی را رعایت کرد", "قبول همه درخواست‌ها", "رمز ساده گذاشت"],
+        correct: 1
+      },
+      {
+        text: "فیشینگ چیست؟",
+        options: ["نوعی ماهیگیری", "روش سرقت اطلاعات", "نوعی رمزگذاری", "حمله فیزیکی"],
+        correct: 1
+      }
+    ];
+  </script>
+
+  <!-- لینک به فایل JS مشترک -->
+  <script src="frontend/guiz/quiz.css"></script>
+</body>
+</html>
