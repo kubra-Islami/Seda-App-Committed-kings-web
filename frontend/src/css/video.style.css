@@ -112,7 +112,7 @@ li::marker {
   top: 43px;
 }
 .pinkcolor {
-  color: #f2a1f2;
+  color: #1e1e76;
 }
 .navbar-brand {
   color: white;
@@ -185,6 +185,9 @@ li::marker {
 }
 .courses ul {
   padding: 0px 0px 30px 0px;
+}
+.course:hover {
+  text-decoration: underline;
 }
 
 #footer {
