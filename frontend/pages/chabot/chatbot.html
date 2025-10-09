@@ -1,39 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <title>چت ‌بات صدا </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>چت ‌بات صدا</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Vazir:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/bootstrap-icons.svg" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazir:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/bootstrap-icons.svg"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../../src/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../src/css/chatbot/chatbot.css">
+    <link rel="stylesheet" href="../../src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../src/css/chatbot/chatbot.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">چت‌بات صدا</div>
 
-</head>
-<body>
+      <div id="chat-box"></div>
 
-<div class="chat-container">
-    <div class="chat-header">
-        چت‌بات صدا
-    </div>
-
-    <div id="chat-box"></div>
-
-    <div class="chat-input">
-        <input type="text" id="user-input" placeholder="پیام خود را بنویسید...">
+      <div class="chat-input">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="پیام خود را بنویسید..."
+        />
         <button id="send-btn" class="btn btn-primary">
-            <i class="bi bi-send"></i>
+          <i class="bi bi-send"></i>
         </button>
+      </div>
     </div>
-</div>
 
-<script src="../../src/js/bootstrap.bundle.min.js"></script>
-<script src="../../src/js/chatbot/chatbot.js"></script>
-</body>
+    <script src="../../src/js/bootstrap.bundle.min.js"></script>
+    <script src="../../src/js/chatbot/chatbot.js"></script>
+  </body>
 </html>
