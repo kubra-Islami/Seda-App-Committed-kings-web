@@ -198,6 +198,12 @@ li::marker {
 .fa-brands {
   text-decoration: none;
 }
+.colHeader {
+  padding: 10px;
+}
+.colPara {
+  padding: 10px;
+}
 /* مدیا کوئری جامع */
 
 /* تبلت و موبایل بزرگ */
