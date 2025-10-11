@@ -143,9 +143,10 @@ li::marker {
 .footer {
   background-color: white;
 }
+
 .Chatbotbtn {
   position: relative;
-  right: 65rem;
+  right: 30rem;
   top: 10px;
 }
 .Chatbotbtn button {
@@ -154,13 +155,14 @@ li::marker {
   padding: 10px;
   color: white;
   transition: 1s ease;
+  width: 50px;
 }
 .Chatbotbtn button:hover {
   background-color: #1e1e76;
 }
 .footerMark {
   position: absolute;
-  right: 68rem;
+  right: 60rem;
   top: 90rem;
   padding: 10px;
 }
@@ -206,97 +208,88 @@ li::marker {
 }
 /* مدیا کوئری جامع */
 
-/* تبلت و موبایل بزرگ */
-@media (max-width: 768px) {
-  /* Navbar */
-  .navbar-brand,
-  .nav-link {
-    font-size: 14px;
-  }
+/* هدر و متن اصلی */
+#headtext {
+  margin-top: 60px;
+  padding: 15px;
+}
+#headtext h1 {
+  font-size: 22px;
+}
+#headtext p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+#headtext div {
+  bottom: 200px;
+  float: none;
+  text-align: center;
+}
 
-  /* هدر و متن اصلی */
-  #headtext {
-    margin-top: 60px;
-    padding: 15px;
-  }
-  #headtext h1 {
-    font-size: 22px;
-  }
-  #headtext p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  #headtext div {
-    bottom: 200px;
-    float: none;
-    text-align: center;
-  }
+/* کارت‌ها و ستون‌ها */
+.container {
+  margin: 30px 20px;
+}
+.row {
+  gap: 20px;
+  flex-direction: column;
+}
+.col {
+  margin: 0;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  padding: 15px;
+}
+.col img {
+  left: 0;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.col h5 {
+  font-size: 16px;
+}
+.col p {
+  font-size: 14px;
+}
+.col button,
+.colbtn,
+.colbtn0 {
+  width: 100%;
+  bottom: 0;
+  top: auto;
+}
 
-  /* کارت‌ها و ستون‌ها */
-  .container {
-    margin: 30px 20px;
-  }
-  .row {
-    gap: 20px;
-    flex-direction: column;
-  }
-  .col {
-    margin: 0;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-    padding: 15px;
-  }
-  .col img {
-    left: 0;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-  }
-  .col h5 {
-    font-size: 16px;
-  }
-  .col p {
-    font-size: 14px;
-  }
-  .col button,
-  .colbtn,
-  .colbtn0 {
-    width: 100%;
-    bottom: 0;
-    top: auto;
-  }
+/* فوتر */
+.footer {
+  text-align: center;
+  padding: 30px 15px;
+}
+#footer {
+  font-size: 12px;
+}
 
-  /* فوتر */
-  .footer {
-    text-align: center;
-    padding: 30px 15px;
-  }
-  #footer {
-    font-size: 12px;
-  }
+/* دکمه چت بات */
+.Chatbotbtn {
+  bottom: 15px;
+  right: 15px;
+}
+.Chatbotbtn button {
+  width: 90%;
+  font-size: 14px;
+  padding: 10px 12px;
+}
 
-  /* دکمه چت بات */
-  .Chatbotbtn {
-    bottom: 15px;
-    right: 15px;
-  }
-  .Chatbotbtn button {
-    width: 90%;
-    font-size: 14px;
-    padding: 10px 12px;
-  }
-
-  /* استیکرهای شبکه‌های اجتماعی */
-  .footerMark {
-    flex-direction: row;
-    bottom: 60px;
-    right: 50%;
-    transform: translateX(50%);
-    gap: 10px;
-  }
-  .footerMark a {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
+/* استیکرهای شبکه‌های اجتماعی */
+.footerMark {
+  flex-direction: row;
+  bottom: 60px;
+  right: 50%;
+  transform: translateX(50%);
+  gap: 10px;
+}
+.footerMark a {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
 }
 
 /* موبایل کوچک */
@@ -334,10 +327,101 @@ li::marker {
     right: 50%;
     transform: translateX(50%);
   }
-
+  .headofImg {
+    width: 500px;
+    height: 300px;
+    margin-right: 2px;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
   /* دکمه چت بات */
   .Chatbotbtn button {
     width: 95%;
     font-size: 13px;
   }
 }
+/*سکشن دوم از هر ویدیو*/
+.videoMain {
+  background-color: white;
+  padding: 40px;
+  margin-top: 0px;
+}
+.video {
+  width: 100%;
+  height: 500px;
+}
+/*مدیا کیوری سایز مبایل های کوچک*/
+
+/* @media (max-width: 378px){
+  .navbar{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    margin-left: 100px;
+  }
+} */
+
+/* @media (max-width: 480px) {
+  body {
+    width: 300px;
+  }
+
+  #head {
+    display: flex;
+    flex-wrap: wrap;
+    width: 373px;
+  }
+  .maintext {
+    margin-top: 300px;
+    width: 373px;
+  }
+  .headofImg {
+    width: 300px;
+    height: 400px;
+    padding: 130px 0px 50px 0px;
+  }
+  .paraHead {
+    width: 300px;
+  }
+  .row {
+    margin-right: 20px;
+  }
+
+  #btn {
+    position: relative;
+    left: 20px;
+  }
+  .Chatbotbtn {
+    position: relative;
+    top: 290px;
+  }
+  .footer {
+    width: 373px;
+  }
+  .footerMark {
+    position: relative;
+    top: 290px;
+    left: 200px;
+  }
+  .courses {
+    position: relative;
+    bottom: 70px;
+  }
+  #footer {
+    margin-left: 50px;
+    text-align: center;
+  }
+  .colbtn0 {
+    position: relative;
+    top: 10%;
+  }
+} */
