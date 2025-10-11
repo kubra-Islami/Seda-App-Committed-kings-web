@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>کوییز اهمیت امنیت دیجیتال</title>
+
+  <!-- لینک به فایل CSS -->
+  <link rel="stylesheet" href="../quiz/quiz.css">
+</head>
+<body>
+  <div class="quiz-card">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress"></div>
+    </div>
+    <h1>کوییز: امنیت دیجیتال</h1>
+
+    <div class="question-text" id="question-text"></div>
+    <div class="options" id="options"></div>
+
+    <div class="score-card" id="score-card">
+      <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
+      <div class="message" id="message"></div>
+      <button class="home-btn" onclick="window.location.href='../index.html'">
+        بازگشت به صفحه اصلی
+      </button>
+    </div>
+  </div>
+
+  <!-- تعریف سؤالات همین صفحه -->
+  <script>
+    window.quizQuestions = [
+      {
+        text:"چرا امنیت دیجیتال مهم استم؟؛",
+        options: ["برای دسترسی همه","برای محافظت از اطلاعات","برای سرعت بیشتر", "برای سرگرمی"],
+        correct: 1
+      }
+    ];
+  </script>
+
+  <!-- لینک به فایل JS مشترک -->
+  <script src="../quiz/quiz.js"></script>
+</body>
+</html>

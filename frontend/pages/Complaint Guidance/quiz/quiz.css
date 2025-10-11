@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  background: linear-gradient(135deg, #707FF5, #A195F9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+
+.quiz-card {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.quiz-card:hover { transform: translateY(-5px); }
+
+.progress-bar {
+  height: 12px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #4b4bc3, #f2a1f2);
+  transition: width 0.4s ease;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #FFFFFF;
+}
+
+.question-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.options {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.option {
+  padding: 0.8rem;
+  background: rgba(255,255,255,0.15);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  color: #1e1e76;
+}
+.option:hover { background: #FFFFFF; transform: scale(1.02); }
+.option.correct { background: #4b4bc3; color: #fff; }
+.option.wrong { background: #f2a1f2; color: #000; }
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background: #F2A1F2;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover { opacity: 0.9; }
+
+.score-card {
+  display: none;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  color: #FFFFFF;
+  animation: fadeIn 0.5s ease;
+}
+
+.message {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.home-btn {
+  margin-top: 1.5rem;
+  background: #4b4bc3;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 600px) {
+  .options { grid-template-columns: repeat(2,1fr); }
+}
