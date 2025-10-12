@@ -125,7 +125,24 @@ li::marker {
 }
 
 .colbtn0 {
-  margin-top: auto; /* هم‌سطح با دیگر دکمه‌ها */
+  position: relative;
+  top: 43px;
+}
+.pinkcolor {
+  color: #f2a1f2;
+}
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: #1e1e76;
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: #a195f9;
 }
 .courselist {
   list-style: none;
