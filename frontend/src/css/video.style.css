@@ -195,38 +195,12 @@ li::marker {
 .course:hover {
   text-decoration: underline;
 }
-.footerMark {
-  display: flex;
-  justify-content: left; /* وسط‌چین افقی */
-  gap: 10px; /* فاصله بین آیکون‌ها */
-  position: relative; /* یا fixed بسته به نیاز */
-  right: 50%; /* وسط‌چین نسبی */
-  transform: translateX(50%);
-  top: 250px;
-}
-.instagraئ {
-  color: #1e1e76;
-}
 
 #footer {
   font-size: small;
   color: white;
   text-align: center;
   margin-top: 10px;
-}
-
-.footerMark {
-  flex-direction: row;
-  bottom: 60px;
-  right: 50%;
-  transform: translateX(50%);
-  gap: 10px;
-}
-
-.footerMark a {
-  width: 40px;
-  height: 40px;
-  font-size: 18px;
 }
 
 /*سکشن دوم از هر ویدیو*/
@@ -249,9 +223,6 @@ li::marker {
 .VideoPara {
   color: #1e1e76;
 }
-/*حالت های ریسپانسیف صفحه*/
-/* @media (max-width: 380px) {
-  /* Navbar */
 .navbar {
   width: 100%;
   font-size: 12px;
@@ -262,4 +233,95 @@ li::marker {
 }
 .maintext {
   width: 100%;
+}
+.quiz-invite {
+  margin: 20px;
+  color: white;
+}
+.quiz-invite a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #1e1e76;
+}
+.videoPartfooter {
+  background-color: white;
+}
+.quiz button {
+  background-color: white;
+  border: none;
+  margin: 30px;
+}
+.footerMark {
+  display: flex;
+  gap: 15px; /* فاصله بین آیکون‌ها */
+  justify-content: flex-end; /* قرار گرفتن در سمت چپ */
+  align-items: center;
+  padding: 10px 20px; /* فاصله از اطراف */
+  position: relative;
+  top: 220px;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* تمام عرض صفحه */
+  z-index: 1000;
+}
+
+.social i {
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social:hover i {
+  color: #707ff5; /* رنگ تیره‌تر هنگام هاور */
+}
+
+/* اگر بخواهی هر شبکه رنگ جداگانه داشته باشد می‌توان تنظیم کرد، اما همه گلابی هستند */
+.instagram i,
+.facebook i,
+.twitter i,
+.linkedin i,
+.phone i {
+  color: #1e1e76;
+}
+
+.social {
+  text-decoration: none;
+}
+
+@media (max-width: 380px) {
+  .videoPartfooter {
+    height: 320px;
+  }
+  #Chatbtn {
+    width: 130px;
+    height: 36px;
+    border-radius: 20px 0px 0px 20px;
+    margin-right: 10px;
+    position: relative;
+    top: 260px;
+    left: 120px;
+    padding: 5px;
+  }
+  .footerMark {
+    position: relative;
+    top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .videoPartfooter {
+    height: 320px;
+  }
+  #Chatbtn {
+    width: 150px;
+    height: 36px;
+    border-radius: 20px;
+    margin-right: 10px;
+    position: relative;
+    top: 260px;
+    left: 205px;
+    padding: 5px;
+  }
+  .footerMark {
+    position: relative;
+    top: 270px;
+  }
 }
