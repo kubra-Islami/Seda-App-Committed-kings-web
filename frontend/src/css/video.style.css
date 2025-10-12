@@ -18,101 +18,118 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 li::marker {
   color: #4b4bc3;
   font-size: 18px;
 }
+
 .navbar {
   background: linear-gradient(
     135deg,
     #1e1e76 0%,
-    /* بنفش خیلی تیره */ #4b4bc3 25%,
-    /* بنفش روشن‌تر */ #707ff5 50%,
-    /* آبی بنفش */ #a195f9 75%,
-    /* بنفش ملایم */ #f2a1f2 100% /* صورتی */
+    #4b4bc3 25%,
+    #707ff5 50%,
+    #a195f9 75%,
+    #f2a1f2 100%
   );
   width: 100%;
   z-index: 1000;
   overflow-x: hidden;
 }
+.nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-brand:hover {
+  color: #1e1e76;
+}
 
 #headtext {
   background-color: white;
   margin-top: 50px;
+  font-size: 15px;
 }
 #headtext h1 {
-  padding: 10px 30px 0px 0px;
-}
-#headtext > p {
-  padding: 5px 30px 0px 0px;
-}
-#headtext div {
-  float: left;
-  position: relative;
-  bottom: 300px;
-}
-#headtext img {
   margin-top: 10px;
+  margin-right: 10px;
+  color: #1e1e76;
 }
+#headtext p {
+  margin-right: 20px;
+}
+
+.headofImg {
+  padding: 0px 600px 0px 0px;
+  width: 90%;
+  height: 400px;
+  position: relative;
+  bottom: 200px;
+}
+
 .d-flex {
   height: 300px;
 }
+.MainHeader {
+  color: #1e1e76;
+}
+
 .maintext {
   padding: 30px;
   color: black;
   background-color: white;
 }
 .container {
-  margin: 50px 100px 50px 100px;
+  margin: 30px 80px 30px 0px;
 }
 .row {
-  gap: 40px;
+  gap: 5%;
 }
+
 .col {
+  display: flex; /* فعال کردن فلکس */
+  flex-direction: column; /* محتویات ستون به شکل ستون چیده شوند */
+  justify-content: space-between; /* فاصله بین تصویر/متن و دکمه حفظ شود */
   background-color: white;
-  gap: 10px;
+  gap: 15px;
+  align-items: center;
   border-radius: 10px;
   text-align: right;
-  box-shadow: 0 0px 2px rgba(255, 255, 255, 0.8);
-  margin: 0px 40px 10px 0px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  width: 26%;
+  height: 420px;
+  margin: 20px 20px 10px 10px;
 }
-.col img {
-  position: relative;
-  left: 12px;
-  border-radius: 10px 10px 0px 0px;
-}
-.col h3 {
-  position: absolute;
-}
-.button {
-  background-color: #a195f9;
-  border: none;
-}
+
 .col button {
-  background-color: #f2a1f2;
+  background-color: #1e1e76;
   border: none;
   border-radius: 10px;
-
-  width: 200px;
-  position: relative;
-  right: 30px;
-  bottom: 5px;
+  width: 180px;
   color: white;
   padding: 5px;
+  transition: background-color 1s ease;
+  margin-top: auto; /* دکمه همیشه پایین ستون */
+  position: static; /* حذف relative و bottom */
 }
+
 .col button:hover {
-  background-color: #1e1e76;
+  background-color: #707ff5;
 }
-.colbtn {
-  position: relative;
-  top: 18px;
-}
+
 .colbtn0 {
   position: relative;
   top: 43px;
 }
 .pinkcolor {
-  color: #1e1e76;
+  color: #f2a1f2;
 }
 .navbar-brand {
   color: white;
@@ -134,201 +151,115 @@ li::marker {
   text-decoration: none;
   color: black;
 }
+
 .courselist:hover {
   color: #1e1e76;
 }
+
 .course:hover {
   color: #1e1e76;
 }
+
 .footer {
   background-color: white;
 }
 .Chatbotbtn {
-  position: relative;
-  right: 65rem;
-  top: 10px;
+  position: absolute;
+  left: 20px;
 }
 .Chatbotbtn button {
-  background-color: #f2a1f2;
+  background-color: #1e1e76;
   border: none;
   padding: 10px;
   color: white;
   transition: 1s ease;
+  width: 300px;
+  margin-top: 10px;
 }
+
 .Chatbotbtn button:hover {
-  background-color: #1e1e76;
+  background-color: #707ff5;
 }
-.footerMark {
-  position: absolute;
-  right: 68rem;
-  top: 90rem;
-  padding: 10px;
-}
-.footerMark a {
-  gap: 20px;
-  color: #f2a1f2;
-}
-.instagram {
-  font-size: 25px;
-  padding: 0px 10px 0px 10px;
-}
-.facebook {
-  padding: 0px 10px 0px 10px;
-  font-size: 25px;
-}
-.x {
-  padding: 0px 10px 0px 10px;
-  font-size: 25px;
-}
+
 .courses {
   margin: 0px 20px 20px 0px;
+  position: relative;
+  left: 5px;
+  text-align: right;
 }
+
 .courses ul {
   padding: 0px 0px 30px 0px;
+}
+
+.course:hover {
+  text-decoration: underline;
+}
+.footerMark {
+  display: flex;
+  justify-content: left; /* وسط‌چین افقی */
+  gap: 10px; /* فاصله بین آیکون‌ها */
+  position: relative; /* یا fixed بسته به نیاز */
+  right: 50%; /* وسط‌چین نسبی */
+  transform: translateX(50%);
+  top: 250px;
+}
+.instagraئ {
+  color: #1e1e76;
 }
 
 #footer {
   font-size: small;
   color: white;
   text-align: center;
+  margin-top: 10px;
 }
-.fa-brands {
-  text-decoration: none;
-}
-/* مدیا کوئری جامع */
 
-/* تبلت و موبایل بزرگ */
-@media (max-width: 768px) {
+.footerMark {
+  flex-direction: row;
+  bottom: 60px;
+  right: 50%;
+  transform: translateX(50%);
+  gap: 10px;
+}
+
+.footerMark a {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+
+/*سکشن دوم از هر ویدیو*/
+.videoMain {
+  background-color: white;
+  padding: 40px;
+}
+.videoMain h1 {
+  color: #1e1e76;
+}
+.video {
+  width: 100%;
+  height: 500px;
+}
+#showBtn {
+  background-color: white;
+  border: none;
+  color: #1e1e76;
+}
+.VideoPara {
+  color: #1e1e76;
+}
+/*حالت های ریسپانسیف صفحه*/
+/* @media (max-width: 380px) {
   /* Navbar */
-  .navbar-brand,
-  .nav-link {
-    font-size: 14px;
-  }
-
-  /* هدر و متن اصلی */
-  #headtext {
-    margin-top: 60px;
-    padding: 15px;
-  }
-  #headtext h1 {
-    font-size: 22px;
-  }
-  #headtext p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  #headtext div {
-    bottom: 200px;
-    float: none;
-    text-align: center;
-  }
-
-  /* کارت‌ها و ستون‌ها */
-  .container {
-    margin: 30px 20px;
-  }
-  .row {
-    gap: 20px;
-    flex-direction: column;
-  }
-  .col {
-    margin: 0;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-    padding: 15px;
-  }
-  .col img {
-    left: 0;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-  }
-  .col h5 {
-    font-size: 16px;
-  }
-  .col p {
-    font-size: 14px;
-  }
-  .col button,
-  .colbtn,
-  .colbtn0 {
-    width: 100%;
-    bottom: 0;
-    top: auto;
-  }
-
-  /* فوتر */
-  .footer {
-    text-align: center;
-    padding: 30px 15px;
-  }
-  #footer {
-    font-size: 12px;
-  }
-
-  /* دکمه چت بات */
-  .Chatbotbtn {
-    bottom: 15px;
-    right: 15px;
-  }
-  .Chatbotbtn button {
-    width: 90%;
-    font-size: 14px;
-    padding: 10px 12px;
-  }
-
-  /* استیکرهای شبکه‌های اجتماعی */
-  .footerMark {
-    flex-direction: row;
-    bottom: 60px;
-    right: 50%;
-    transform: translateX(50%);
-    gap: 10px;
-  }
-  .footerMark a {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
+.navbar {
+  width: 100%;
+  font-size: 12px;
 }
-
-/* موبایل کوچک */
-@media (max-width: 576px) {
-  /* Navbar */
-  .navbar-brand,
-  .nav-link {
-    font-size: 12px;
-  }
-
-  /* هدر و متن اصلی */
-  #headtext h1 {
-    font-size: 20px;
-  }
-  #headtext p {
-    font-size: 13px;
-  }
-
-  /* کارت‌ها */
-  .col h5 {
-    font-size: 14px;
-  }
-  .col p {
-    font-size: 13px;
-  }
-  .col button {
-    font-size: 13px;
-    padding: 8px 10px;
-  }
-
-  /* فوتر */
-  .footerMark {
-    flex-direction: row;
-    bottom: 50px;
-    right: 50%;
-    transform: translateX(50%);
-  }
-
-  /* دکمه چت بات */
-  .Chatbotbtn button {
-    width: 95%;
-    font-size: 13px;
-  }
+.head {
+  display: flex;
+  flex-wrap: wrap;
+}
+.maintext {
+  width: 100%;
 }
