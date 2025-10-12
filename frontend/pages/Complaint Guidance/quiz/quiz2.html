@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../quiz/quiz.css">
+</head>
+""
+<body>
+  <div class="quiz-card">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress"></div>
+    </div>
+    <h1>کوییز: حریم خصوصی انلاین</h1>
+
+    <div class="question-text" id="question-text"></div>
+    <div class="options" id="options"></div>
+
+    <div class="score-card" id="score-card">
+      <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
+      <div class="message" id="message"></div>
+      <button class="home-btn" onclick="window.location.href='..'">
+      باز گشت به صفحه اصلی 
+      </button>
+    </div>
+  </div>
+
+  
+  <script>
+    window.quizQuestions = [
+      {
+        text:"حریم خصوصی آنلاین چیست؟",
+        options: ["ارسال پیام","محافظت از اطلاعات شخصی در اینترنت","خرید انلاین","بازی در اینترنت"],
+        correct: 1
+      },
+      {
+        text:"چرا حریم خصوصی مهم است؟",
+        options: ["برای افزایش دنبال کننده ها","برای جلوگیری از سوءاستفاده انلاین","برای زیبا شدن پروفایل","برای داشتن اینترنت سریع تر"],
+        correct: 1
+      },
+      {  
+        text:"چگونه میتوان از اطلاعات شخصی محافظت کرد؟",
+        options: ["با باز کردن لینک ناشناس","با استمفاده از رمز قوی","با اشتراک گذاشتن رمز با دوستان","با اشتراک گذاشتن همه چیز در اینترنت"],
+        correct: 1
+      },
+      {
+        text:"اگر کسی اطلاعاتت را پخش کند جه میکنی؟",
+        options: ["اطلاعات او را هم پخش میکنی","به بزرگتر یا مسوول گزارش میدهی","با او دعوا میکنی ","سکوت میکنی "],
+        correct: 1
+      },
+    ];
+
+  </script>
+  <script src="../quiz/quiz.js"></script>
+</body>
+</html>
