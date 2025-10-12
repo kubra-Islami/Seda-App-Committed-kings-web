@@ -40,8 +40,10 @@ li::marker {
   background-color: white;
   margin-top: 50px;
 }
-#headtext h1 {
+.Head {
+  color: #1e1e76;
   padding: 10px 30px 0px 0px;
+  font-size: 100px;
 }
 #headtext > p {
   padding: 5px 30px 0px 0px;
@@ -51,8 +53,19 @@ li::marker {
   position: relative;
   bottom: 300px;
 }
-#headtext img {
-  margin-top: 10px;
+.headofImg {
+  padding: 0px 400px 0px 0px;
+  width: 90%;
+  height: 400px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: color(#fdfdfd) (0deg);
+  }
+  to {
+    transform: (45deg);
+  }
 }
 .d-flex {
   height: 300px;
@@ -67,6 +80,8 @@ li::marker {
 }
 .row {
   gap: 40px;
+  display: inline-flex;
+  margin: 0px 100px 0px 0px;
 }
 .col {
   background-color: white;
@@ -75,45 +90,42 @@ li::marker {
   text-align: right;
   box-shadow: 0 0px 2px rgba(255, 255, 255, 0.8);
   margin: 0px 40px 10px 0px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  padding: 15px;
 }
 .col img {
   position: relative;
-  left: 12px;
   border-radius: 10px 10px 0px 0px;
+  left: 0;
+  width: 100%;
 }
+
 .col h3 {
   position: absolute;
-}
-.button {
-  background-color: #a195f9;
-  border: none;
+  font-size: 16px;
 }
 .col button {
   background-color: #f2a1f2;
   border: none;
   border-radius: 10px;
-
   width: 200px;
   position: relative;
-  right: 30px;
   bottom: 5px;
   color: white;
   padding: 5px;
+  transition: colorChange ease-in 2s;
 }
 .col button:hover {
   background-color: #1e1e76;
 }
+.colHeader{
+  font-size: 30px;
+}
 .colbtn {
   position: relative;
-  top: 18px;
+  top: 40px;
 }
-.colbtn0 {
-  position: relative;
-  top: 43px;
-}
-.pinkcolor {
-  color: #1e1e76;
-}
+
 .navbar-brand {
   color: white;
   font-weight: bold;
@@ -213,9 +225,6 @@ li::marker {
   margin-top: 60px;
   padding: 15px;
 }
-#headtext h1 {
-  font-size: 22px;
-}
 #headtext p {
   font-size: 14px;
   line-height: 1.6;
@@ -230,26 +239,7 @@ li::marker {
 .container {
   margin: 30px 20px;
 }
-.row {
-  gap: 20px;
-  flex-direction: column;
-}
-.col {
-  margin: 0;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-  padding: 15px;
-}
-.col img {
-  left: 0;
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-}
-.col h5 {
-  font-size: 16px;
-}
-.col p {
-  font-size: 14px;
-}
+
 .col button,
 .colbtn,
 .colbtn0 {
@@ -293,7 +283,7 @@ li::marker {
 }
 
 /* موبایل کوچک */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   /* Navbar */
   .navbar-brand,
   .nav-link {
@@ -312,34 +302,13 @@ li::marker {
   .col h5 {
     font-size: 14px;
   }
-  .col p {
-    font-size: 13px;
-  }
-  .col button {
-    font-size: 13px;
-    padding: 8px 10px;
-  }
-
+  
   /* فوتر */
   .footerMark {
     flex-direction: row;
     bottom: 50px;
     right: 50%;
     transform: translateX(50%);
-  }
-  .headofImg {
-    width: 500px;
-    height: 300px;
-    margin-right: 2px;
-    animation: spin 2s linear infinite;
-  }
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(90deg);
-    }
   }
   /* دکمه چت بات */
   .Chatbotbtn button {
@@ -356,7 +325,7 @@ li::marker {
 .video {
   width: 100%;
   height: 500px;
-}
+} */
 /*مدیا کیوری سایز مبایل های کوچک*/
 
 /* @media (max-width: 378px){
