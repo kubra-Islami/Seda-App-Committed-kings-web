@@ -212,14 +212,32 @@ li::marker {
   font-size: 18px;
 }
 
-/* سکشن دوم از هر ویدیو */
+/*سکشن دوم از هر ویدیو*/
 .videoMain {
   background-color: white;
   padding: 40px;
-  margin-top: 0px;
 }
 
 .video {
   width: 100%;
   height: 500px;
+}
+#showBtn {
+  background-color: white;
+  border: none;
+  color: #1e1e76;
+}
+/*حالت های ریسپانسیف صفحه*/
+/* @media (max-width: 380px) {
+  /* Navbar */
+.navbar {
+  width: 100%;
+  font-size: 12px;
+}
+.head {
+  display: flex;
+  flex-wrap: wrap;
+}
+.maintext {
+  width: 100%;
 }
