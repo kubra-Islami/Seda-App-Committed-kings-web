@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../quiz/quiz.css">
+</head>
+<body>
+  <div class="quiz-card">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress"></div>
+    </div>
+    <h1>کوییز: استفاده از آنتی ویروس</h1>
+    <div class="question-text" id="question-text"></div>
+    <div class="options" id="options"></div>
+
+    <div class="score-card" id="score-card">
+      <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
+      <div class="message" id="message"></div>
+      <button class="home-btn" onclick="window.location.href='..'">
+      باز گشت به صفحه اصلی 
+      </button>
+    </div>
+  </div>
+
+  
+  <script>
+    window.quizQuestions = [
+      {
+        text:"آنتی ویروس چه کاری انجام می دهد؟",
+        options: ["عکس ها را ذخیره میکند","ویروس را حذف میکند","ویدیو میسازد","موسیقی پخش میکند"],
+        correct: 1
+      },
+       {
+        text:"اگر آنتی ویروس ویروسی پیدا کند چه باید کرد؟",
+        options: ["دوباره ان را باز کنیم","فایل را حذف یا قرنطینه کنیم","فایل برای دیگران بفرستیم","نادیده بگیرم"],
+        correct: 1
+      },
+       {
+        text:"اگر آنتی ویروس خاموش باشد چه می شود؟",
+        options: ["باتری کمتر مصرف می شود","ویروس ها راحت وارد می شوند","اینترنت سریع تر میشود","سیستم امن تر میشود"],
+        correct: 1
+      },
+      {
+        text:"کدام رفتار خطرناک است",
+        options: ["استفاده از رمز قوی","باز کردن فایل ناشناس","اسکن سیستم","به روز رسانی آنتی ویروس"],
+        correct: 1
+      }
+    ];
+
+  </script>
+  <script src="../quiz/quiz.js"></script>
+</body>
+</html>
