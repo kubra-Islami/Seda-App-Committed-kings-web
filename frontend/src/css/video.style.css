@@ -107,7 +107,6 @@ li::marker {
   height: 420px;
   margin: 20px 20px 10px 10px;
 }
-
 .col button {
   background-color: #1e1e76;
   border: none;
@@ -286,10 +285,172 @@ li::marker {
 .social {
   text-decoration: none;
 }
-
 @media (max-width: 380px) {
+  .navbar {
+   position: relative;
+   left: 180px;
+   width: 100%;
+  }
+  #head {
+    height: 42%;
+    margin-bottom: 0px;
+  }
+  .headofImg {
+    padding: 0; /* حذف فاصله‌های اضافی */
+    width: 80%; /* تمام عرض صفحه */
+    height: 450px; /* ارتفاع متناسب با عرض */
+    position: absolute;
+    right: 374px;
+    top: 50px;
+    background-color: white;
+    overflow-x: none;
+  }
+  .maintext {
+    width: 660px;
+  }
+  .row {
+    margin-left: 5px;
+    position: relative;
+    right: 50px;
+  }
+
+  .col {
+    width: 180px;
+  }
+  .col img {
+    width: 300px;
+  }
+  .footer {
+    width: 660px;
+    height: 330px;
+  }
+  .button {
+    position: relative;
+    right: 270px;
+  }
+  .footerMark {
+    position: relative;
+    top: 260px;
+  }
+  #footer {
+    position: relative;
+    right: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    position: relative;
+    left: 273px;
+    width: 100%;
+  }
+  #head {
+    height: 42%;
+    margin-bottom: 0px;
+  }
+  .headofImg {
+    padding: 0; /* حذف فاصله‌های اضافی */
+    width: 76%; /* تمام عرض صفحه */
+    height: 450px; /* ارتفاع متناسب با عرض */
+    position: absolute;
+    right: 374px;
+    top: 50px;
+    background-color: white;
+    overflow-x: none;
+  }
+  .maintext {
+    width: 690px;
+  }
+  .row {
+    margin-left: 5px;
+    position: relative;
+    right: 50px;
+  }
+
+  .col {
+    width: 180px;
+  }
+  .col img {
+    width: 370px;
+  }
+  .footer {
+    width: 690px;
+    height: 330px;
+  }
+  .button {
+    position: relative;
+    right: 270px;
+  }
+  .footerMark {
+    position: relative;
+    top: 260px;
+  }
+  #footer {
+    position: relative;
+    right: 150px;
+  }
+}
+@media (max-width: 768px){
+    .navbar {
+    position: relative;
+    left: 273px;
+    width: 64rem;
+  }
+  #head {
+    height: 42%;
+    margin-bottom: 0px;
+  }
+  .headofImg {
+    padding: 0; /* حذف فاصله‌های اضافی */
+    width: 55%; /* تمام عرض صفحه */
+    height: 300px; /* ارتفاع متناسب با عرض */
+    position: absolute;
+    right: 600px;
+    top: 50px;
+    background-color: white;
+    overflow-x: none;
+  }
+  .maintext {
+    width: 64rem;
+  }
+  .row {
+    display: flex;
+  
+  }
+
+  .col {
+    width: 240px;
+    display:block;
+  }
+  .col img {
+    width: 240px;
+  }
+  .footer {
+    width: 64rem;
+    height: 330px;
+  }
+  .button {
+    position: relative;
+    right: 270px;
+  }
+  .footerMark {
+    position: relative;
+    top: 260px;
+  }
+  #footer {
+    position: relative;
+    right: 150px;
+  }
+}
+
+*/
+/*مدیا کیوری بخش سکشن های ویدیو*/
+
+/* @media (max-width: 380px) {
   .videoPartfooter {
     height: 320px;
+  }
+  #head {
+    height: 200px;
   }
   #Chatbtn {
     width: 130px;
@@ -305,23 +466,4 @@ li::marker {
     position: relative;
     top: 20px;
   }
-}
-@media (max-width: 480px) {
-  .videoPartfooter {
-    height: 320px;
-  }
-  #Chatbtn {
-    width: 150px;
-    height: 36px;
-    border-radius: 20px;
-    margin-right: 10px;
-    position: relative;
-    top: 260px;
-    left: 205px;
-    padding: 5px;
-  }
-  .footerMark {
-    position: relative;
-    top: 270px;
-  }
-}
+} */
