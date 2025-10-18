@@ -1,19 +1,21 @@
 const btn = document.getElementById("showBtn");
 const text = document.getElementById("fullText");
 
-// اطمینان از اینکه متن هنگام بارگذاری صفحه پنهان است
 window.addEventListener("DOMContentLoaded", () => {
-  text.style.display = "none";
+  text.style.height = "0px";
   btn.textContent = "معلومات بیشتر";
 });
 
-// اضافه کردن رویداد کلیک
 btn.addEventListener("click", () => {
-  if (text.style.display === "none") {
-    text.style.display = "block";
-    btn.textContent = "بستن توضیحات"; // تغییر نام دکمه
+  if (!text.classList.contains("open")) {
+    // باز شدن نرم و خودکار بر اساس ارتفاع واقعی
+    text.style.height = text.scrollHeight + "px";
+    text.classList.add("open");
+    btn.textContent = "بستن توضیحات";
   } else {
-    text.style.display = "none";
-    btn.textContent = "معلومات بیشتر"; // برگشت به حالت قبلی
+    // بستن نرم و برگشتن به صفر
+    text.style.height = "0px";
+    text.classList.remove("open");
+    btn.textContent = "معلومات بیشتر";
   }
 });

@@ -33,6 +33,7 @@ li::marker {
     #a195f9 75%,
     #f2a1f2 100%
   );
+  font-size: 12px;
   width: 100%;
   z-index: 1000;
   overflow-x: hidden;
@@ -222,10 +223,7 @@ li::marker {
 .VideoPara {
   color: #1e1e76;
 }
-.navbar {
-  width: 100%;
-  font-size: 12px;
-}
+
 .head {
   display: flex;
   flex-wrap: wrap;
@@ -288,5 +286,112 @@ li::marker {
 @media (max-width: 380px) {
   .videoPartfooter {
     background-color: white;
+  }
+}
+#fullText {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.6s ease, opacity 0.6s ease;
+}
+
+#fullText.open {
+  opacity: 1;
+}
+/* مدیا کیوری برای بخش ویدیو ها  */
+/* @media (max-width: 480px) {
+  .navbar {
+    width: 630px;
+  }
+  .maintext {
+    width: 630px;
+  }
+  .headofImg {
+    display: block;
+    height: 200px;
+    width: 200px;
+  }
+  .row {
+    display: inline;
+  }
+  .col {
+    width: 300px;
+    margin-right: 70px;
+  }
+  .footer {
+    width: 630px;
+  }
+  .Chatbotbtn {
+    position: absolute;
+    right: 300px;
+  }
+  #footer {
+    margin-right: 170px;
+  }
+} */
+@media (max-width: 480px) {
+  .navbar {
+    width: 100%;
+  }
+  .row {
+    margin-right: 150px;
+    width: 300px;
+  }
+  .col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .Chatbotbtn {
+    margin-right: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    margin-right: -300px;
+  }
+  #head {
+    width: 800px;
+  }
+  .maintext {
+    width: 800px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .col {
+    width: 200px;
+    height: 500px;
+  }
+  .col img {
+    width: 220px;
+  }
+
+  .Chatbotbtn {
+    margin-right: 500px;
+  }
+  .footer {
+    width: 800px;
+  }
+  #footer {
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar {
+    position: relative;
+    left: 20px;
+  }
+  .col {
+    width: 230px;
+    height: 490px;
+  }
+  .col img {
+    width: 230px;
   }
 }
