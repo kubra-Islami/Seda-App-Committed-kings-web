@@ -15,6 +15,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css"
+      rel="stylesheet"
+    />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -23,9 +28,14 @@
     <link rel="stylesheet" href="../src/css/video.style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg position-fixed">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      dir="rtl"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#headCourse">محتوایای آموزشی</a>
+        <a class="navbar-brand text-white fw-bold" href="#headCourse"
+          >محتوای آموزشی</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -37,18 +47,20 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">خانه</a>
+              <a class="nav-link text-white" href="#">خانه</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">برگشت</a>
+              <a class="nav-link text-white" href="#">برگشت</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <div class="d-flex" id="head">
       <div class="p-2 flex-grow-1" id="headtext">
         <h1 class="pinkcolor">
@@ -86,7 +98,7 @@
         یاد می‌گیرید. موضوعات<br />
         اصلی این بخش شامل موارد زیر است:
       </p>
-      <h3 class="MainHeader">1: ایجاد رمز قوی و ایمن</h3>
+      <h5 class="MainHeader">1: ایجاد رمز قوی و ایمن</h5>
       <ul>
         <li>طول مناسب رمز و ترکیب حروف، اعداد و نمادها</li>
         <li>
@@ -94,16 +106,16 @@
         </li>
         <li>همیت داشتن رمزهای یکتا برای هر حساب</li>
       </ul>
-      <h3 class="MainHeader">
+      <h5 class="MainHeader">
         ۲. استفاده از مدیریت رمز عبور (Password Manager)
-      </h3>
+      </h5>
       <ul>
         <li>ذخیره امن رمزهای عبور در محیط رمزگذاری‌شده</li>
         <li>ساخت رمزهای تصادفی و بسیار قوی برای هر حساب</li>
       </ul>
-      <h3 class="MainHeader">
+      <h5 class="MainHeader">
         ۳. احراز هویت دو مرحله‌ای (2FA – Two-Factor Authentication)
-      </h3>
+      </h5>
       <ul>
         <li>
           فعال کردن 2FA در حساب‌های مختلف (پیامک، اپلیکیشن احراز هویت، کلید
@@ -119,11 +131,11 @@
         می‌کنند.
       </p>
     </div>
-    <div class="container">
+    <div class="container" id="container">
       <div class="row">
         <div class="col col-md-3">
           <img
-            src="../components/image/password img.avif"
+            src="../components/image/password secction.jpg"
             width="297px"
             height="160px"
           />
@@ -159,8 +171,8 @@
           />
           <h5 class="colHeader">احراز هویت دو مرحله‌ای</h5>
           <p class="colPara">
-            کاربران در فضای اینترنت با تهدیداتی مانند بدافزارها، لینک‌های جعلی و
-            فیشینگ روبه‌رو می‌شوند که خطر سرقت اطلاعات را در پی دارد.
+            احراز رمز دو‌مرحله‌ای روشی است که با افزودن یک مرحلهٔ تأیید اضافی پس
+            از وارد کردن رمز، امنیت حساب‌های آنلاین را افزایش می‌دهد.
           </p>
           <a href="./two-factor.html"
             ><button class="btn0">بیشتر بدانید</button></a
@@ -211,34 +223,38 @@
         <h2 id="headCourse">محتوای آموزشی</h2>
         <ul>
           <li class="courselist">
-            <a href="" target="_blank" class="course"
+            <a href="video-library.html" target="_blank" class="course"
               >آشنایی با امنیت دیجیتال</a
             >
           </li>
           <li class="courselist">
-            <a href="" target="_blank" class="course">امنیت شبکه و اینترنت</a>
+            <a href="internetSection.html" target="_blank" class="course"
+              >امنیت شبکه و اینترنت</a
+            >
           </li>
           <li class="courselist">
-            <a href="" target="_blank" class="course"
+            <a href="socialMediaSecurity.html" target="_blank" class="course"
               >امنیت شبکه های اجتماعی و پیام رسان ها</a
             >
           </li>
           <li class="courselist">
-            <a href="" target="_blank" class="course">امنیت دستگاه ها</a>
+            <a href="SecurityofDevices.html" target="_blank" class="course"
+              >امنیت دستگاه ها</a
+            >
           </li>
           <li class="courselist">
-            <a href="" target="_blank" class="course"
+            <a href="Threat Management.html" target="_blank" class="course"
               >مدیریت تهدیدات و گزارش دهی</a
             >
           </li>
           <li class="courselist">
-            <a href="" target="_blank" class="course"
+            <a href="SafeWayforChildern.html" target="_blank" class="course"
               >رهنمایی ایمنی برای خانواده و کودکان</a
             >
           </li>
           <li class="courselist">
-            <a href="" target="_blank" class="course"
-              >رهنمایی عملی برای ایمن ماندن در فضای دیجیتال
+            <a href="SafeWayforChildern.html" target="_blank" class="course"
+              >نرم‌افزارهای مخرب و اپلیکیشن‌های خطرناک
             </a>
           </li>
         </ul>
