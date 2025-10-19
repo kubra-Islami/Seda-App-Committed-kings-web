@@ -3,6 +3,7 @@ body {
   padding: 0;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: "Vazir", sans-serif;
 
   /* گرادیانت ترکیبی از رنگ‌ها */
   background: linear-gradient(
@@ -36,7 +37,6 @@ li::marker {
   font-size: 12px;
   width: 100%;
   z-index: 1000;
-  overflow-x: hidden;
 }
 .nav-link {
   color: white;
@@ -329,9 +329,14 @@ li::marker {
     margin-right: 170px;
   }
 } */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .navbar {
-    width: 100%;
+    position: absolute;
+    background-color: white;
+    margin-bottom: 0px;
+  }
+  #headtext {
+    margin-top: 0px;
   }
   .row {
     margin-right: 150px;
@@ -342,38 +347,59 @@ li::marker {
     flex-wrap: wrap;
     align-items: center;
   }
+  .headofImg {
+    display: inline;
+    height: 300px;
+    width: 100%;
+  }
   .Chatbotbtn {
-    margin-right: 100px;
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+  }
+
+  #footer {
+    position: relative;
+    right: 190px;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .navbar {
-    margin-right: -300px;
+    width: 100%;
+    margin-left: 200px;
   }
   #head {
     width: 800px;
   }
+
   .maintext {
     width: 800px;
   }
+  .container {
+    margin: 0px;
+  }
   .row {
     display: flex;
-    flex-wrap: wrap;
+    margin-left: 10px;
+    padding: 0px;
+    gap: 0px;
+    width: 790px;
     align-items: center;
+    justify-items: center;
   }
-  .col {
-    width: 200px;
-    height: 500px;
-  }
-  .col img {
-    width: 220px;
+
+  .headofImg {
+    display: inline;
+    height: 300px;
+    width: 100%;
   }
 
   .Chatbotbtn {
-    margin-right: 500px;
+    position: absolute;
+    right: 480px;
   }
   .footer {
-    width: 800px;
+    width: 802px;
   }
   #footer {
     text-align: center;
@@ -394,4 +420,4 @@ li::marker {
   .col img {
     width: 230px;
   }
-}
+} */
