@@ -5,8 +5,8 @@
   padding: 0;
 }
 body {
-  background-color: #fff;
-  direction: rtl;
+    font-family: 'Vazir', Arial, sans-serif;
+    direction: rtl;
 }
 
 /* Header */

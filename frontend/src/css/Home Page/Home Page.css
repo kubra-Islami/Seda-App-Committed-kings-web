@@ -1,0 +1,163 @@
+body {
+  font-family: 'Vazir', Arial, sans-serif;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  background-color: #a195f9;
+}
+
+.navbar {
+  background: linear-gradient(135deg,
+      #1e1e76 0%,
+      #4b4bc3 25%,
+      #707ff5 50%,
+      #a195f9 75%,
+      #f2a1f2 100%);
+}
+
+nav {
+  font-size: 26px;
+}
+#first-section {
+  background-image: url(../../../assets/images/618de4cfd614fbf59ff6ace3_Afghan-Girls-Coding.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 12%;
+  height: 100%;
+}
+
+#welcome {
+  background-color: #fff;
+  color: #1e1e76;
+  font-size: 150%;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 5% 5% 0 0;
+  width: 30%;
+  height: 10%;
+}
+
+#shape1 {
+  background-color: #707ff5;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 40%;
+  padding: 10px;
+  margin: 0 50% 0 0;
+}
+
+#skill {
+  background-color: #fff;
+  color: #1e1e76;
+  font-size: 100%;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  padding: 30px;
+  margin-right: 40%;
+  text-align: center;
+  width: 50%;
+}
+
+#shape2 {
+  background-color: #707ff5;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 40%;
+  padding: 10px;
+  margin: 0 50% 0 0;
+}
+
+#second-section {
+  background-color: #a195f9;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+#future, #platform {
+  width: 50%;
+  padding: 20px; 
+  color: #1e1e76;
+  font-weight: bold;
+}
+
+#future {
+  font-size: 150%;
+  margin: 5% 10% 0 0;
+  width: 25%;
+  height: 10%;
+}
+
+#future img {
+  height: 300px;
+  width: 300px;
+}
+
+#future p {
+  margin-top: -70px;
+  text-align: center;
+}
+
+#shape3 {
+  background-color: #707ff5;
+  border-radius: 30px;
+  width: 30%;
+  padding: 5%;
+  margin: 0 30% 0 0;
+}
+
+#platform {
+  font-size: 130%;
+  margin: 10% 0 0 10%;
+  text-align: center;
+  width: 30%;
+}
+
+#third-section {
+  background-color: #fff;
+  border-radius: 50px;
+  width: 90%;
+  align-items: center;
+  margin-right: 60px;
+  padding: 20px;
+}
+
+#third-section h2 {
+  color: #1e1e76;
+  text-align: center;
+}
+
+#list li {
+  color: #1e1e76;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#textes {
+  color: #1e1e76;
+  width: 60%;
+  margin-right: 25%;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+#third-section button {
+  background-color: #707ff5;
+  color: #fff;
+  border-radius: 30px;
+  width: 20%;
+  padding: 5px;
+  margin: 0 5% 0 0;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#third-section button:hover {
+  font-weight: bold;
+  transform: scale(1.3);
+}
