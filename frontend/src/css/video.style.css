@@ -197,7 +197,7 @@ body {
   background-color: #707ff5;
 }
 
-/* ✨ Show/hide full text */
+/* Show/hide full text */
 #fullText {
   height: 0;
   overflow: hidden;
@@ -210,7 +210,7 @@ body {
   opacity: 1;
 }
 
-/* 📱 Responsive tweaks */
+/* Responsive tweaks */
 @media (max-width: 768px) {
   .video {
     height: 40vh;
