@@ -202,3 +202,8 @@ li::marker {
   text-align: center;
   margin-top: 10px;
 }
+.footerMark {
+  position: relative;
+  right: 530px;
+  top: 260px;
+}
