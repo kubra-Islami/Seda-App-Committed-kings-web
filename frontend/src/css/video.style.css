@@ -1,424 +1,234 @@
+/*  Global styles */
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  overflow-x: hidden;
   font-family: "Vazir", sans-serif;
-
-  /* گرادیانت ترکیبی از رنگ‌ها */
-  background: linear-gradient(
-    135deg,
-    #1e1e76 0%,
-    /* بنفش خیلی تیره */ #4b4bc3 25%,
-    /* بنفش روشن‌تر */ #707ff5 50%,
-    /* آبی بنفش */ #a195f9 75%,
-    /* بنفش ملایم */ #f2a1f2 100% /* صورتی */
-  );
-
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding-top: 70px; /* space for fixed navbar */
+  overflow-x: hidden;
 }
 
-li::marker {
-  color: #4b4bc3;
-  font-size: 18px;
+/*  Video section */
+.VideoPart {
+  position: relative;
+  margin: 2rem 0;
 }
 
-.navbar {
-  background: linear-gradient(
-    135deg,
-    #1e1e76 0%,
-    #4b4bc3 25%,
-    #707ff5 50%,
-    #a195f9 75%,
-    #f2a1f2 100%
-  );
-  font-size: 12px;
+.video {
   width: 100%;
-  z-index: 1000;
+  height: 60vh;
+  border-radius: 8px;
 }
+
+/*  Navbar */
+.navbar {
+  background: linear-gradient(135deg, #1e1e76, #4b4bc3, #707ff5, #a195f9, #f2a1f2);
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
 .nav-link {
-  color: white;
+  color: white !important;
 }
 
-.navbar-brand {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.navbar-brand:hover {
-  color: #1e1e76;
-}
-
-#headtext {
-  background-color: white;
-  margin-top: 50px;
-  font-size: 15px;
-}
-#headtext h1 {
-  margin-top: 10px;
-  margin-right: 10px;
-  color: #1e1e76;
-}
-#headtext p {
-  margin-right: 20px;
-}
-
-.headofImg {
-  padding: 0px 600px 0px 0px;
-  width: 90%;
-  height: 400px;
-  position: relative;
-  bottom: 200px;
-}
-
-.d-flex {
-  height: 300px;
-}
-.MainHeader {
-  color: #1e1e76;
-}
-
-.maintext {
-  padding: 30px;
-  color: black;
-  background-color: white;
-}
-.container {
-  margin: 30px 80px 30px 0px;
-}
-.row {
-  gap: 5%;
-}
-
-.col {
-  display: flex; /* فعال کردن فلکس */
-  flex-direction: column; /* محتویات ستون به شکل ستون چیده شوند */
-  justify-content: space-between; /* فاصله بین تصویر/متن و دکمه حفظ شود */
-  background-color: white;
-  gap: 15px;
-  align-items: center;
-  border-radius: 10px;
-  text-align: right;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-  padding: 15px;
-  width: 26%;
-  height: 420px;
-  margin: 20px 20px 10px 10px;
-}
-.col button {
-  background-color: #1e1e76;
-  border: none;
-  border-radius: 10px;
-  width: 180px;
-  color: white;
-  padding: 5px;
-  transition: background-color 1s ease;
-  margin-top: auto; /* دکمه همیشه پایین ستون */
-  position: static; /* حذف relative و bottom */
-}
-
-.col button:hover {
-  background-color: #707ff5;
-}
-
-.colbtn0 {
-  position: relative;
-  top: 43px;
-}
-.pinkcolor {
-  color: #f2a1f2;
-}
-.navbar-brand {
-  color: white;
-  font-weight: bold;
-}
-.navbar-brand:hover {
-  color: #1e1e76;
-}
-.nav-link {
-  color: white;
-}
 .nav-link:hover {
-  color: #a195f9;
+  color: #f2a1f2 !important;
 }
-.courselist {
+
+/*  Main video text section */
+.videoMain {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.videoMain h1 {
+  color: #1e1e76;
+  font-size: 1.8rem;
+}
+
+.videoMain p {
+  line-height: 1.8;
+}
+
+.VideoPara {
+  color: #1e1e76;
+  margin-top: 1.5rem;
+}
+
+/*  Show more button */
+#showBtn {
+  background-color: transparent;
+  border: none;
+  color: #1e1e76;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/*  Quiz section */
+.quiz-invite {
+  background: linear-gradient(135deg, #4b4bc3, #707ff5);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.quiz-invite a.quiz-btn {
+  display: inline-block;
+  background-color: white;
+  color: #1e1e76;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.quiz-invite a.quiz-btn:hover {
+  background-color: #f2a1f2;
+  color: white;
+}
+
+/*  Footer Section */
+.videoPartfooter {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  margin-top: 2rem;
+}
+
+.footerMark {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.social i {
+  font-size: 24px;
+  color: #1e1e76;
+  transition: color 0.3s;
+}
+
+.social:hover i {
+  color: #707ff5;
+}
+
+.courses h2 {
+  color: #1e1e76;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.courses ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.courselist a {
+
+.courses li {
+  margin-bottom: 0.5rem;
+}
+
+.course {
   text-decoration: none;
   color: black;
-}
-
-.courselist:hover {
-  color: #1e1e76;
+  font-size: 0.95rem;
+  transition: color 0.3s;
 }
 
 .course:hover {
   color: #1e1e76;
 }
 
-.footer {
-  background-color: white;
-}
-.Chatbotbtn {
-  position: absolute;
-  left: 20px;
-}
 .Chatbotbtn button {
   background-color: #1e1e76;
-  border: none;
-  padding: 10px;
   color: white;
-  transition: 1s ease;
-  width: 300px;
-  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 220px;
 }
 
 .Chatbotbtn button:hover {
   background-color: #707ff5;
 }
 
-.courses {
-  margin: 0px 20px 20px 0px;
-  position: relative;
-  left: 5px;
-  text-align: right;
-}
-
-.courses ul {
-  padding: 0px 0px 30px 0px;
-}
-
-.course:hover {
-  text-decoration: underline;
-}
-
 #footer {
-  font-size: small;
-  color: white;
   text-align: center;
-  margin-top: 10px;
-}
-
-/*سکشن دوم از هر ویدیو*/
-.videoMain {
-  background-color: white;
-  padding: 40px;
-}
-.videoMain h1 {
   color: #1e1e76;
-}
-.video {
-  width: 100%;
-  height: 500px;
-}
-#showBtn {
-  background-color: white;
-  border: none;
-  color: #1e1e76;
-}
-.VideoPara {
-  color: #1e1e76;
+  font-size: 0.9rem;
+  margin: 0;
 }
 
-.head {
-  display: flex;
-  flex-wrap: wrap;
-}
-.maintext {
-  width: 100%;
-}
-.quiz-invite {
-  margin: 20px;
-  color: white;
-}
-.quiz-invite a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #1e1e76;
-}
-.videoPartfooter {
-  background-color: white;
-}
-.quiz button {
-  background-color: white;
-  border: none;
-  margin: 30px;
-}
-.footerMark {
-  display: flex;
-  gap: 15px; /* فاصله بین آیکون‌ها */
-  justify-content: flex-end; /* قرار گرفتن در سمت چپ */
-  align-items: center;
-  padding: 10px 20px; /* فاصله از اطراف */
-  position: relative;
-  top: 220px;
-  bottom: 0;
-  left: 0;
-  width: 100%; /* تمام عرض صفحه */
-  z-index: 1000;
-}
-
-.social i {
-  font-size: 24px;
-  transition: color 0.3s;
-}
-
-.social:hover i {
-  color: #707ff5; /* رنگ تیره‌تر هنگام هاور */
-}
-
-/* اگر بخواهی هر شبکه رنگ جداگانه داشته باشد می‌توان تنظیم کرد، اما همه گلابی هستند */
-.instagram i,
-.facebook i,
-.twitter i,
-.linkedin i,
-.phone i {
-  color: #1e1e76;
-}
-
-.social {
-  text-decoration: none;
-}
-@media (max-width: 380px) {
+/* Responsive Tweaks */
+@media (max-width: 768px) {
   .videoPartfooter {
-    background-color: white;
+    padding: 2rem 1rem;
+  }
+
+  .courses {
+    text-align: center;
+  }
+
+  .Chatbotbtn button {
+    width: 100%;
+    margin-top: 1rem;
   }
 }
+
+
+/* Chatbot button */
+.Chatbotbtn button {
+  background-color: #1e1e76;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  transition: 0.3s;
+}
+
+.Chatbotbtn button:hover {
+  background-color: #707ff5;
+}
+
+/* Show/hide full text */
 #fullText {
   height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: height 0.6s ease, opacity 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 #fullText.open {
+  height: auto;
   opacity: 1;
 }
 
-/* مدیا کیوری برای بخش ویدیو ها  */
-/* @media (max-width: 480px) {
-  .navbar {
-    width: 630px;
-  }
-  .maintext {
-    width: 630px;
-  }
-  .headofImg {
-    display: block;
-    height: 200px;
-    width: 200px;
-  }
-  .row {
-    display: inline;
-  }
-  .col {
-    width: 300px;
-    margin-right: 70px;
-  }
-  .footer {
-    width: 630px;
-  }
-  .Chatbotbtn {
-    position: absolute;
-    right: 300px;
-  }
-  #footer {
-    margin-right: 170px;
-  }
-} */
-/* @media (max-width: 480px) {
-  .navbar {
-    position: absolute;
-    background-color: white;
-    margin-bottom: 0px;
-  }
-  #headtext {
-    margin-top: 0px;
-  }
-  .row {
-    margin-right: 150px;
-    width: 300px;
-  }
-  .col {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .headofImg {
-    display: inline;
-    height: 300px;
-    width: 100%;
-  }
-  .Chatbotbtn {
-    position: absolute;
-    right: 0px;
-    margin: 10px;
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .video {
+    height: 40vh;
   }
 
-  #footer {
-    position: relative;
-    right: 190px;
+  .videoMain {
+    padding: 1.2rem;
+  }
+
+  .videoMain h1 {
+    font-size: 1.4rem;
+  }
+
+  .quiz-invite {
+    padding: 1.2rem;
+  }
+
+  .Chatbotbtn button {
+    width: 100%;
   }
 }
-@media (min-width: 768px) {
-  .navbar {
-    width: 100%;
-    margin-left: 200px;
-  }
-  #head {
-    width: 800px;
-  }
-
-  .maintext {
-    width: 800px;
-  }
-  .container {
-    margin: 0px;
-  }
-  .row {
-    display: flex;
-    margin-left: 10px;
-    padding: 0px;
-    gap: 0px;
-    width: 790px;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .headofImg {
-    display: inline;
-    height: 300px;
-    width: 100%;
-  }
-
-  .Chatbotbtn {
-    position: absolute;
-    right: 480px;
-  }
-  .footer {
-    width: 802px;
-  }
-  #footer {
-    text-align: center;
-  }
-}
-@media (max-width: 1024px) {
-  body {
-    overflow-x: hidden;
-  }
-  .navbar {
-    position: relative;
-    left: 20px;
-  }
-  .col {
-    width: 230px;
-    height: 490px;
-  }
-  .col img {
-    width: 230px;
-  }
-} */
