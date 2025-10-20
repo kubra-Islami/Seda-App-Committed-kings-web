@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Vazir", sans-serif;
+
+  /* گرادیانت ترکیبی از رنگ‌ها */
+  background: linear-gradient(
+    135deg,
+    #1e1e76 0%,
+    /* بنفش خیلی تیره */ #4b4bc3 25%,
+    /* بنفش روشن‌تر */ #707ff5 50%,
+    /* آبی بنفش */ #a195f9 75%,
+    /* بنفش ملایم */ #f2a1f2 100% /* صورتی */
+  );
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+li::marker {
+  color: #4b4bc3;
+  font-size: 18px;
+}
+
+.navbar {
+  background: linear-gradient(
+    135deg,
+    #1e1e76 0%,
+    #4b4bc3 25%,
+    #707ff5 50%,
+    #a195f9 75%,
+    #f2a1f2 100%
+  );
+  font-size: 12px;
+  width: 100%;
+  z-index: 1000;
+}
+.nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-brand:hover {
+  color: #1e1e76;
+}
+
+#headtext {
+  background-color: white;
+  margin-top: 50px;
+  font-size: 15px;
+}
+#headtext h1 {
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #1e1e76;
+}
+#headtext p {
+  margin-right: 20px;
+}
+
+.headofImg {
+  padding: 0px 600px 0px 0px;
+  width: 90%;
+  height: 400px;
+  position: relative;
+  bottom: 200px;
+}
+
+.d-flex {
+  height: 300px;
+}
+.MainHeader {
+  color: #1e1e76;
+}
+
+.maintext {
+  padding: 30px;
+  color: black;
+  background-color: white;
+}
+.container {
+  margin: 30px 80px 30px 0px;
+}
+.row {
+  gap: 5%;
+}
+
+.col {
+  display: flex; /* فعال کردن فلکس */
+  flex-direction: column; /* محتویات ستون به شکل ستون چیده شوند */
+  justify-content: space-between; /* فاصله بین تصویر/متن و دکمه حفظ شود */
+  background-color: white;
+  gap: 15px;
+  align-items: center;
+  border-radius: 10px;
+  text-align: right;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  width: 26%;
+  height: 420px;
+  margin: 20px 20px 10px 10px;
+}
+.col button {
+  background-color: #1e1e76;
+  border: none;
+  border-radius: 10px;
+  width: 180px;
+  color: white;
+  padding: 5px;
+  transition: background-color 1s ease;
+  margin-top: auto; /* دکمه همیشه پایین ستون */
+  position: static; /* حذف relative و bottom */
+}
+
+.col button:hover {
+  background-color: #707ff5;
+}
+
+.colbtn0 {
+  position: relative;
+  top: 43px;
+}
+.pinkcolor {
+  color: #f2a1f2;
+}
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: #1e1e76;
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: #a195f9;
+}
+.courselist {
+  list-style: none;
+}
+.courselist a {
+  text-decoration: none;
+  color: black;
+}
+
+.courselist:hover {
+  color: #1e1e76;
+}
+
+.course:hover {
+  color: #1e1e76;
+}
+
+.footer {
+  background-color: white;
+}
+.Chatbotbtn {
+  position: absolute;
+  left: 20px;
+}
+.Chatbotbtn button {
+  background-color: #1e1e76;
+  border: none;
+  padding: 10px;
+  color: white;
+  transition: 1s ease;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.Chatbotbtn button:hover {
+  background-color: #707ff5;
+}
+
+.courses {
+  margin: 0px 20px 20px 0px;
+  position: relative;
+  left: 5px;
+  text-align: right;
+}
+
+.courses ul {
+  padding: 0px 0px 30px 0px;
+}
+
+.course:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  font-size: small;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
