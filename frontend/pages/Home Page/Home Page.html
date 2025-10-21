@@ -13,313 +13,394 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark pt-3">
-        <div class="container-fluid d-flex justify-content-start">
-            <div class="navbar-header">
-                <a href="#" target="_blank" rel="noopener noreferrer" class="navbar-brand">
-                    <img src="../../assets/images/لوگوی صدا.jpg" alt="صدا" height="60" width="auto">
-                </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-expanded="false" aria-controls="navbarNav" aria-label="toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home-section" target="_blank"
-                            rel="noopener noreferrer">خانه</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-section" target="_blank" rel="noopener noreferrer">درباره
-                            ما</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services-section" target="_blank" rel="noopener noreferrer">خدمات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">آموزش ها</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">چت بات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">شکایات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">جعبه ابزار اضطراری</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">کویز</a>
-                    </li>
-                </ul>
-            </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark pt-3">
+    <div class="container">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">
+            <img src="../../assets/images/لوگوی صدا.jpg" alt="صدا" height="60" width="auto">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu Items -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home-section">خانه</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services-section">خدمات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">آموزش ها</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">چت بات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">شکایات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">جعبه ابزار اضطراری</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">کویز</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+<!-- Main Content -->
+<main>
 
-    <!-- Main Content -->
-    <main>
-
-        <!-- wlcome Section -->
-        <section id="welcome-section"
-            class="d-flex flex-column flex-md-row justify-content-md-end align-items-md-center">
-            <div id="welcome" class="col-10 col-md-4 col-lg-3 mb-3 mb-md-0 me-md-3">
+    <!-- wlcome Section -->
+    <section id="welcome-section" class="">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-around p-4">
+            <div id="welcome" class="p-4 shadow rounded-4 bg-white bg-opacity-75 mb-4 mb-md-0">
                 <p>خوش آمدید به وبسایت صدا! ما خوشحالیم که شما به فضای آموزشی و الهام‌بخش صدا پیوسته‌اید.</p>
-                <div id="shape1"></div>
             </div>
-            <div id="skill" class="col-10 col-md-6 col-lg-5 ms-md-5 me-md-auto">
+            <div id="skill" class="p-4 shadow rounded-4 bg-white bg-opacity-75">
                 <p>مهارت‌های دیجیتال یاد بگیریم، خلاق شویم و دنیای آنلاین را کشف کنیم. قدم اول را با ما بردار و مسیر
                     موفقیت خود را آغاز کن!</p>
-                <div id="shape2"></div>
             </div>
-        </section>
-
-        <!-- home page section -->
-        <section id="home-section"
-            class="d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-center align-items-md-center gap-1">
-            <div id="future" class="col-10 col-md-4 col-lg-3 mx-auto text-center my-3">
-                <img src="../../assets/images/seda.png" alt="صدا" class="mx-auto d-block">
-                <p>آینده درخشان خود را از راه یادگیری دیجیتال بسازید!</p>
-                <div id="shape3"></div>
-            </div>
-            <div id="platform" class="col-10 col-md-4 col-lg-3 mx-auto text-center text-md-end my-3">
-                <p>صدا یک پلتفرم امن و ناشناس است این پلتفرم برای توانمندسازی دختران و زنان افغان در زمینه امنیت دیجیتال
-                    طراحی شده است. با دسترسی به محتوای آموزشی محلی، ویدیوهای کوتاه آموزشی، راهنماهای مرحله به مرحله،
-                    ابزارهای اضطراری و راهنمایی برای ثبت شکایات، کاربران می‌توانند با اعتماد به نفس، به صورت خصوصی و
-                    آزاد، مهارت‌های دیجیتال بیاموزند و آینده خود را شکل دهند.</p>
-            </div>
-        </section>
-
-        <!-- about us section -->
-        <section id="about-section"
-            class="container-fluid d-flex flex-column align-items-center justify-content-center p-3 p-md-4 p-lg-5 mx-auto"
-            style="max-width: 90%;">
-            <h2 class="text-center w-100 w-md-75 w-lg-50">چرا مهارت‌های <span
-                    style="text-decoration: underline #f2a1f2;">دیجیتال</span> خود را با صدا توسعه دهیم؟ </h2>
-            <div id="list" class="w-100 w-md-75 w-lg-50 my-3 my-md-4">
-                <ul
-                    class="list-unstyled d-flex flex-column flex-md-row justify-content-md-around align-items-start p-0 m-0">
-                    <li class="mx-md-2 mx-lg-3">
-                        <i class="fas fa-brain"></i> شکاف مهارت‌های دیجیتال خود را ببندید.
-                    </li>
-                    <li class="mx-md-2 mx-lg-3"> <i class="fas fa-chart-line"></i> رهبری و اعتماد
-                        به نفس دیجیتال خود را تقویت کنید.</li>
-                    <li class="mx-md-2 mx-lg-3"> <i class="fas fa-rocket"></i> مهارت‌های جدید
-                        بیاموزید و فرصت‌های خود را گسترش دهید.</li>
-                </ul>
-            </div>
-            <div id="textes" class="w-70 w-md-75 w-lg-50 float-md-end ms-md-3 ms-lg-4">
-                <p>با دسترسی به منابع آموزشی محلی و بین‌المللی، ویدیوهای کوتاه آموزشی، راهنماهای مرحله به مرحله و
-                    ابزارهای تعاملی، صدا به شما کمک می‌کند تا مهارت‌های دیجیتال را با اعتماد به نفس و به‌ صورت ناشناس
-                    بیاموزید و توانمندی خود را برای شکل دادن به آینده‌تان افزایش دهید.</p>
-                <p id="today">امروز به جامعه صدا بپیوندید و سفر خود را به سمت توانمندسازی دیجیتال آغاز کنید.</p>
-            </div>
-            <div class="w-100 w-md-75 w-lg-50">
-                <button class="w-40 w-md-20 w-lg-10 px-3 px-md-4 me-md-2 me-lg-3">از امروز آغاز کنید</button>
-            </div>
-        </section>
-
-        <!-- services section -->
-        <section id="services-section"
-            class="mx-auto mx-md-3 mx-lg-5 p-3 p-md-4 p-lg-5 d-flex flex-column align-items-center justify-content-center">
-            <h2 class="mb-3 mb-md-4"><span id="seda-title">صدا</span> چگونه کار میکند؟</h2>
-            <div id="site" class="w-100 w-md-75 w-lg-50 mb-4 mb-md-5">
-                <ul class="list-unstyled p-0 m-0">
-                    <li class="py-2">در وبسایت <span id="seda-title">صدا</span> نیازی به ثبت‌ نام یا ایجاد حساب کاربری
-                        نیست.</li>
-                    <li class="py-2">شما می‌توانید مستقیماً به منابع آموزشی دسترسی پیدا کنید.</li>
-                </ul>
-            </div>
-            <div id="part" class="w-100 w-md-75 w-lg-50">
-                <ul class="list-unstyled p-0 m-0">
-                    <li class="py-2">هر بخش شامل ویدیوهای آموزشی کوتاه است.</li>
-                    <li class="py-2">در کنار هر ویدیو، مقالات و راهنماهایی وجود دارد که موضوع را توضیح داده و نشان
-                        می‌دهد چگونه مهارت‌ها را به کار ببریم.</li>
-                    <li class="py-2">کاربران می‌توانند به صورت گام‌به‌گام و ناشناس یاد بگیرند و به‌ سادگی پیشرفت خود را
-                        در ارتقای مهارت‌های دیجیتال دنبال کنند.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- courses section -->
-        <section id="course-section" class="container px-3 px-md-4 px-lg-5 my-5">
-            <h2 class="text-center mb-3 mb-md-4">آموزش ها</h2>
-            <p id="course" class="text-center mb-4 mb-md-5"> با کلیک کردن روی هر کارت به کورس ها بپیوندید و مهارت های دیجیتلی هود را افزایش دهید.           </p>
-
-            <!-- digital-safety -->
-            <div class="row g-3 g-md-4 justify-content-center">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div id="digital-safety" class="card h-100 shadow-sm border-0 rounded-10 p-3 text-center">
-                        <img src="https://thumbs.dreamstime.com/b/digital-security-shield-padlock-icon-purple-cyber-background-using-black-violet-color-palette-technology-344895784.jpg"
-                            alt="Digital Safety">
-                        <h5 class="card-title fw-bold mb-3">آشنایی با امنیت دیجیتال</h5>
-                        <ul class="list-unstyled card-text text-start px-2">
-                            <li class="py-1">اهمیت امنیت دیجیتال</li>
-                            <li class="py-1">اصول حفظ حریم خصوصی آنلاین</li>
-                            <li class="py-1">خطرات رایج در فضای اینترنت</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- enter-password -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div id="enter-password" class="card h-100 shadow-sm border-0 rounded-10 p-3 text-center">
-                        <img src="https://www.shutterstock.com/shutterstock/videos/3690885369/thumb/1.jpg?ip=x480"
-                            alt="Password Safety">
-                        <h5 class="card-title fw-bold mb-3">آشنایی با رمز عبور</h5>
-                        <ul class="list-unstyled card-text text-start px-2">
-                            <!-- add li items if needed -->
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- network-internetsafety -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div id="network-internetsafety" class="card h-100 shadow-sm border-0 rounded-10 p-3 text-center">
-                        <img src="https://www.shutterstock.com/image-vector/abstract-digital-technology-futuristic-circuit-600nw-2306608033.jpg"
-                            alt="Internet Safety">
-                        <h5 class="card-title fw-bold mb-3">امنیت شبکه و انترنت</h5>
-                        <ul class="list-unstyled card-text text-start px-2">
-                            <li class="py-1">استفاده امن از Wi-Fi عمومی ومرور امن VPN</li>
-                            <li class="py-1">تشخیص سایت های جعلی وفیشینگ</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- message-socialsafety -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div id="message-socialsafety" class="card h-100 shadow-sm border-0 rounded-10 p-3 text-center">
-                        <img src="https://media.istockphoto.com/id/2160599272/vector/smartphone-security-concept-with-shield-and-digital-code-for-mobile-protection.jpg?s=612x612&w=0&k=20&c=f5XskJtCovSHiay3O_5NMU8im5ogd4_K962MCUwAybo="
-                            alt="Social Media Safety">
-                        <h5 class="card-title fw-bold mb-3">امنیت شبکه‌های اجتماعی و پیام‌ رسان‌ها</h5>
-                        <ul class="list-unstyled card-text text-start px-2">
-                            <li class="py-1">تنظیمات حریم خصوصی در WhatsApp</li>
-                            <li class="py-1">شناسایی و مدیریت پیام‌ها و تماس‌های مشکوک</li>
-                            <li class="py-1">مخافظت از اطلاعات شخصی</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- device-safety -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div id="device-safety" class="card h-100 shadow-sm border-0 rounded-10 p-3 text-center">
-                        <img src="https://www.shutterstock.com/image-photo/businessman-typing-phone-hands-glowing-600nw-2319120097.jpg"
-                            alt="Device Safety">
-                        <h5 class="card-title fw-bold mb-3">امنیت دستگاه‌ها</h5>
-                        <ul class="list-unstyled card-text text-start px-2">
-                            <li class="py-1">آپدیت سیستم‌ها و برنامه‌ها</li>
-                            <li class="py-1">استفاده از آنتی‌ویروس و ابزارهای امنیتی</li>
-                            <li class="py-1">پشتیبان‌گیری از داده‌ها</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- threat-management -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div id="threat-management" class="card h-100 shadow-sm border-0 rounded-10 p-3 text-center">
-                        <img src="https://www.redscan.com/media/redteaming-scaled.jpg" alt="Threat Management">
-                        <h5 class="card-title fw-bold mb-3">مدیریت تهدیدات و گزارش‌دهی</h5>
-                        <ul class="list-unstyled card-text text-start px-2">
-                            <li class="py-1">شناسایی تهدیدات آنلاین و هک</li>
-                            <li class="py-1">روش های ایمن گذارش دهی و شکایات</li>
-                            <li class="py-1">ابزار اضطراری و ذخیره شماره مورد اعتماد</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- family-safety -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div id="family-safety" class="card h-100 shadow-sm border-0 rounded-10 p-3 text-center">
-                        <img src="https://t3.ftcdn.net/jpg/07/44/44/46/360_F_744444652_gTp0csEpYGn22niCb6NHFowIPdR63NjD.jpg"
-                            alt="Family Safety">
-                        <h5 class="card-title fw-bold mb-3">راهنمای ایمنی برای خانواده و کودکان</h5>
-                        <ul class="list-unstyled card-text text-start px-2">
-                            <li class="py-1">نکات امنیتی برای کودکان و نوجوانان</li>
-                            <li class="py-1">تنظیمات والدین و محدودیت‌های دسترسی</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- malware-apps -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div id="malware-apps" class="card h-100 shadow-sm border-0 rounded-10 p-3 text-center">
-                        <img src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2024/05/31174622/sl-spider-monster-malware-magenta-1200x675-1.jpg"
-                            alt="Malware Safety">
-                        <h5 class="card-title fw-bold mb-3">نرم‌افزارهای مخرب و اپلیکیشن‌های خطرناک</h5>
-                        <ul class="list-unstyled card-text text-start px-2">
-                            <li class="py-1">شناسایی بدافزار ها نشانه های آلودگی دستگاه به بدافزار ها و راه های پیشگیری
-                                آن</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- chatbot-section -->
-        <section id="chatbot-section" class="container-fluid my-5">
-            <div class="row align-items-center rounded-5 border border-light shadow-sm p-5 m-5">
-                <div class="col-lg-6 col-md-6 col-sm-12 order-lg-2 order-md-2 order-sm-1 order-1 position-relative p-0">
-                    <img src="../../assets/images/chatbot.jpg" alt="" class="img-fluid rounded-5">
-                    <button class="btn position-absolute">کلیک کنید</button>
-                </div>
-                <div id="chatbot" class="col-lg-6 col-md-6 col-sm-12 order-lg-1 order-md-1 order-sm-2 order-2 text-end">
-                    <h2>چت بات صدا</h2>
-                    <p>چت‌ بات ما یک دستیار هوشمند آنلاین است که به شما کمک می‌کند مشکلات و سوال‌های مربوط به امنیت
-                        دیجیتال را سریع و آسان حل کنید.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer Section -->
-<footer id="footer-section" class="container-fluid py-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0">
-      <div class="footer-widget">
-        <h5 class="mb-4">درباره صدا</h5>
-        <p>پلتفرم آموزشی و الهام‌بخش برای توانمندسازی دیجیتال زنان و دختران افغان.</p>
-        <div class="social-links mt-4">
-          <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
         </div>
-      </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home-section" class="container my-5 py-5">
+        <div class="row g-4 align-items-center justify-content-center">
+            <!-- آینده دیجیتال -->
+            <div id="future"
+                 class="col-md-5 text-center p-4 shadow-lg rounded-4 bg-white home-card position-relative overflow-hidden">
+                <div class="card-overlay"></div>
+                <img src="../../assets/images/seda.png" alt="صدا" class="img-fluid rounded-4 mb-3">
+                <h4 class="fw-bold mb-2">آینده درخشان خود را بسازید</h4>
+                <p class="mb-0">با یادگیری مهارت‌های دیجیتال، مسیر موفقیت خود را هموار کنید و آینده‌ای درخشان
+                    بسازید.</p>
+            </div>
+
+            <!-- پلتفرم صدا -->
+            <div id="platform"
+                 class="col-md-6 p-4 shadow-lg rounded-4 bg-white home-card text-md-end position-relative overflow-hidden">
+                <div class="card-overlay"></div>
+                <h4 class="fw-bold mb-3">پلتفرم امن و ناشناس صدا</h4>
+                <p>صدا برای توانمندسازی دختران و زنان افغان در زمینه امنیت دیجیتال طراحی شده است. با دسترسی به محتوای
+                    آموزشی محلی، ویدیوهای کوتاه، راهنماهای مرحله به مرحله و ابزارهای اضطراری، می‌توانید مهارت‌های
+                    دیجیتال خود را با اعتماد به نفس و به‌صورت خصوصی بیاموزید و آینده خود را شکل دهید.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about us section -->
+    <section id="about-section" class="container my-5 py-5">
+        <h2 class="text-center mb-5 fw-bold">
+            چرا مهارت‌های <span class=" text-underline" style="color: #707ff5">دیجیتال</span> خود را با صدا توسعه دهیم؟
+        </h2>
+
+        <div class="row g-4 justify-content-center mb-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="about-card p-4 rounded-4 shadow-sm h-100 text-center bg-white">
+                    <div class="icon mb-3">
+                        <i class="fas fa-brain fa-2x" style="color: #707ff5"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">شکاف مهارت‌ها</h5>
+                    <p>شکاف مهارت‌های دیجیتال خود را ببندید و آماده آینده دیجیتال شوید.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="about-card p-4 rounded-4 shadow-sm h-100 text-center bg-white">
+                    <div class="icon mb-3">
+                        <i class="fas fa-chart-line fa-2x" style="color: #707ff5"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">رهبری و اعتماد به نفس</h5>
+                    <p>رهبری و اعتماد به نفس دیجیتال خود را تقویت کنید و مسیر موفقیت خود را هموار کنید.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="about-card p-4 rounded-4 shadow-sm h-100 text-center bg-white">
+                    <div class="icon mb-3">
+                        <i class="fas fa-rocket fa-2x" style="color: #707ff5"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">مهارت‌های جدید</h5>
+                    <p>مهارت‌های جدید بیاموزید و فرصت‌های خود را در دنیای دیجیتال گسترش دهید.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4 w-75 mx-auto">
+            <p class="mb-3">با دسترسی به منابع آموزشی محلی و بین‌المللی، ویدیوهای کوتاه آموزشی، راهنماهای مرحله به مرحله
+                و ابزارهای تعاملی، صدا به شما کمک می‌کند مهارت‌های دیجیتال را با اعتماد به نفس و به‌صورت ناشناس بیاموزید
+                و توانمندی خود را برای شکل دادن به آینده‌تان افزایش دهید.</p>
+            <p class="fw-bold" id="today">امروز به جامعه صدا بپیوندید و سفر خود را به سمت توانمندسازی دیجیتال آغاز
+                کنید.</p>
+            <button class="btn btn-primary btn-lg mt-3 p-3">از امروز آغاز کنید</button>
+        </div>
+    </section>
+
+
+    <!-- services section -->
+    <section id="services-section" class="container my-5 py-5">
+        <h2 class="text-center mb-5 fw-bold"><span style="color: #f2a1f2">صدا</span> چگونه کار می‌کند؟</h2>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card p-4 text-center rounded-4 shadow-sm h-100 bg-white">
+                    <div class="icon mb-3">
+                        <i class="fas fa-user-check fa-2x" style="color: #f2a1f2"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">بدون ثبت نام</h5>
+                    <p>در وبسایت <span style="color: #f2a1f2">صدا</span> نیازی به ثبت‌نام یا ایجاد حساب کاربری نیست و
+                        شما می‌توانید مستقیم به منابع آموزشی دسترسی پیدا کنید.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card p-4 text-center rounded-4 shadow-sm h-100 bg-white">
+                    <div class="icon mb-3">
+                        <i class="fas fa-video fa-2x" style="color: #f2a1f2"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">ویدیوهای آموزشی کوتاه</h5>
+                    <p>هر بخش شامل ویدیوهای آموزشی کوتاه است که همراه با مقالات و راهنماهای مرحله به مرحله ارائه
+                        می‌شوند.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card p-4 text-center rounded-4 shadow-sm h-100 bg-white">
+                    <div class="icon mb-3">
+                        <i class="fas fa-graduation-cap fa-2x " style="color: #f2a1f2"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">پیشرفت گام‌به‌گام</h5>
+                    <p>کاربران می‌توانند به صورت گام‌به‌گام و ناشناس یاد بگیرند و به سادگی پیشرفت خود را دنبال کنند.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- courses section -->
+    <section id="course-section" class="container mx-auto p-0 m-0 my-5">
+        <h2 class="text-center mb-3 mb-md-4">آموزش ها</h2>
+        <p id="course" class="text-center mb-4 mb-md-5" style="color: #1e1e76; font-size: 1.5rem">
+            با کلیک روی هر کارت به کورس‌ها بپیوندید و مهارت‌های دیجیتالی خود را افزایش دهید.
+        </p>
+
+        <div class="row g-4 justify-content-center cards">
+            <!-- digital-safety -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-lg border-0 rounded-10 p-3 text-center hover-card">
+                    <img src="https://thumbs.dreamstime.com/b/digital-security-shield-padlock-icon-purple-cyber-background-using-black-violet-color-palette-technology-344895784.jpg"
+                         alt="Digital Safety" class="img-fluid rounded-4 mb-3">
+                    <h5 class="card-title fw-bold mb-3">آشنایی با امنیت دیجیتال</h5>
+                    <ul class="list-unstyled card-text text-start px-2">
+                        <li class="py-1">اهمیت امنیت دیجیتال</li>
+                        <li class="py-1">اصول حفظ حریم خصوصی آنلاین</li>
+                        <li class="py-1">خطرات رایج در فضای اینترنت</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- enter-password -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-lg border-0 rounded-10 p-3 text-center hover-card">
+                    <img src="https://www.shutterstock.com/shutterstock/videos/3690885369/thumb/1.jpg?ip=x480"
+                         alt="Password Safety" class="img-fluid rounded-4 mb-3">
+                    <h5 class="card-title fw-bold mb-3">آشنایی با رمز عبور</h5>
+                    <ul class="list-unstyled card-text text-start px-2">
+                        <li class="py-1">ایجاد رمزهای امن و پیچیده</li>
+                        <li class="py-1">مدیریت رمزها با ابزارهای امن</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- network-internetsafety -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-lg border-0 rounded-10 p-3 text-center hover-card">
+                    <img src="https://www.shutterstock.com/image-vector/abstract-digital-technology-futuristic-circuit-600nw-2306608033.jpg"
+                         alt="Internet Safety" class="img-fluid rounded-4 mb-3">
+                    <h5 class="card-title fw-bold mb-3">امنیت شبکه و اینترنت</h5>
+                    <ul class="list-unstyled card-text text-start px-2">
+                        <li class="py-1">استفاده امن از Wi-Fi عمومی و VPN</li>
+                        <li class="py-1">تشخیص سایت‌های جعلی و فیشینگ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- message-socialsafety -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-lg border-0 rounded-10 p-3 text-center hover-card">
+                    <img src="https://media.istockphoto.com/id/2160599272/vector/smartphone-security-concept-with-shield-and-digital-code-for-mobile-protection.jpg?s=612x612&w=0&k=20&c=f5XskJtCovSHiay3O_5NMU8im5ogd4_K962MCUwAybo="
+                         alt="Social Media Safety" class="img-fluid rounded-4 mb-3">
+                    <h5 class="card-title fw-bold mb-3">امنیت شبکه‌های اجتماعی و پیام‌رسان‌ها</h5>
+                    <ul class="list-unstyled card-text text-start px-2">
+                        <li class="py-1">تنظیمات حریم خصوصی در WhatsApp</li>
+                        <li class="py-1">شناسایی و مدیریت پیام‌ها و تماس‌های مشکوک</li>
+                        <li class="py-1">محافظت از اطلاعات شخصی</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- device-safety -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-lg border-0 rounded-10 p-3 text-center hover-card">
+                    <img src="https://www.shutterstock.com/image-photo/businessman-typing-phone-hands-glowing-600nw-2319120097.jpg"
+                         alt="Device Safety" class="img-fluid rounded-4 mb-3">
+                    <h5 class="card-title fw-bold mb-3">امنیت دستگاه‌ها</h5>
+                    <ul class="list-unstyled card-text text-start px-2">
+                        <li class="py-1">آپدیت سیستم‌ها و برنامه‌ها</li>
+                        <li class="py-1">استفاده از آنتی‌ویروس و ابزارهای امنیتی</li>
+                        <li class="py-1">پشتیبان‌گیری از داده‌ها</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- threat-management -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-lg border-0 rounded-10 p-3 text-center hover-card">
+                    <img src="https://www.redscan.com/media/redteaming-scaled.jpg" alt="Threat Management"
+                         class="img-fluid rounded-4 mb-3">
+                    <h5 class="card-title fw-bold mb-3">مدیریت تهدیدات و گزارش‌دهی</h5>
+                    <ul class="list-unstyled card-text text-start px-2">
+                        <li class="py-1">شناسایی تهدیدات آنلاین و هک</li>
+                        <li class="py-1">روش‌های ایمن گزارش‌دهی و شکایات</li>
+                        <li class="py-1">ابزار اضطراری و ذخیره شماره‌های مورد اعتماد</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- family-safety -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-lg border-0 rounded-10 p-3 text-center hover-card">
+                    <img src="https://t3.ftcdn.net/jpg/07/44/44/46/360_F_744444652_gTp0csEpYGn22niCb6NHFowIPdR63NjD.jpg"
+                         alt="Family Safety" class="img-fluid rounded-4 mb-3">
+                    <h5 class="card-title fw-bold mb-3">راهنمای ایمنی برای خانواده و کودکان</h5>
+                    <ul class="list-unstyled card-text text-start px-2">
+                        <li class="py-1">نکات امنیتی برای کودکان و نوجوانان</li>
+                        <li class="py-1">تنظیمات والدین و محدودیت‌های دسترسی</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- malware-apps -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-lg border-0 rounded-10 p-3 text-center hover-card">
+                    <img src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2024/05/31174622/sl-spider-monster-malware-magenta-1200x675-1.jpg"
+                         alt="Malware Safety" class="img-fluid rounded-4 mb-3">
+                    <h5 class="card-title fw-bold mb-3">نرم‌افزارهای مخرب و اپلیکیشن‌های خطرناک</h5>
+                    <ul class="list-unstyled card-text text-start px-2">
+                        <li class="py-1">شناسایی بدافزارها، علائم آلودگی دستگاه و روش‌های پیشگیری</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- chatbot-section -->
+    <section id="chatbot-section" class="container my-5">
+        <div class="row align-items-center bg-white rounded-5 shadow-lg p-4 p-md-5">
+            <!-- تصویر و دکمه -->
+            <div class="col-lg-6 col-md-6 col-sm-12 position-relative mb-4 mb-md-0">
+                <img src="../../assets/images/chatbot.jpg" alt="چت بات صدا" class="img-fluid rounded-5 shadow-sm">
+                <button class="btn btn-gradient position-absolute start-50 translate-middle-x bottom-0 mb-3">
+                    شروع گفتگو
+                </button>
+            </div>
+
+            <!-- متن توضیحی -->
+            <div class="col-lg-6 col-md-6 col-sm-12 text-center text-md-end">
+                <h2 class="mb-3">چت بات صدا</h2>
+                <p class="lead">
+                    چت‌بات ما یک دستیار هوشمند آنلاین است که به شما کمک می‌کند مشکلات و سوال‌های مربوط به
+                    امنیت دیجیتال را سریع و آسان حل کنید.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</main>
+<!-- Footer Section -->
+<footer id="footer-section" class="container-fluid bg-dark text-white py-5">
+    <div class="row justify-content-center">
+        <!-- درباره صدا -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0">
+            <div class="footer-widget">
+                <h5 class="mb-4">درباره صدا</h5>
+                <p>پلتفرم آموزشی و الهام‌بخش برای توانمندسازی دیجیتال زنان و دختران افغان.</p>
+                <!--                <div class="social-links mt-4">-->
+                <!--                    <a href="#" class="text-white me-3 footer-icon"><i class="fab fa-facebook-f"></i></a>-->
+                <!--                    <a href="#" class="text-white me-3 footer-icon"><i class="fab fa-twitter"></i></a>-->
+                <!--                    <a href="#" class="text-white me-3 footer-icon"><i class="fab fa-instagram"></i></a>-->
+                <!--                </div>-->
+            </div>
+        </div>
+
+        <!-- لینک‌های سریع -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0">
+            <div class="footer-widget">
+                <h5 class="mb-4">لینک‌های سریع</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#home-section"
+                                        class="text-white text-decoration-none footer-link">خانه</a></li>
+                    <li class="mb-2"><a href="#about-section" class="text-white text-decoration-none footer-link">درباره
+                        ما</a></li>
+                    <li class="mb-2"><a href="#services-section" class="text-white text-decoration-none footer-link">خدمات</a>
+                    </li>
+                    <li class="mb-2"><a href="#course-section" class="text-white text-decoration-none footer-link">آموزش‌ها</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- خدمات -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0">
+            <div class="footer-widget">
+                <h5 class="mb-4">خدمات</h5>
+                <ul class="list-unstyled m-0 p-0">
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none footer-link">چت بات</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none footer-link">شکایات</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none footer-link">جعبه ابزار
+                        اضطراری</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none footer-link">کویز</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- تماس با ما -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0">
+            <div class="footer-widget">
+                <h5 class="mb-4">تماس با ما</h5>
+                <p class="mb-1">ایمیل: <a href="mailto:info@seda.af" class="text-white footer-link">info@seda.af</a></p>
+                <p class="mb-0">تلفن: <a href="tel:88888" class="text-white footer-link">۸۸۸۸۸</a></p>
+            </div>
+        </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0">
-      <div class="footer-widget">
-        <h5 class="mb-4">لینک‌های سریع</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="#home-section" class="text-decoration-none">خانه</a></li>
-          <li class="mb-2"><a href="#about-section" class="text-decoration-none">درباره ما</a></li>
-          <li class="mb-2"><a href="#services-section" class="text-decoration-none">خدمات</a></li>
-          <li class="mb-2"><a href="#" class="text-decoration-none">آموزش ها</a></li>
-        </ul>
-      </div>
+
+    <!-- حقوق کپی‌رایت -->
+    <div class="row justify-content-center mt-5">
+        <div class="col-12 text-center">
+            <p class="mb-0">&copy; ۲۰۲۵ صدا. تمامی حقوق محفوظ است.</p>
+        </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0">
-      <div class="footer-widget">
-        <h5 class="mb-4">خدمات</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="#" class="text-decoration-none">چت بات</a></li>
-          <li class="mb-2"><a href="#" class="text-decoration-none">شکایات</a></li>
-          <li class="mb-2"><a href="#" class="text-decoration-none">جعبه ابزار اضطراری</a></li>
-          <li class="mb-2"><a href="#" class="text-decoration-none">کویز</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0">
-      <div class="footer-widget">
-        <h5 class="mb-4">تماس با ما</h5>
-        <p>ایمیل: info@seda.af</p>
-        <p class="text-end">تلفن: ۸۸۸۸۸</p>
-      </div>
-    </div>
-  </div>
-  <div class="row justify-content-center mt-5">
-    <div class="col-12 text-center">
-      <p class="mb-0">&copy; ۲۰۲۵ صدا. تمامی حقوق محفوظ است.</p>
-    </div>
-  </div>
 </footer>
 </body>
 
