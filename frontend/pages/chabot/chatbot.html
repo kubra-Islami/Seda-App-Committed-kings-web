@@ -1,47 +1,141 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>چت ‌بات صدا</title>
 
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Vazir:wght@400;700&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Vazir:wght@400;700&display=swap"
+            rel="stylesheet"
     />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/bootstrap-icons.svg"
-      rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/bootstrap-icons.svg"
+            rel="stylesheet"
     />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
-      rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+            rel="stylesheet"
     />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="../../src/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../src/css/chatbot/chatbot.css" />
-  </head>
-  <body>
-    <div class="chat-container">
-      <div class="chat-header">چت‌بات صدا</div>
+    <link rel="stylesheet" href="../../src/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../src/css/chatbot/chatbot.css"/>
+    <link rel="stylesheet" href="../../src/css/style.css"/>
+</head>
+<body>
 
-      <div id="chat-box"></div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark pt-3">
+    <div class="container">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">
+            <img src="../../assets/images/لوگوی صدا.jpg" alt="صدا" height="60" width="auto">
+        </a>
 
-      <div class="chat-input">
-        <input
-          type="text"
-          id="user-input"
-          placeholder="پیام خود را بنویسید..."
-        />
-        <button id="send-btn" class="btn btn-primary">
-          <i class="bi bi-send"></i>
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
+
+        <!-- Menu Items -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home-section">خانه</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services-section">خدمات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">آموزش ها</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">چت بات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">شکایات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">جعبه ابزار اضطراری</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">کویز</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Main Content -->
+<main>
+    <div class="chat-container">
+        <div class="chat-header">چت‌بات صدا</div>
+
+        <div id="chat-box"></div>
+
+        <div class="chat-input">
+            <input
+                    type="text"
+                    id="user-input"
+                    placeholder="پیام خود را بنویسید..."
+            />
+            <button id="send-btn" class="btn btn-primary">
+                <i class="bi bi-send"></i>
+            </button>
+        </div>
+    </div>
+</main>
+<footer id="footer-section" class="container-fluid py-5 text-white ">
+    <div class="row justify-content-center g-4 p-sm-4">
+        <!-- درباره صدا -->
+        <div class="col-lg-3 col-md-6 col-sm-6 text-center text-md-start">
+            <div class="footer-widget">
+                <h5>درباره صدا</h5>
+                <p>پلتفرم آموزشی و الهام‌بخش برای توانمندسازی دیجیتال زنان و دختران افغان.</p>
+            </div>
+        </div>
+
+        <!-- لینک‌های سریع -->
+        <div class="col-lg-3 col-md-6 col-sm-6 text-center text-md-start">
+            <div class="footer-widget">
+                <h5>لینک‌های سریع</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#home-section">خانه</a></li>
+                    <li><a href="#about-section">درباره ما</a></li>
+                    <li><a href="#services-section">خدمات</a></li>
+                    <li><a href="#course-section">آموزش‌ها</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- خدمات -->
+        <div class="col-lg-3 col-md-6 col-sm-6 text-center text-md-start">
+            <div class="footer-widget">
+                <h5>خدمات</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#chatbot-section">چت بات</a></li>
+                    <li><a href="#">شکایات</a></li>
+                    <li><a href="#">جعبه ابزار اضطراری</a></li>
+                    <li><a href="#">کویز</a></li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 
-    <script src="../../src/js/bootstrap.bundle.min.js"></script>
-    <script src="../../src/js/chatbot/chatbot.js"></script>
-  </body>
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <p class="mb-0">&copy; ۲۰۲۵ صدا. تمامی حقوق محفوظ است.</p>
+        </div>
+    </div>
+</footer>
+<script src="../../src/js/bootstrap.bundle.min.js"></script>
+<script src="../../src/js/chatbot/chatbot.js"></script>
+</body>
 </html>
