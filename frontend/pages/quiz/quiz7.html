@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../quiz/quiz.css">
+</head>
+<body>
+  <div class="quiz-card">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress"></div>
+    </div>
+   <h1>کوییز: پشتیبان گیری از داده</h1>
+
+    <div class="question-text" id="question-text"></div>
+    <div class="options" id="options"></div>
+
+    <div class="score-card" id="score-card">
+      <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
+      <div class="message" id="message"></div>
+      <button class="home-btn" onclick="window.location.href='..'">
+      باز گشت به صفحه اصلی 
+      </button>
+    </div>
+  </div>
+
+  
+  <script>
+    window.quizQuestions = [
+   
+      {
+        text:"کدام یک از روش های زیر براب ذخیره نخسه پشتیبان خارج از محل مناسب است؟",
+        options: ["فضای ابری ","فلش متصل به کامپیوتر","دیسک نوری در همان محل","هارد داخلی"],
+        correct: 1
+      },
+      {
+        text:"پشتیبان گیری منظم به چه هدفی کمک میکند؟",
+        options: ["ارتقای سیستم","جلوگیری از دست رفتن داده ها","کاهش حجم هارد","افزایش سرعت اینترنت"],
+        correct: 1
+      },
+      {
+        text:"کدام یک از موارد زیر امنیت داده های پشتیبان را افزایش می دهد؟",
+        options: ["خاموش نکردن سیستم","رمز گذاری فایل های پشتیبان","کاهش تعداد نخسه های پشتیبان","ذخیره کردن پشتیبان روی همان کامپیوتر"],
+        correct: 1
+      },
+      {
+        text:"کدام یک از موارد زیر برای بازیابی سریع سریع داده ها  مناسب تر است؟",
+        options: ["پشتیبان گیری دستی ماهانه","پشتیبان گیری افزایشی روزانه","ذخیره داده ها فقط روی فلش","پشتیبان گیری کامل هفتگی"],
+        correct: 1
+      },
+    ];
+
+  </script>
+  <script src="../quiz/quiz.js"></script>
+</body>
+</html>
