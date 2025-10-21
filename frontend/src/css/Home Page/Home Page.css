@@ -640,24 +640,26 @@ body {
 }
 
 
-
-
-/* footer style */
+/* Footer */
 #footer-section {
     background: linear-gradient(135deg, #1e1e76, #4b4bc3);
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .footer-widget h5 {
     font-weight: 600;
     border-bottom: 2px solid #f2a1f2;
     display: inline-block;
     padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
 }
 
 .footer-widget p,
 .footer-widget ul li {
     font-size: 0.95rem;
+    margin-bottom: 10px;
 }
 
 .footer-links a {
@@ -671,13 +673,14 @@ body {
     text-decoration: underline;
 }
 
+/* آیکون‌های شبکه‌های اجتماعی */
 .footer-icon {
     display: inline-block;
     font-size: 1.2rem;
     margin: 0 5px;
     padding: 10px;
     border-radius: 50%;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
 }
 
@@ -686,5 +689,13 @@ body {
     background-color: #fff;
     color: #f2a1f2;
 }
+
+/* موبایل */
+@media (max-width: 767px) {
+    .footer-widget {
+        text-align: center !important;
+    }
+}
+
 
 
