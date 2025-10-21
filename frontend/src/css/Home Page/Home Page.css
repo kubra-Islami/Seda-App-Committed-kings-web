@@ -28,44 +28,68 @@ body {
  }
 
  /* welcome section style */
- #welcome-section {
-   background-image: url(../../../assets/images/618de4cfd614fbf59ff6ace3_Afghan-Girls-Coding.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   color: #1e1e76;
-   min-height: 100vh;
-   padding: 5% 2%;
-   background-position: center;
- }
+#welcome-section {
+    background-color: #f5f5ff;
+    color: #1e1e76;
+    min-height: 100vh;
+    padding: 3% 2%;
+    display: flex;
+    align-items: center;
+}
 
- #welcome,
- #skill {
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s ease;
-   line-height: 1.8;
-   padding: 25px;
-   background-color: rgba(255, 255, 255, 0.8);
-   border-radius: 15px;
- }
+/* تصویر */
+.welcome-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
 
- #welcome {
-   font-size: 25px;
- }
+.welcome-image:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
 
- #skill {
-   font-size: 18px;
-   margin-top: 300px;
- }
+/* کارت متن */
+#welcome {
+    line-height: 1.8;
+    padding: 30px;
+    /*background-color: rgba(255,255,255,0.85);*/
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
- #shape1,
- #shape2 {
-   background-color: #707ff5;
-   border-radius: 30px;
-   border: 1px solid #ddd;
-   width: 40%;
-   padding: 10px;
-   margin: 0 50% 0 0;
- }
+/*#welcome:hover {*/
+/*    transform: translateY(-8px);*/
+/*    box-shadow: 0 20px 40px rgba(0,0,0,0.2);*/
+/*}*/
+
+#welcome h2 {
+    color: #1e1e76;
+    font-size: 28px;
+}
+
+#welcome p {
+    font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #welcome-section {
+        flex-direction: column;
+        padding: 4% 2%;
+    }
+
+    .welcome-text, .welcome-image {
+        width: 100%;
+    }
+
+    #welcome {
+        padding: 20px;
+    }
+}
+
 
 
  /* home section style */
@@ -334,7 +358,6 @@ body {
   background-color: #fff;
   padding: 60px 0;
   color: #1e1e76;
->>>>>>> fbe5bd020678e0e4a82d8afb00ee5af119f4267a
 }
 
 /* navbar style */
@@ -372,45 +395,6 @@ body {
 }
 
 
-/* welcome section style */
-#welcome-section {
-    background-image: url(../../../assets/images/618de4cfd614fbf59ff6ace3_Afghan-Girls-Coding.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #1e1e76;
-    min-height: 100vh;
-    padding: 5% 2%;
-    background-position: center;
-}
-
-#welcome,
-#skill {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    line-height: 1.8;
-    padding: 25px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-}
-
-#welcome {
-    font-size: 25px;
-}
-
-#skill {
-    font-size: 18px;
-    margin-top: 300px;
-}
-
-#shape1,
-#shape2 {
-    background-color: #707ff5;
-    border-radius: 30px;
-    border: 1px solid #ddd;
-    width: 40%;
-    padding: 10px;
-    margin: 0 50% 0 0;
-}
 
 /* home section style */
 .home-card {

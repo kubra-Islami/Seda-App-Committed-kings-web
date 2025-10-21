@@ -6,55 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>راهنمای شکایات</title>
     <link rel="stylesheet" href="../../src/css/Complaint Guidance/Complaint Guidance.css">
+    <link rel="stylesheet" href="../../src/css/style.css">
 </head>
 
 <body>
 
-  <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark pt-3">
-        <div class="container-fluid d-flex justify-content-start">
-            <div class="navbar-header">
-                <a href="#" target="_blank" rel="noopener noreferrer" class="navbar-brand">
-                    <img src="../../assets/images/لوگوی صدا.jpg" alt="صدا" height="60" width="auto">
-                </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-expanded="false" aria-controls="navbarNav" aria-label="toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home-section" target="_blank"
-                            rel="noopener noreferrer">خانه</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-section" target="_blank" rel="noopener noreferrer">درباره
-                            ما</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services-section" target="_blank" rel="noopener noreferrer">خدمات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">آموزش ها</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#course-section" target="_blank" rel="noopener noreferrer">چت بات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Complaint Guidance.html" target="_blank" rel="noopener noreferrer">شکایات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Emergency Toolkit.html" target="_blank" rel="noopener noreferrer">جعبه ابزار اضطراری</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">کویز</a>
-                    </li>
-                </ul>
-            </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark pt-3">
+    <div class="container">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">
+            <img src="../../assets/images/لوگوی صدا.jpg" alt="صدا" height="60" width="auto">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu Items -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home-section">خانه</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services-section">خدمات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#course-section">آموزش ها</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#chatbot-section">چت بات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">شکایات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">جعبه ابزار اضطراری</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">کویز</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-    
+    </div>
+</nav>
+<main>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -85,101 +88,127 @@
         </div>
     </div>
     <div class="container" id="info" style="display: none;">
-  <div class="row">
-    <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12 mx-auto">
-      <div class="card mt-5">
-        <div class="card-header">
-          <h1>ثبت شکایات</h1>
+        <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12 mx-auto">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h1>ثبت شکایات</h1>
+                    </div>
+                    <div class="card-body">
+                        <p>برای ثبت شکایت در افغانستان، می‌توانید با شماره‌ی ۵۰۰۰ با ریاست عمومی اداره امور امارت اسلامی
+                            افغانستان تماس بگیرید. </p>
+                        <p>همچنین، وزارت امر به معروف و نهی از منکر شماره‌ی ۱۹۱ و یک ایمیل آدرس برای ثبت شکایات شهروندان
+                            در داخل و خارج از کشور در نظر گرفته است. </p>
+                        <h3>نحوه ثبت شکایات:</h3>
+                        <h5>از طریق تلفن: </h5>
+                        <ul>
+                            <li>تماس با شماره ۵۰۰۰ برای شکایات عمومی.</li>
+                            <li>تماس با شماره ۱۹۱ برای شکایات مرتبط با وزارت امر به معروف و نهی از منکر.</li>
+                        </ul>
+                        <h5>از طریق وزارت امر به معروف و نهی از منکر:</h5>
+                        <ul>
+                            <li>برای ارسال شکایت کتبی، می‌توانید از طریق ایمیل آدرس این وزارت اقدام کنید.</li>
+                            <li>برای مستندسازی شکایت، می‌توانید اسناد دست داشته خود را از طریق واتساپ ارسال کنید.</li>
+                        </ul>
+                        <h5>شکایت از کارکرد نهادهای دولتی: </h5>
+                        <ul>
+                            <li>شکایات مربوط به کارکرد نهادهای دولتی و بدرفتاری نظامیان و محتسبین را می‌توانید از طریق
+                                ایمیل، شماره ۱۹۱ و یا به صورت کتبی به کمیسیون شکایات وزارت امر به معروف شریک بسازید.
+                            </li>
+                        </ul>
+                        <h3>نکات مهم: </h3>
+                        <ul>
+                            <li>وزارت امر به معروف و نهی از منکر تاکید کرده است که شهروندان می‌توانند به صورت آزادانه
+                                شکایت‌های خود را ثبت کنند تا به آن رسیدگی شود.
+                            </li>
+                            <li>شکایات ثبت شده در وزارت امر به معروف، مورد رسیدگی قرار می‌گیرند و رسیدگی جدی به
+                                پرونده‌ها می‌تواند اعتماد میان دولت و مردم را بیشتر کند.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-          <p>برای ثبت شکایت در افغانستان، می‌توانید با شماره‌ی ۵۰۰۰ با ریاست عمومی اداره امور امارت اسلامی افغانستان تماس بگیرید. </p>
-          <p>همچنین، وزارت امر به معروف و نهی از منکر شماره‌ی ۱۹۱ و یک ایمیل آدرس برای ثبت شکایات شهروندان در داخل و خارج از کشور در نظر گرفته است. </p>
-          <h3>نحوه ثبت شکایات:</h3>
-            <h5>از طریق تلفن: </h5>
-            <ul>
-              <li>تماس با شماره ۵۰۰۰ برای شکایات عمومی.</li>
-              <li>تماس با شماره ۱۹۱ برای شکایات مرتبط با وزارت امر به معروف و نهی از منکر.</li>
-            </ul>
-            <h5>از طریق وزارت امر به معروف و نهی از منکر:</h5>
-            <ul>
-              <li>برای ارسال شکایت کتبی، می‌توانید از طریق ایمیل آدرس این وزارت اقدام کنید. </li>
-              <li>برای مستندسازی شکایت، می‌توانید اسناد دست داشته خود را از طریق واتساپ ارسال کنید. </li>
-            </ul>
-            <h5>شکایت از کارکرد نهادهای دولتی: </h5>
-            <ul>
-              <li>شکایات مربوط به کارکرد نهادهای دولتی و بدرفتاری نظامیان و محتسبین را می‌توانید از طریق ایمیل، شماره ۱۹۱ و یا به صورت کتبی به کمیسیون شکایات وزارت امر به معروف شریک بسازید. </li>
-            </ul>
-          <h3>نکات مهم: </h3>
-          <ul>
-            <li>وزارت امر به معروف و نهی از منکر تاکید کرده است که شهروندان می‌توانند به صورت آزادانه شکایت‌های خود را ثبت کنند تا به آن رسیدگی شود.</li>
-            <li>شکایات ثبت شده در وزارت امر به معروف، مورد رسیدگی قرار می‌گیرند و رسیدگی جدی به پرونده‌ها می‌تواند اعتماد میان دولت و مردم را بیشتر کند.</li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
-<div class="container" id="steps" style="display: none;">
-  <div class="row">
-    <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12 mx-auto">
-      <div class="card mt-5">
-        <div class="card-header">
-          <h1>مراحل کلی ثبت شکایت</h1>
+    <div class="container" id="steps" style="display: none;">
+        <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12 mx-auto">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h1>مراحل کلی ثبت شکایت</h1>
+                    </div>
+                    <div class="card-body">
+                        <h3>۱. شناسایی نهاد مربوطه: </h3>
+                        <p>ابتدا مشخص کنید که شکایت شما مربوط به کدام اداره یا وزارت است.</p>
+                        <h3>۲. استفاده از کانال‌های ارتباطی:</h3>
+                        <ul>
+                            <li><b>وب‌سایت رسمی:</b> بسیاری از وزارتخانه‌ها و ادارات، بخشی برای ثبت شکایات در
+                                وب‌سایت‌های خود دارند.
+                            </li>
+                            <li><b>صفحات اجتماعی:</b> در برخی موارد، امکان ثبت شکایت از طریق صفحات رسمی فیسبوک ادارات
+                                نیز وجود دارد.
+                            </li>
+                            <li><b>مراجعه حضوری:</b> می‌توانید به صورت حضوری به مدیریت شکایات در محل اداره مربوطه مراجعه
+                                کنید.
+                            </li>
+                            <li><b>صندوق‌های شکایت:</b> در ساختمان‌های اداری صندوق‌هایی برای دریافت شکایات کتبی وجود
+                                دارند.
+                            </li>
+                        </ul>
+                        <h3>۳. ارائه اطلاعات دقیق: </h3>
+                        <p>شکایات خود را به صورت دقیق، مستند و بر پایه حقایق ارسال کنید. </p>
+                        <h3>۴. پیگیری شکایت: </h3>
+                        <p>پس از ثبت، از طریق نهاد مربوطه مراحل رسیدگی به شکایت را پیگیری کنید.</p>
+                        <h4>مثال‌ها:</h4>
+                        <ul>
+                            <li><b>وزارت معارف:</b> برای شکایات مربوط به مدارس و معلمان، می‌توانید از طریق وب‌سایت وزارت
+                                معارف اقدام کنید.
+                            </li>
+                            <li>همچنین، می‌توانید به صورت حضوری به مدیریت شکایات در وزارت معارف مراجعه کنید.</li>
+                            <li><b>وزارت مخابرات و تکنالوژی معلوماتی:</b>برای ثبت شکایات در این وزارت، می‌توانید فرم
+                                مخصوص ثبت شکایت را از وب‌سایت وزارت دانلود کرده و پس از تکمیل، به آدرس ایمیل مشخص شده
+                                ارسال کنید.
+                            </li>
+                            <li><b>ریاست عواید:</b>برای شکایات مربوط به مالیات و عواید، می‌توانید از طریق وب‌سایت ریاست
+                                عواید اقدام کنید یا به صورت حضوری به مدیریت شکایات مراجعه کنید.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-          <h3>۱.	شناسایی نهاد مربوطه: </h3>
-          <p>ابتدا مشخص کنید که شکایت شما مربوط به کدام اداره یا وزارت است.</p>
-          <h3>۲.	استفاده از کانال‌های ارتباطی:</h3>
-          <ul>
-            <li><b>وب‌سایت رسمی:</b> بسیاری از وزارتخانه‌ها و ادارات، بخشی برای ثبت شکایات در وب‌سایت‌های خود دارند. </li>
-            <li><b>صفحات اجتماعی:</b> در برخی موارد، امکان ثبت شکایت از طریق صفحات رسمی فیسبوک ادارات نیز وجود دارد. </li>
-            <li><b>مراجعه حضوری:</b> می‌توانید به صورت حضوری به مدیریت شکایات در محل اداره مربوطه مراجعه کنید.</li>
-            <li><b>صندوق‌های شکایت:</b> در ساختمان‌های اداری صندوق‌هایی برای دریافت شکایات کتبی وجود دارند.</li>
-          </ul>
-          <h3>۳.	ارائه اطلاعات دقیق: </h3>
-          <p>شکایات خود را به صورت دقیق، مستند و بر پایه حقایق ارسال کنید. </p>
-          <h3>۴.	پیگیری شکایت: </h3>
-          <p>پس از ثبت، از طریق نهاد مربوطه مراحل رسیدگی به شکایت را پیگیری کنید.</p>
-          <h4>مثال‌ها:</h4>
-            <ul>
-              <li><b>وزارت معارف:</b> برای شکایات مربوط به مدارس و معلمان، می‌توانید از طریق وب‌سایت وزارت معارف اقدام کنید.</li>
-              <li>همچنین، می‌توانید به صورت حضوری به مدیریت شکایات در وزارت معارف مراجعه کنید.</li>
-              <li><b>وزارت مخابرات و تکنالوژی معلوماتی:</b>برای ثبت شکایات در این وزارت، می‌توانید فرم مخصوص ثبت شکایت را از وب‌سایت وزارت دانلود کرده و پس از تکمیل، به آدرس ایمیل مشخص شده ارسال کنید.</li>
-              <li><b>ریاست عواید:</b>برای شکایات مربوط به مالیات و عواید، می‌توانید از طریق وب‌سایت ریاست عواید اقدام کنید یا به صورت حضوری به مدیریت شکایات مراجعه کنید.</li>
-            </ul>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
 
-<div class="container" id="legal-advice" style="display: none;">
-  <div class="row">
-    <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12 mx-auto">
-      <div class="card mt-5">
-        <div class="card-header">
-          <h1> مشاوره حقوقی در مورد شکایات</h3>
+    <div class="container" id="legal-advice" style="display: none;">
+        <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12 mx-auto">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h1> مشاوره حقوقی در مورد شکایات</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>برای دریافت معلومات حقوقی مربوط به شکایات در افغانستان، می‌توانید با مرکز مشوره‌دهی حقوقی
+                            تلفنی وزارت عدلیه به شماره ۱۸۸ تماس بگیرید. </p>
+                        <p>مشاوران حقوقی این مرکز به صورت رایگان در موضوعات مختلف حقوقی از جمله فامیلی، مدنی و جزایی به
+                            شهروندان مشوره می‌دهند و تماس با این مرکز محرمانه است. </p>
+                        <h3>چگونگی دریافت مشوره حقوقی: </h3>
+                        <ul>
+                            <li>با شماره تلفن ۱۸۸ تماس بگیرید.</li>
+                            <li>در مورد مشکل حقوقی خود صحبت کنید، خواه در موضوعات فامیلی، مدنی و یا جزایی باشد.</li>
+                            <li>مشاوران حقوقی وزارت عدلیه به شما مشوره خواهند داد و معلومات لازم را ارائه می‌کنند.</li>
+                        </ul>
+                        <h3>نکات مهم:</h3>
+                        <ul>
+                            <li>این خدمات به صورت تلفنی و رایگان ارائه می‌شود.</li>
+                            <li>مشاوره‌های ارائه شده به صورت محرمانه است.</li>
+                            <li>این مرکز به شهروندان از سراسر کشور خدمات ارائه می‌دهد.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-          <p>برای دریافت معلومات حقوقی مربوط به شکایات در افغانستان، می‌توانید با مرکز مشوره‌دهی حقوقی تلفنی وزارت عدلیه به شماره ۱۸۸ تماس بگیرید. </p>
-          <p>مشاوران حقوقی این مرکز به صورت رایگان در موضوعات مختلف حقوقی از جمله فامیلی، مدنی و جزایی به شهروندان مشوره می‌دهند و تماس با این مرکز محرمانه است. </p>
-          <h3>چگونگی دریافت مشوره حقوقی: </h3>
-          <ul>
-            <li>با شماره تلفن ۱۸۸ تماس بگیرید.</li>
-            <li>در مورد مشکل حقوقی خود صحبت کنید، خواه در موضوعات فامیلی، مدنی و یا جزایی باشد.</li>
-            <li>مشاوران حقوقی وزارت عدلیه به شما مشوره خواهند داد و معلومات لازم را ارائه می‌کنند.</li>
-          </ul>
-          <h3>نکات مهم:</h3>
-          <ul>
-            <li>این خدمات به صورت تلفنی و رایگان ارائه می‌شود.</li>
-            <li>مشاوره‌های ارائه شده به صورت محرمانه است.</li>
-            <li>این مرکز به شهروندان از سراسر کشور خدمات ارائه می‌دهد.</li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
+</main>
 <script src="../../src/js/Complaint Guidance/Complaint Guidance.js"></script>
 </body>
 
