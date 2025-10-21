@@ -211,6 +211,7 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* مدیا کیوری برای بخش ویدیو ها  */
 /* @media (max-width: 480px) {
   .navbar {
@@ -270,11 +271,16 @@ body {
     right: 0px;
     margin: 10px;
 =======
+=======
+>>>>>>> 72d2c1fb5486bd88b7acff8f67c11c6039d7e4f6
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .video {
     height: 40vh;
+<<<<<<< HEAD
 >>>>>>> f6db75a703db237eb9f4f75a502c19122601defc
+=======
+>>>>>>> 72d2c1fb5486bd88b7acff8f67c11c6039d7e4f6
   }
 
   .videoMain {

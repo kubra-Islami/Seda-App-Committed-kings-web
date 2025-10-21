@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>آزمون: نکات امنیتی برای کودکان و نوجوانان</title>
+  <link rel="stylesheet" href="../quiz/quiz.css">
+</head>
+<body>
+  <div class="quiz-card">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress"></div>
+    </div>
+    <h1>آزمون: نکات امنیتی برای کودکان و نوجوانان</h1>
+    <div class="question-text" id="question-text"></div>
+    <div class="options" id="options"></div>
+
+    <div class="score-card" id="score-card">
+      <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
+      <div class="message" id="message"></div>
+      <button class="home-btn" onclick="window.location.href='../pages/Threat Management.html'">
+        بازگشت به صفحه قبلی
+      </button>
+    </div>
+  </div>
+
+  <script>
+    window.quizQuestions = [
+      {
+        text: "چرا آموزش امنیت آنلاین به کودکان ضروری است؟",
+        options: [
+          "برای جلوگیری از اشتراک‌گذاری اطلاعات شخصی و شناخت خطرات فضای مجازی",
+          "برای افزایش سرعت اینترنت",
+          "برای دسترسی بیشتر به اپلیکیشن‌ها",
+          "برای حذف تبلیغات"
+        ],
+        correct: 0
+      },
+      {
+        text: "کدام گزینه نمونه‌ای از کنترل والدین (Parental Control) است؟",
+        options: [
+          "محدود کردن دسترسی به سایت‌های نامناسب و تعیین زمان استفاده",
+          "افزایش روشنایی صفحه‌نمایش",
+          "نصب بازی‌های بیشتر",
+          "غیرفعال کردن وای‌فای"
+        ],
+        correct: 0
+      },
+      {
+        text: "در صورتی که کودک پیام مشکوکی دریافت کند باید چه کند؟",
+        options: [
+          "به والدین یا مراقب خود اطلاع دهد",
+          "پیام را باز کرده و جواب دهد",
+          "آن را برای دوستانش بفرستد",
+          "آن را نادیده بگیرد"
+        ],
+        correct: 0
+      },
+      {
+        text: "چگونه می‌توان از اطلاعات شخصی کودکان محافظت کرد؟",
+        options: [
+          "با تنظیم پروفایل‌ها روی حالت خصوصی و محدود کردن دسترسی",
+          "با استفاده از رمزهای ساده برای راحتی",
+          "با اشتراک‌گذاری اطلاعات با معلمان",
+          "با نصب اپلیکیشن‌های بیشتر"
+        ],
+        correct: 0
+      },
+      {
+        text: "بهترین روش برای آگاهی از فعالیت آنلاین کودکان چیست؟",
+        options: [
+          "نظارت هوشمند و گفتگوهای منظم با کودک",
+          "کنترل مداوم و تنبیه",
+          "بی‌توجهی به استفاده کودک از اینترنت",
+          "دادن رمز عبور والدین به کودک"
+        ],
+        correct: 0
+      }
+    ];
+
+    // ترتیب تصادفی برای سؤالات
+    window.quizQuestions.sort(() => Math.random() - 0.5);
+  </script>
+
+  <script src="../quiz/quiz.js"></script>
+</body>
+</html>
+
