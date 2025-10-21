@@ -1,30 +1,32 @@
 body {
   margin: 0;
-  font-family: 'Tahoma', sans-serif;
-  background: linear-gradient(135deg, #707FF5, #A195F9);
+  font-family: "Tahoma", sans-serif;
+  background: linear-gradient(135deg, #707ff5, #a195f9);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 1rem;
 }
 
 .quiz-card {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(15px);
   border-radius: 25px;
   padding: 2rem;
   max-width: 500px;
   width: 100%;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
-.quiz-card:hover { transform: translateY(-5px); }
+.quiz-card:hover {
+  transform: translateY(-5px);
+}
 
 .progress-bar {
   height: 12px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -41,14 +43,14 @@ h1 {
   text-align: center;
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .question-text {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .options {
@@ -58,16 +60,25 @@ h1 {
 
 .option {
   padding: 0.8rem;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.2s;
   text-align: center;
   color: #1e1e76;
 }
-.option:hover { background: #FFFFFF; transform: scale(1.02); }
-.option.correct { background: #4b4bc3; color: #fff; }
-.option.wrong { background: #f2a1f2; color: #000; }
+.option:hover {
+  background: #ffffff;
+  transform: scale(1.02);
+}
+.option.correct {
+  background: #4b4bc3;
+  color: #fff;
+}
+.option.wrong {
+  background: #f2a1f2;
+  color: #000;
+}
 
 .controls {
   display: flex;
@@ -79,13 +90,15 @@ button {
   padding: 0.5rem 1.2rem;
   border: none;
   border-radius: 10px;
-  background: #F2A1F2;
+  background: #f2a1f2;
   color: #000;
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s;
 }
-button:hover { opacity: 0.9; }
+button:hover {
+  opacity: 0.9;
+}
 
 .score-card {
   display: none;
@@ -93,7 +106,7 @@ button:hover { opacity: 0.9; }
   font-size: 1.3rem;
   font-weight: bold;
   margin-top: 1.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
   animation: fadeIn 0.5s ease;
 }
 
@@ -109,10 +122,18 @@ button:hover { opacity: 0.9; }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: 600px) {
-  .options { grid-template-columns: repeat(2,1fr); }
+  .options {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
