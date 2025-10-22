@@ -623,6 +623,138 @@ body {
     }
 }
 
+/* Complaint Guidance Section */
+#complaint-guidance {
+    background-color: #f5f5ff;
+    color: #1e1e76;
+    padding: 80px 20px;
+}
+
+#complaint-guidance h2 {
+    color: #1e1e76;
+    font-size: 2rem;
+}
+
+#complaint-guidance p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.btn-complaint-link {
+    background-color: #707ff5;
+    color: #fff;
+    border-radius: 12px;
+    transition: 0.3s;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-complaint-link:hover {
+    background-color: #585df2;
+    transform: translateY(-4px);
+}
+
+#complaint-guidance img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#complaint-guidance img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #complaint-guidance {
+        text-align: center;
+        padding: 60px 15px;
+    }
+
+    #complaint-guidance img {
+        margin-top: 20px;
+    }
+}
+/* Emergency Toolkit Section */
+#emergency-section {
+    background-color: #eef1ff;
+    color: #1e1e76;
+    padding: 80px 20px;
+}
+
+#emergency-section h2 {
+    color: #1e1e76;
+    font-size: 2rem;
+}
+
+#emergency-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.emergency-list {
+    list-style: none;
+    padding: 0;
+}
+
+.emergency-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    position: relative;
+    padding-right: 25px;
+}
+
+.emergency-list li::before {
+    content: "🛡️";
+    position: absolute;
+    right: 0;
+    color: #707ff5;
+    font-size: 1.1rem;
+}
+
+.btn-emergency {
+    background-color: #707ff5;
+    color: #fff;
+    border-radius: 12px;
+    transition: 0.3s;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-emergency:hover {
+    background-color: #585df2;
+    transform: translateY(-4px);
+}
+
+#emergency-section img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#emergency-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #emergency-section {
+        text-align: center;
+        padding: 60px 15px;
+    }
+
+    #emergency-section img {
+        margin-bottom: 25px;
+    }
+
+    .emergency-list {
+        text-align: center;
+    }
+}
 
 /* Footer */
 #footer-section {
