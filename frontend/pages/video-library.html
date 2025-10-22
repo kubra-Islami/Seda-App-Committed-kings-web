@@ -4,24 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>آموزش ها</title>
-    <link rel="stylesheet" href="../src/css/video.style.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../src/css/videoLibrary.style.css" />
+    <link rel="stylesheet" href="../src/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top position-fixed" dir="rtl" >
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand text-white fw-bold" href="#headCourse">محتوای آموزشی</a>
+        <a class="navbar-brand fw-bold" href="#headCourse">محتوای آموزشی</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,59 +45,165 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">خانه</a>
+              <a class="nav-link" href="Home Page/Home Page.html">خانه</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">برگشت</a>
+              <a class="nav-link" href="Home Page/Home Page.html#course"
+                >برگشت</a
+              >
             </li>
           </ul>
         </div>
       </div>
-</nav>
+    </nav>
 
-    <div class="d-flex" id="head">
-      <div class="p-2 flex-grow-1" id="headtext">
-        <h1 class="pinkcolor">امنیت دیجیتال</h1>
-        <p>
-          <br />
-          امنیت دیجیتال به مجموعه اقداماتی اطلاق می‌شود که برای حفاظت از<br />
-          اطلاعات، داده‌ها و سیستم‌های دیجیتال در برابر دسترسی غیرمجاز،<br />
-          سوءاستفاده یا تهدیدات سایبری انجام می‌گیرد. هدف اصلی آن تضمین<br />
-          محرمانگی، یکپارچگی و در دسترس بودن اطلاعات است. رعایت اصول امنیت<br />
-          دیجیتال شامل استفاده از رمزهای عبور قوی، به‌روزرسانی منظم
-          نرم‌افزارها،<br />
-          مدیریت دسترسی‌ها و آگاهی از تهدیدات اینترنتی می‌باشد تا کاربران و<br />
-          سازمان‌ها بتوانند در محیط دیجیتال با اطمینان و امنیت فعالیت کنند.<br />
-        </p>
-        </p>
+    <div class="container-fluid text-center" id="container-fluid">
+      <div class="row">
+        <div class="col" id="col1">
+          <h1>اهمیت امنیت دیجیتال</h1>
+          <p>
+            دنیا دیجیتال خود را محافظت کنید در دنیای متصل امروزی، امنیت دیجیتال
+            از همیشه مهم‌تر است. داده‌های خود را ایمن نگه دارید، به حریم خصوصی
+            احترام بگذارید و از خطرات آنلاین آگاه باشید. با درک و رعایت امنیت
+            دیجیتال، می‌توانید با اطمینان در مسابقات شرکت کنید، با دوستان خود
+            به‌صورت ایمن همکاری کنید و بیشترین بهره را از دنیای آنلاین ببرید.
+          </p>
+          <a href="#learnmore"><button class="button">شروع یادگیری</button></a>
+        </div>
 
-        <div class="p-2">
-          <img class="headofImg" src="../components/image/section1 ..jpg"  />
+        <div class="col">
+          <img
+            src="../components/image/password2 img.jpg"
+            height="350px"
+            width="600px"
+            style="border-radius: 5px"
+          />
         </div>
       </div>
     </div>
-    <div class="maintext">
-      <p class="maintextPara">
-        در این بخش شما با اصول پایه امنیت دیجیتال آشنا می‌شوید و مهارت‌های لازم
-        برای محافظت <br />از خود در فضای آنلاین را یاد می‌گیرید. موضوعات اصلی
-        این بخش شامل موارد زیر است:
-      </p>
-      <h5 class="MainHeader">اهمیت امنیت دیجیتال:</h5>
-      <ul>
-        <li>درک ضرورت حفظ اطلاعات شخصی و امنیت آنلاین</li>
-        <li>شناخت تهدیدات موجود در اینترنت و تاثیر آن‌ها بر زندگی روزمره</li>
-      </ul>
-      <h5 class="MainHeader">اصول حفظ حریم خصوصی آنلاین:</h5>
-      <ul>
-        <li>گاهی از داده‌هایی که به اشتراک می‌گذارید</li>
-        <li>کنترل دسترسی‌ها و تنظیمات حریم خصوصی در حساب‌ها و اپلیکیشن‌ها</li>
-      </ul>
-      <h5 class="MainHeader">خطرات رایج در فضای اینترنت:</h5>
-      <ul>
-        <li>شناسایی بدافزارها، لینک‌های جعلی و فیشینگ</li>
-        <li>روش‌های جلوگیری از سرقت اطلاعات و سوءاستفاده از حساب‌ها</li>
-      </ul>
-      <p>
+    <div id="para">
+      <h3>چطور این یادگیری را شروع کنم؟</h3>
+    </div>
+    <div class="container" id="container">
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">- گام 1:</h5>
+          <p class="card-text">موضوع مورد علاقه‌ات را انتخاب کن</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">- گام 2:</h5>
+          <p class="card-text">روی دکمه «شروع یادگیری» کلیک کن</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">- گام 3:</h5>
+          <p class="card-text">ویدیوها و متون آموزشی را دنبال کن</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">- گام 4:</h5>
+          <p class="card-text">در اخیر آزمون بده</p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid"
+      id="container-fluid12"
+      style="background-color: #707ff5"
+    >
+      <!-- عنوان اصلی -->
+      <h2 class="text-center mb-5 fw-bold" id="header" style="color: white">
+        مبانی
+        <span class="text-underline" style="color: #4b4bc3">امنیت</span>
+        آنلاین
+      </h2>
+
+      <!-- کارت‌ها -->
+      <div class="row g-4 justify-content-center">
+        <!-- کارت 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="about-card p-4 rounded-4 shadow-sm h-100 text-center bg-white"
+          >
+            <div class="icon mb-3" id="learnmore">
+              <i class="fas fa-brain fa-2x" style="color: #4b4bc3"></i>
+            </div>
+            <h5 class="fw-bold mb-3" style="color: #4b4bc3">امنیت دیجیتال</h5>
+            <p style="color: black">
+              در دنیای امروز که همه چیز به اینترنت و فناوری دیجیتال متصل است،
+              حفظ امنیت دیجیتال اهمیت بسیار بالایی دارد. هر فرد باید بداند چگونه
+              اطلاعات شخصی خود را محافظت کند و از دسترسی غیرمجاز به داده‌ها
+              جلوگیری نماید. آگاهی از تهدیدات اینترنتی مانند هک، بدافزارها،
+              لینک‌های جعلی و فیشینگ نقش کلیدی در جلوگیری از آسیب‌ها دارد.
+              استفاده از نرم‌افزارهای امنیتی به‌روز، بررسی دقیق لینک‌ها،
+              فعال‌سازی احراز هویت دو مرحله‌ای و محدود کردن اشتراک‌گذاری اطلاعات
+              در شبکه‌های اجتماعی از جمله اقدامات مؤثر هستند. رعایت این نکات به
+              کاربران کمک می‌کند با اطمینان و امنیت بیشتری در فضای آنلاین فعالیت
+              کنند، داده‌های خود را محافظت نمایند و تجربه‌ای امن، مطمئن و مفید
+              از دنیای دیجیتال داشته باشند.
+            </p>
+          </div>
+        </div>
+
+        <!-- کارت 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="about-card p-4 rounded-4 shadow-sm h-100 text-center bg-white"
+          >
+            <div class="icon mb-3">
+              <i class="fas fa-chart-line fa-2x" style="color: #4b4bc3"></i>
+            </div>
+            <h5 class="fw-bold mb-3" style="color: #4b4bc3">
+              حریم خصوصی آنلاین
+            </h5>
+            <p style="color: black">
+              حفظ حریم خصوصی آنلاین یکی از مهم‌ترین بخش‌های امنیت دیجیتال است.
+              هر فرد باید با دقت بررسی کند که چه داده‌هایی را در اینترنت به
+              اشتراک می‌گذارد و از انتشار اطلاعات حساس و شخصی بدون ضرورت خودداری
+              نماید. علاوه بر این، کنترل دسترسی‌ها و تنظیمات حریم خصوصی در
+              حساب‌ها و اپلیکیشن‌ها اهمیت زیادی دارد تا افراد غیرمجاز نتوانند به
+              اطلاعات شما دسترسی پیدا کنند. به‌روزرسانی منظم رمز عبورها، استفاده
+              از رمزهای قوی، فعال کردن احراز هویت دو مرحله‌ای و محدود کردن
+              اشتراک‌گذاری اطلاعات در شبکه‌های اجتماعی از جمله اقدامات مؤثر برای
+              محافظت از حریم خصوصی هستند. رعایت این اصول به کاربران کمک می‌کند
+              با امنیت و اعتماد بیشتری در فضای دیجیتال فعالیت کنند و تجربه‌ای
+              ایمن و کنترل‌شده از زندگی آنلاین داشته باشند.
+            </p>
+          </div>
+        </div>
+
+        <!-- کارت 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="about-card p-4 rounded-4 shadow-sm h-100 text-center bg-white"
+          >
+            <div class="icon mb-3">
+              <i class="fas fa-rocket fa-2x" style="color: #4b4bc3"></i>
+            </div>
+            <h5 class="fw-bold mb-3" style="color: #4b4bc3">
+              خطرات رایج در اینترنت
+            </h5>
+            <p style="color: black">
+              فضای اینترنت می‌تواند پر از خطرات پنهان باشد که کاربران را تهدید
+              می‌کنند. شناسایی بدافزارها، لینک‌های جعلی و حملات فیشینگ از
+              مهم‌ترین تهدیداتی است که می‌تواند اطلاعات شخصی و مالی شما را به
+              خطر بیندازد. همچنین، روش‌های جلوگیری از سرقت اطلاعات و سوءاستفاده
+              از حساب‌ها اهمیت ویژه‌ای دارند. استفاده از نرم‌افزارهای امنیتی
+              به‌روز، بررسی دقیق لینک‌ها قبل از کلیک، عدم اشتراک‌گذاری اطلاعات
+              حساس در شبکه‌های اجتماعی و فعال‌سازی احراز هویت دو مرحله‌ای، از
+              جمله اقدامات مؤثر برای محافظت در برابر تهدیدات اینترنتی است. آگاهی
+              و دقت در برخورد با این خطرات، به کاربران امکان می‌دهد که با امنیت
+              و اعتماد بیشتری در فضای آنلاین فعالیت کنند و از تجربه دیجیتال خود
+              لذت ببرند.
+            </p>
+          </div>
+        </div>
+      </div>
+      <p id="para1">
         با مطالعه و استفاده از این بخش، شما قادر خواهید بود خطرات آنلاین را
         شناسایی کنید، اقدامات پیشگیرانه انجام دهید و اطلاعات شخصی خود را ایمن
         نگه دارید. این مهارت‌ها پایه‌ای برای ورود به بخش‌های پیشرفته‌تر امنیت
@@ -97,51 +211,72 @@
         می‌کنند.
       </p>
     </div>
-    <div class="container" id="container">
-      <div class="row">
-        <div class="col col-md-3">
-          <img
-            src="../components/image/سکشن اول عکس دوم.jpg"
-            width="297px"
-            height="160px"
-          />
-          <h5 class="colHeader">اهمیت امنیت دیجیتال</h5>
-          <p class="colPara">
-            اطلاعات شخصی خود را حفظ کنید <br />و با تهدیدهای آنلاین آشنا شوید تا
-            زندگی دیجیتال خود را ایمن نگه دارید
+
+    <!-- عنوان کلی بخش -->
+    <div class="section-header text-center mb-4">
+      <h2>مبانی آموزش امنیت دیجیتال</h2>
+      <p>
+        با مطالعه این بخش، می‌توانید مهارت‌های پایه‌ای در امنیت دیجیتال، حریم
+        خصوصی و خطرات اینترنتی را بیاموزید.
+      </p>
+    </div>
+
+    <!-- کانتینر کارت‌ها -->
+    <div class="container" id="container1">
+      <div class="card custom-card">
+        <img
+          src="../components/image/سکشن اول عکس اول.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">اهمیت امنیت دیجیتال</h5>
+          <p class="card-text">
+            اطلاعات شخصی خود را به‌طور کامل محافظت کنید و با تهدیدهای آنلاین
+            آشنا شوید تا امنیت و سلامت زندگی دیجیتال خود را تضمین کرده و از
+            خطرات احتمالی پیشگیری نمایید.
           </p>
-         <a href="./degital-safety.html" ><button class="colbtn0">بیشتر بدانید</button></a>
+          <a href="./degital-safety.html" class="btn">شروع یادگیری</a>
         </div>
-        <div class="col col-md-3">
-          <img
-            src="../components/image/سکشن اول عکس اول.png"
-           width="297px"
-            height="160px"
-          />
-          <h5 class="colHeader">حریم خصوصی آنلاین</h5>
-          <p class="colPara">
-            آگاهی از داده‌هایی که به اشتراک می‌گذارید و کنترل دسترسی‌ها و
-            تنظیمات حریم خصوصی حساب‌ها و اپلیکیشن‌ها برای حفاظت بهتر از اطلاعات
-            شخصی
+      </div>
+
+      <div class="card custom-card">
+        <img
+          src="../components/image/سکشن اول عکس سوم.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">حریم خصوصی آنلاین</h5>
+          <p class="card-text">
+            آگاهی دقیق از داده‌هایی که به اشتراک می‌گذارید و مدیریت کنترل
+            دسترسی‌ها و تنظیمات حریم خصوصی در حساب‌ها و اپلیکیشن‌ها، نقش مهمی در
+            حفاظت مؤثر از اطلاعات شخصی دارد.
           </p>
-         <a href="./Privacy-Policy.html" ><button class="colbtn0">بیشتر بدانید</button></a>
+          <a href="./Privacy-Policy.html" class="btn">شروع یادگیری</a>
         </div>
-        <div class="col col-md-3">
-          <img
-            src="../components/image/سکشن اول عکس سوم.jpg"
-            width="297px"
-            height="160px"
-          />
-          <h5 class="colHeader">خطرات رایج در فضای اینترنت</h5>
-          <p class="colPara">
+      </div>
+
+      <div class="card custom-card">
+        <img
+          src="../components/image/سکشن اول عکس دوم.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">خطرات رایج در فضای اینترنت</h5>
+          <p class="card-text">
             کاربران در فضای اینترنت با تهدیداتی مانند بدافزارها، لینک‌های جعلی و
-            فیشینگ روبه‌رو می‌شوند که خطر سرقت اطلاعات را در پی دارد.
+            حملات فیشینگ مواجه می‌شوند که می‌تواند منجر به سرقت و سوءاستفاده از
+            اطلاعات شخصی آنان گردد.
           </p>
-         <a href="./comman-internet-risk.html" ><button class="btn0">بیشتر بدانید</button></a>
+          <a href="comman-internet-risk.html" class="btn">شروع یادگیری</a>
         </div>
       </div>
     </div>
-  <div class="footer">
+
+    <!-- Footer Section -->
+    <div class="footer">
       <div class="Chatbotbtn">
         <a href="../pages/chabot/chatbot.html"
           ><button class="button">ارتباط با پشتیبانی</button></a
@@ -222,6 +357,15 @@
         </ul>
       </div>
     </div>
-    <p id="footer">© 2025 صدا همه حقوق محفوظ است</p>
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>
