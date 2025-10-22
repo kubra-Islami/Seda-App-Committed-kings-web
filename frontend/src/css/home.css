@@ -1,3 +1,87 @@
+/* Navbar اصلی */
+.custom-navbar {
+  background-color: #f5f5ff;
+  transition: all 0.3s ease;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* لینک‌ها */
+.custom-navbar .nav-link {
+  color: #1e1e76;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #585df2;
+  text-decoration: underline;
+}
+
+/* برند */
+.custom-navbar .navbar-brand {
+  color: #4b4bc3;
+  font-size: 1.25rem;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #585df2;
+}
+
+/* موبایل: منو وسط چین */
+@media (max-width: 992px) {
+  .custom-navbar .navbar-nav {
+    text-align: center;
+  }
+
+  .custom-navbar .nav-link {
+    margin: 0.5rem 0;
+  }
+}
+
+/* افکت هنگام اسکرول */
+.custom-navbar.scrolled {
+  background-color: #4b4bc3;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+
+#learning-section h3 {
+  color: #4b4bc3;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+#para {
+  margin-top: 40px;
+  padding: 20px 60px 0px 0px;
+  color: rgb(30, 30, 118);
+}
+.card-title {
+  color: #707ff5;
+}
+.card-body {
+  transition: all 0.3s ease;
+}
+.card-body:hover {
+  transform: scale(1.05);
+  border-color: #707ff5;
+  box-shadow: 0 8px 20px #707ff5;
+}
+
+
 #container-fluid11 {
   background-color: rgb(112, 127, 245);
   height: 440px;
@@ -90,30 +174,6 @@
     padding: 10px 0;
   }
 }
-
-#container {
-  display: flex;
-  gap: 10px;
-  padding: 40px 0px;
-  margin: 0px 60px 40px 20px;
-}
-#para {
-  margin-top: 40px;
-  padding: 20px 60px 0px 0px;
-  color: rgb(30, 30, 118);
-}
-.card-title {
-  color: #707ff5;
-}
-.card-body {
-  transition: all 0.3s ease; /* تنظیم انیمیشن */
-}
-.card-body:hover {
-  transform: scale(1.05); /* کمی بزرگ شدن */
-  border-color: #707ff5;
-  box-shadow: 0 8px 20px #707ff5;
-}
-
 #container-fluid {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -140,10 +200,9 @@
 #container1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* کارت‌ها از چپ به راست قرار بگیرند */
-  gap: 10px; /* فاصله بین کارت‌ها */
+  justify-content: flex-start;
+  gap: 10px;
   padding: 30px;
-  height: 40rem;
 }
 .section-header h2 {
   font-size: 2rem;
@@ -209,89 +268,149 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* ریسپانسیو */
+/*!* ریسپانسیو *!*/
 
-/* موبایل */
-@media (max-width: 767px) {
-  #container1 {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+/*!* موبایل *!*/
+/*@media (max-width: 767px) {*/
+/*  #container1 {*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*  }*/
+/*}*/
 
 /* تبلت */
-@media (min-width: 768px) and (max-width: 991px) {
-  .custom-card {
-    width: 45%;
-  }
-}
+/*@media (min-width: 768px) and (max-width: 991px) {*/
+/*  .custom-card {*/
+/*    width: 45%;*/
+/*  }*/
+/*}*/
 
-/* دسکتاپ */
-@media (min-width: 992px) {
-  .custom-card {
-    width: 22rem;
-  }
-}
+/*!* دسکتاپ *!*/
+/*@media (min-width: 992px) {*/
+/*  .custom-card {*/
+/*    width: 22rem;*/
+/*  }*/
+/*}*/
 .footer {
   background-color: #707ff5;
+  color: white;
   padding: 40px 20px;
   text-align: center;
+}
+
+/* دکمه فوتر */
+.footer-btn {
+  background-color: white;
+  color: #707ff5;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+  background-color: #585df2;
   color: white;
+  transform: translateY(-2px);
 }
 
-.footerMark {
-  margin: 20px 0;
-}
-
-.social {
-  color: #1e1e76;
+ /*شبکه‌های اجتماعی */
+.footer .social {
   font-size: 22px;
-  margin: 0 10px;
-  transition: 0.4s;
+  margin: 5px 10px;
+  color: #1e1e76;
+  transition: transform 0.3s, color 0.3s;
 }
 
-.social:hover {
+.footer .social:hover {
   color: white;
   transform: scale(1.2);
 }
 
-.courses {
-  margin-top: 20px;
-}
-
-.courses h2 {
-  color: #1e1e76;
+/* دوره‌ها */
+.footer .courses h2 {
   font-weight: bold;
+  color: #1e1e76;
+  margin-bottom: 10px;
 }
 
-.courselist {
-  list-style: none;
-  margin: 10px 0;
+.footer .courses .courselist {
+  margin: 5px 0;
 }
 
-.courselist a {
-  text-decoration: none;
+.footer .courses .courselist a {
   color: white;
+  text-decoration: none;
   transition: 0.3s;
 }
 
-.courselist a:hover {
+.footer .courses .courselist a:hover {
   color: #1e1e76;
   text-decoration: underline;
 }
 
-#footer {
-  margin-top: 20px;
-  text-align: center;
-  color: white;
-  font-size: 13px;
+ ریسپانسیو موبایل
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .courses {
+    margin-top: 20px;
+  }
+
+  .footer .social {
+    margin: 5px;
+  }
 }
-#header {
-  padding-top: 20px;
+
+#digital-security-section {
+  background-color: #f5f6ff;
+  padding: 60px 15px;
 }
-/* مدیا کیوری */
-@media (max-width: 480px) {
-  body {
-    overflow-x: hidden;
+
+#digital-security-section h1 {
+  color: #4b4bc3;
+  font-size: 2rem;
+}
+
+#digital-security-section p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.btn-primary {
+  background-color: #707ff5;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1.5rem;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #585df2;
+  transform: translateY(-2px);
+}
+
+/* تصویر ریسپانسیو */
+#digital-security-section img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 📱 موبایل */
+@media (max-width: 768px) {
+  #digital-security-section h1 {
+    font-size: 1.6rem;
+  }
+
+  #digital-security-section p {
+    font-size: 0.95rem;
   }
 }
