@@ -1,12 +1,14 @@
-.container-fluid {
+#container-fluid11 {
   background-color: rgb(112, 127, 245);
   height: 440px;
 }
+
 .row {
   text-align: right;
   padding: 20px;
   color: white;
 }
+
 .col {
   padding: 30px;
 }
@@ -18,7 +20,7 @@
   background-color: white;
   color: #707ff5;
   padding: 12px;
-  margin-top: 10px;
+  margin-top: 20px;
   border: none;
   font-size: 20px;
   font-weight: bold;
@@ -29,10 +31,76 @@
   background-color: #707ff5;
   color: white;
 }
-.container {
+.custom-navbar {
+  background-color: white;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: rgb(32, 55, 145); /* آبی تیره */
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  transform: scale(1.1);
+  color: rgb(112, 127, 245);
+}
+
+.navbar.scrolled {
+  background-color: rgb(112, 127, 245);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .nav-link {
+  color: white !important;
+}
+
+.navbar.scrolled .nav-link:hover {
+  transform: scale(1.1);
+  color: #f2a1f2 !important;
+}
+
+/* دکمه منوی موبایل */
+.navbar-toggler {
+  border-color: rgb(32, 55, 145);
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled .navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(32,55,145,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar.scrolled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+  .nav-link {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+#container {
   display: flex;
   gap: 10px;
   padding: 40px 0px;
+  margin: 0px 60px 40px 20px;
+}
+#para {
+  margin-top: 40px;
+  padding: 20px 60px 0px 0px;
+  color: rgb(30, 30, 118);
 }
 .card-title {
   color: #707ff5;
@@ -45,26 +113,185 @@
   border-color: #707ff5;
   box-shadow: 0 8px 20px #707ff5;
 }
-.para {
-  padding: 20px 60px 0px 0px;
-  font-size: 20px;
-}
+
 #container-fluid {
-  background: linear-gradient(135deg, rgb(112, 127, 245), rgb(161, 149, 249));
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 30rem;
+  background-color: #707ff5;
+}
+#container-fluid12 h2 {
   margin-top: 10px;
 }
+.about-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+#para1 {
+  color: white;
+  text-align: right;
+  padding: 20px;
+}
+/* کانتینر کارت‌ها */
+#container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* کارت‌ها از چپ به راست قرار بگیرند */
+  gap: 10px; /* فاصله بین کارت‌ها */
+  padding: 30px;
+  height: 40rem;
+}
+.section-header h2 {
+  font-size: 2rem;
+  color: #4b4bc3;
+  font-weight: bold;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* کارت‌ها */
+.custom-card {
+  width: 22rem;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* تصویر کارت */
+.custom-card img {
+  width: 100%;
+  height: 50%; /* نیمه بالای کارت */
+  object-fit: cover;
+}
+
+/* متن کارت */
+.custom-card .card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+/* دکمه */
+.custom-card .btn {
+  margin-top: 10px;
+  background: linear-gradient(135deg, rgb(112, 127, 245), rgb(161, 149, 249));
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ریسپانسیو */
+
+/* موبایل */
+@media (max-width: 767px) {
+  #container1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* تبلت */
+@media (min-width: 768px) and (max-width: 991px) {
+  .custom-card {
+    width: 45%;
+  }
+}
+
+/* دسکتاپ */
+@media (min-width: 992px) {
+  .custom-card {
+    width: 22rem;
+  }
+}
+.footer {
+  background-color: #707ff5;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.footerMark {
+  margin: 20px 0;
+}
+
+.social {
+  color: #1e1e76;
+  font-size: 22px;
+  margin: 0 10px;
+  transition: 0.4s;
+}
+
+.social:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+.courses {
+  margin-top: 20px;
+}
+
+.courses h2 {
+  color: #1e1e76;
+  font-weight: bold;
+}
+
+.courselist {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.courselist a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.courselist a:hover {
+  color: #1e1e76;
+  text-decoration: underline;
+}
+
+#footer {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+}
 #header {
-  padding-top: 100px;
+  padding-top: 20px;
 }
-#row {
-  background-color: white;
-  margin: 90px 30px 60px 30px;
+/* مدیا کیوری */
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
 }
-#container {
-  align-items: center;
-}
-#container;
