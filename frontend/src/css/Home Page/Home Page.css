@@ -591,6 +591,10 @@ nav {
   filter: brightness(1.1);
 }
 
+.btn-gradient a {
+  text-decoration: none;
+}
+
 .btn-gradient {
   background: linear-gradient(135deg, #6f42c1, #f2a1f2);
   color: #fff;
