@@ -1,12 +1,98 @@
-.container-fluid {
+/* Navbar اصلی */
+.custom-navbar {
+  background-color: #f5f5ff;
+  transition: all 0.3s ease;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* لینک‌ها */
+.custom-navbar .nav-link {
+  color: #1e1e76;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #585df2;
+  text-decoration: underline;
+}
+
+/* برند */
+.custom-navbar .navbar-brand {
+  color: #4b4bc3;
+  font-size: 1.25rem;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #585df2;
+}
+
+/* موبایل: منو وسط چین */
+@media (max-width: 992px) {
+  .custom-navbar .navbar-nav {
+    text-align: center;
+  }
+
+  .custom-navbar .nav-link {
+    margin: 0.5rem 0;
+  }
+}
+
+/* افکت هنگام اسکرول */
+.custom-navbar.scrolled {
+  background-color: #4b4bc3;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+
+#learning-section h3 {
+  color: #4b4bc3;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+#para {
+  margin-top: 40px;
+  padding: 20px 60px 0px 0px;
+  color: rgb(30, 30, 118);
+}
+.card-title {
+  color: #707ff5;
+}
+.card-body {
+  transition: all 0.3s ease;
+}
+.card-body:hover {
+  transform: scale(1.05);
+  border-color: #707ff5;
+  box-shadow: 0 8px 20px #707ff5;
+}
+
+
+#container-fluid11 {
   background-color: rgb(112, 127, 245);
   height: 440px;
 }
+
 .row {
   text-align: right;
   padding: 20px;
   color: white;
 }
+
 .col {
   padding: 30px;
 }
@@ -18,7 +104,7 @@
   background-color: white;
   color: #707ff5;
   padding: 12px;
-  margin-top: 10px;
+  margin-top: 20px;
   border: none;
   font-size: 20px;
   font-weight: bold;
@@ -29,42 +115,302 @@
   background-color: #707ff5;
   color: white;
 }
-.container {
-  display: flex;
-  gap: 10px;
-  padding: 40px 0px;
+.custom-navbar {
+  background-color: white;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
 }
-.card-title {
-  color: #707ff5;
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: rgb(32, 55, 145); /* آبی تیره */
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
-.card-body {
-  transition: all 0.3s ease; /* تنظیم انیمیشن */
+
+.custom-navbar .nav-link:hover {
+  transform: scale(1.1);
+  color: rgb(112, 127, 245);
 }
-.card-body:hover {
-  transform: scale(1.05); /* کمی بزرگ شدن */
-  border-color: #707ff5;
-  box-shadow: 0 8px 20px #707ff5;
+
+.navbar.scrolled {
+  background-color: rgb(112, 127, 245);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
-.para {
-  padding: 20px 60px 0px 0px;
-  font-size: 20px;
+
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .nav-link {
+  color: white !important;
+}
+
+.navbar.scrolled .nav-link:hover {
+  transform: scale(1.1);
+  color: #f2a1f2 !important;
+}
+
+/* دکمه منوی موبایل */
+.navbar-toggler {
+  border-color: rgb(32, 55, 145);
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled .navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(32,55,145,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar.scrolled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+  .nav-link {
+    text-align: center;
+    padding: 10px 0;
+  }
 }
 #container-fluid {
-  background: linear-gradient(135deg, rgb(112, 127, 245), rgb(161, 149, 249));
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 30rem;
+  background-color: #707ff5;
+}
+#container-fluid12 h2 {
   margin-top: 10px;
 }
-#header {
-  padding-top: 100px;
+.about-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-#row {
+
+.about-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+#para1 {
+  color: white;
+  text-align: right;
+  padding: 20px;
+}
+/* کانتینر کارت‌ها */
+#container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 30px;
+}
+.section-header h2 {
+  font-size: 2rem;
+  color: #4b4bc3;
+  font-weight: bold;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* کارت‌ها */
+.custom-card {
+  width: 22rem;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* تصویر کارت */
+.custom-card img {
+  width: 100%;
+  height: 50%; /* نیمه بالای کارت */
+  object-fit: cover;
+}
+
+/* متن کارت */
+.custom-card .card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+/* دکمه */
+.custom-card .btn {
+  margin-top: 10px;
+  background: linear-gradient(135deg, rgb(112, 127, 245), rgb(161, 149, 249));
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*!* ریسپانسیو *!*/
+
+/*!* موبایل *!*/
+/*@media (max-width: 767px) {*/
+/*  #container1 {*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*  }*/
+/*}*/
+
+/* تبلت */
+/*@media (min-width: 768px) and (max-width: 991px) {*/
+/*  .custom-card {*/
+/*    width: 45%;*/
+/*  }*/
+/*}*/
+
+/*!* دسکتاپ *!*/
+/*@media (min-width: 992px) {*/
+/*  .custom-card {*/
+/*    width: 22rem;*/
+/*  }*/
+/*}*/
+.footer {
+  background-color: #707ff5;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* دکمه فوتر */
+.footer-btn {
   background-color: white;
-  margin: 90px 30px 60px 30px;
+  color: #707ff5;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-#container {
-  align-items: center;
+
+.footer-btn:hover {
+  background-color: #585df2;
+  color: white;
+  transform: translateY(-2px);
 }
-#container;
+
+ /*شبکه‌های اجتماعی */
+.footer .social {
+  font-size: 22px;
+  margin: 5px 10px;
+  color: #1e1e76;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer .social:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+/* دوره‌ها */
+.footer .courses h2 {
+  font-weight: bold;
+  color: #1e1e76;
+  margin-bottom: 10px;
+}
+
+.footer .courses .courselist {
+  margin: 5px 0;
+}
+
+.footer .courses .courselist a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer .courses .courselist a:hover {
+  color: #1e1e76;
+  text-decoration: underline;
+}
+
+ ریسپانسیو موبایل
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .courses {
+    margin-top: 20px;
+  }
+
+  .footer .social {
+    margin: 5px;
+  }
+}
+
+#digital-security-section {
+  background-color: #f5f6ff;
+  padding: 60px 15px;
+}
+
+#digital-security-section h1 {
+  color: #4b4bc3;
+  font-size: 2rem;
+}
+
+#digital-security-section p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.btn-primary {
+  background-color: #707ff5;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1.5rem;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #585df2;
+  transform: translateY(-2px);
+}
+
+/* تصویر ریسپانسیو */
+#digital-security-section img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 📱 موبایل */
+@media (max-width: 768px) {
+  #digital-security-section h1 {
+    font-size: 1.6rem;
+  }
+
+  #digital-security-section p {
+    font-size: 0.95rem;
+  }
+}

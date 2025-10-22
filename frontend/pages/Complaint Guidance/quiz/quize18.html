@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>کوییز: تنظیمات حریم خصوصی</title>
+  <link rel="stylesheet" href="../quiz/quiz.css">
+</head>
+<body>
+  <div class="quiz-card">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress"></div>
+    </div>
+    <h1>آزمون: تنظیمات حریم خصوصی در شبکه‌های اجتماعی</h1>
+    <div class="question-text" id="question-text"></div>
+    <div class="options" id="options"></div>
+
+    <div class="score-card" id="score-card">
+      <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
+      <div class="message" id="message"></div>
+      <button onclick="window.location.href='../pages/Home Page/Home Page.html'">
+  بازگشت به صفحه قبلی
+</button>
+    </div>
+  </div>
+
+  <script>
+    window.quizQuestions = [
+      {
+        text: "در WhatsApp چگونه می‌توان کنترل کرد چه کسانی آخرین بازدید یا عکس پروفایل شما را ببینند؟",
+        options: [
+          "از بخش تنظیمات حریم خصوصی (Privacy Settings)",
+          "از قسمت چت‌ها",
+          "فقط با حذف حساب کاربری",
+          "امکان تنظیم وجود ندارد"
+        ],
+        correct: 0
+      },
+      {
+        text: "در Telegram برای محافظت از حریم خصوصی چه اقدامی مفید است؟",
+        options: [
+          "مخفی کردن شماره تلفن و تنظیم دیده شدن آخرین فعالیت",
+          "افزودن همه به لیست مخاطبین",
+          "به اشتراک گذاشتن لینک گروه در اینترنت",
+          "روشن گذاشتن تمام دسترسی‌ها"
+        ],
+        correct: 0
+      },
+      {
+        text: "چرا باید دسترسی اپلیکیشن‌های متصل به حساب‌های شبکه‌های اجتماعی را بررسی کنیم؟",
+        options: [
+          "برای افزایش فضای ذخیره‌سازی",
+          "برای جلوگیری از سوءاستفاده از اطلاعات شخصی",
+          "برای افزایش سرعت گوشی",
+          "برای حذف تبلیغات"
+        ],
+        correct: 1
+      },
+      {
+        text: "تأیید هویت دو مرحله‌ای (2FA) چه نقشی دارد؟",
+        options: [
+          "افزایش امنیت حساب با لایه محافظتی اضافی",
+          "کاهش امنیت برای ورود آسان‌تر",
+          "فقط برای تزئین حساب است",
+          "باعث حذف رمز عبور می‌شود"
+        ],
+        correct: 0
+      },
+      {
+        text: "در صورتی که گوشی شما در دست دیگران باشد، چگونه می‌توان دسترسی به پیام‌ها را محدود کرد؟",
+        options: [
+          "فعال کردن قفل اپلیکیشن با رمز یا اثرانگشت",
+          "خاموش کردن اینترنت",
+          "پاک کردن تمام داده‌ها",
+          "هیچ راهی وجود ندارد"
+        ],
+        correct: 0
+      }
+    ];
+  </script>
+
+  <script src="../quiz/quiz.js"></script>
+</body>
+</html>
