@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
  /* body style */
  body {
    font-family: 'Vazir', Arial, sans-serif;
@@ -9,7 +9,6 @@
    overflow-x: hidden;
  }
 
-=======
 /* body style */
 body {
   background-color: white;
@@ -47,7 +46,6 @@ body {
 /*  color: #f2a1f2;*/
 /*}*/
 
->>>>>>> 1f3750d920ac3425d94e405f582e5ee0f2870a88
 /* Main Styles for Complaint Guidance Page  */
 .container-fluid {
  padding: 0;
