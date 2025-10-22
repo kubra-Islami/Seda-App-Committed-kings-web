@@ -352,7 +352,7 @@
   text-decoration: underline;
 }
 
- ریسپانسیو موبایل
+ /* ریسپانسیو موبایل */
 @media (max-width: 767px) {
   .footer {
     text-align: center;
