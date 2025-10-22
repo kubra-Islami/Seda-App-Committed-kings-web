@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  /* body style */
  body {
    font-family: 'Vazir', Arial, sans-serif;
@@ -8,6 +9,45 @@
    overflow-x: hidden;
  }
 
+=======
+/* body style */
+body {
+  background-color: white;
+  font-family: "Vazir", Arial, sans-serif;
+  direction: rtl;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* navbar style */
+/*.navbar {*/
+/*  background: linear-gradient(135deg,*/
+/*      #1e1e76 0%,*/
+/*      #4b4bc3 25%,*/
+/*      #707ff5 50%,*/
+/*      #a195f9 75%,*/
+/*      #f2a1f2 100%);*/
+/*}*/
+
+/* .navbar-header .navbar-brand > img.navbar-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+} */
+
+/* nav style */
+/*nav {*/
+/*  font-size: 26px;*/
+/*}*/
+
+/* nav links style */
+/*.nav-item .nav-link:hover {*/
+/*  color: #f2a1f2;*/
+/*}*/
+
+>>>>>>> 1f3750d920ac3425d94e405f582e5ee0f2870a88
 /* Main Styles for Complaint Guidance Page  */
 .container-fluid {
  padding: 0;
