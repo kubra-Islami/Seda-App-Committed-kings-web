@@ -210,10 +210,77 @@ body {
   opacity: 1;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+/* مدیا کیوری برای بخش ویدیو ها  */
+/* @media (max-width: 480px) {
+  .navbar {
+    width: 630px;
+  }
+  .maintext {
+    width: 630px;
+  }
+  .headofImg {
+    display: block;
+    height: 200px;
+    width: 200px;
+  }
+  .row {
+    display: inline;
+  }
+  .col {
+    width: 300px;
+    margin-right: 70px;
+  }
+  .footer {
+    width: 630px;
+  }
+  .Chatbotbtn {
+    position: absolute;
+    right: 300px;
+  }
+  #footer {
+    margin-right: 170px;
+  }
+} */
+/* @media (max-width: 480px) {
+  .navbar {
+    position: absolute;
+    background-color: white;
+    margin-bottom: 0px;
+  }
+  #headtext {
+    margin-top: 0px;
+  }
+  .row {
+    margin-right: 150px;
+    width: 300px;
+  }
+  .col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .headofImg {
+    display: inline;
+    height: 300px;
+    width: 100%;
+  }
+  .Chatbotbtn {
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+=======
+=======
+>>>>>>> 72d2c1fb5486bd88b7acff8f67c11c6039d7e4f6
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .video {
     height: 40vh;
+<<<<<<< HEAD
+>>>>>>> f6db75a703db237eb9f4f75a502c19122601defc
+=======
+>>>>>>> 72d2c1fb5486bd88b7acff8f67c11c6039d7e4f6
   }
 
   .videoMain {

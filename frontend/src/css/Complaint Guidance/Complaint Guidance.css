@@ -1,17 +1,48 @@
-/* General Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-    font-family: 'Vazir', Arial, sans-serif;
-    direction: rtl;
-}
+ /* body style */
+ body {
+  background: linear-gradient(
+    135deg,
+    #707ff5,   /* بنفش روشن */
+    #f2a1f2    /* صورتی ملایم */
+  );
+   font-family: 'Vazir', Arial, sans-serif;
+   direction: rtl;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+ }
+
+ /* navbar style */
+ /*.navbar {*/
+ /*  background: linear-gradient(135deg,*/
+ /*      #1e1e76 0%,*/
+ /*      #4b4bc3 25%,*/
+ /*      #707ff5 50%,*/
+ /*      #a195f9 75%,*/
+ /*      #f2a1f2 100%);*/
+ /*}*/
+
+ /* .navbar-header .navbar-brand > img.navbar-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+} */
+
+ /* nav style */
+ /*nav {*/
+ /*  font-size: 26px;*/
+ /*}*/
+
+ /* nav links style */
+ /*.nav-item .nav-link:hover {*/
+ /*  color: #f2a1f2;*/
+ /*}*/
+
 /* Main Styles for Complaint Guidance Page  */
-.container-fluid {
-  padding: 0;
-}
+/*.container-fluid {*/
+/*  padding: 0;*/
+/*}*/
 .card-container {
   max-width: 900px;
   margin: 40px auto;

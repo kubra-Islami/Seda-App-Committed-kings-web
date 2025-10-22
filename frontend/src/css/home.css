@@ -1,0 +1,70 @@
+.container-fluid {
+  background-color: rgb(112, 127, 245);
+  height: 440px;
+}
+.row {
+  text-align: right;
+  padding: 20px;
+  color: white;
+}
+.col {
+  padding: 30px;
+}
+#col1 {
+  margin-top: 20px;
+}
+.button {
+  width: 200px;
+  background-color: white;
+  color: #707ff5;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.button:hover {
+  border: solid 2px white;
+  background-color: #707ff5;
+  color: white;
+}
+.container {
+  display: flex;
+  gap: 10px;
+  padding: 40px 0px;
+}
+.card-title {
+  color: #707ff5;
+}
+.card-body {
+  transition: all 0.3s ease; /* تنظیم انیمیشن */
+}
+.card-body:hover {
+  transform: scale(1.05); /* کمی بزرگ شدن */
+  border-color: #707ff5;
+  box-shadow: 0 8px 20px #707ff5;
+}
+.para {
+  padding: 20px 60px 0px 0px;
+  font-size: 20px;
+}
+#container-fluid {
+  background: linear-gradient(135deg, rgb(112, 127, 245), rgb(161, 149, 249));
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+#header {
+  padding-top: 100px;
+}
+#row {
+  background-color: white;
+  margin: 90px 30px 60px 30px;
+}
+#container {
+  align-items: center;
+}
+#container;
