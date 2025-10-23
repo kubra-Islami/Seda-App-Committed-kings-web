@@ -44,11 +44,10 @@
 .custom-navbar.scrolled {
   background-color: #4b4bc3;
   color: white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 0.5rem 1.5rem;
   transition: all 0.3s ease;
 }
-
 
 #learning-section h3 {
   color: #4b4bc3;
@@ -80,7 +79,6 @@
   border-color: #707ff5;
   box-shadow: 0 8px 20px #707ff5;
 }
-
 
 #container-fluid11 {
   background-color: rgb(112, 127, 245);
@@ -182,6 +180,9 @@
 }
 #container-fluid12 h2 {
   margin-top: 10px;
+}
+#col1 {
+  margin-top: 60px;
 }
 .about-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -317,7 +318,7 @@
   transform: translateY(-2px);
 }
 
- /*شبکه‌های اجتماعی */
+/*شبکه‌های اجتماعی */
 .footer .social {
   font-size: 22px;
   margin: 5px 10px;
@@ -352,8 +353,7 @@
   text-decoration: underline;
 }
 
- ریسپانسیو موبایل
-@media (max-width: 767px) {
+ریسپانسیو موبایل @media (max-width: 767px) {
   .footer {
     text-align: center;
   }
