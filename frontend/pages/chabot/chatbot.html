@@ -27,30 +27,44 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark pt-3">
+<nav class="navbar navbar-expand-lg navbar-dark pt-3 fixed-top shadow-sm">
     <div class="container">
         <!-- Logo -->
         <a href="#" class="navbar-brand">
-            <img src="../../assets/images/لوگوی صدا.jpg" alt="صدا" height="60" width="auto">
+            <img
+                    src="../../assets/images/لوگوی_صدا-removebg-preview.png"
+                    alt="صدا"
+                    height="60"
+                    width="auto"
+            />
         </a>
+        <div class="container-fluid m-0 p-0">
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="navbarNav">
 
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Menu Items -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            </div>
             <ul class="navbar-nav text-center">
                 <li class="nav-item">
-                    <a class="nav-link active" href="../../pages/Home%20Page/Home%20Page.html">برگشت به خانه</a>
+                    <a class="nav-link active" href="../../pages/Home%20Page/Home%20Page.html">خانه</a>
                 </li>
             </ul>
         </div>
     </div>
+    </div>
 </nav>
+
 <!-- Main Content -->
 <main>
     <div class="chat-container">
@@ -70,50 +84,15 @@
         </div>
     </div>
 </main>
-<footer id="footer-section" class="container-fluid py-5 text-white ">
-    <div class="row justify-content-center g-4 p-sm-4">
-        <!-- درباره صدا -->
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center text-md-start">
-            <div class="footer-widget">
-                <h5>درباره صدا</h5>
-                <p>پلتفرم آموزشی و الهام‌بخش برای توانمندسازی دیجیتال زنان و دختران افغان.</p>
-            </div>
-        </div>
-
-        <!-- لینک‌های سریع -->
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center text-md-start">
-            <div class="footer-widget">
-                <h5>لینک‌های سریع</h5>
-                <ul class="list-unstyled footer-links">
-                    <li><a href="#home-section">خانه</a></li>
-                    <li><a href="#about-section">درباره ما</a></li>
-                    <li><a href="#services-section">خدمات</a></li>
-                    <li><a href="#course-section">آموزش‌ها</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- خدمات -->
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center text-md-start">
-            <div class="footer-widget">
-                <h5>خدمات</h5>
-                <ul class="list-unstyled footer-links">
-                    <li><a href="#chatbot-section">چت بات</a></li>
-                    <li><a href="#">شکایات</a></li>
-                    <li><a href="#">جعبه ابزار اضطراری</a></li>
-                    <li><a href="#">کویز</a></li>
-                </ul>
-            </div>
-        </div>
-
+<footer>
+    <div class="footer-links">
+        <a href="../Home%20Page/Home%20Page.html">خانه</a>
+        <a href="../Home%20Page/Home%20Page.html#about-section">درباره ما</a>
+        <a href="../Home%20Page/Home%20Page.html#services-section">خدمات</a>
     </div>
-
-    <div class="row mt-5">
-        <div class="col-12 text-center">
-            <p class="mb-0">&copy; ۲۰۲۵ صدا. تمامی حقوق محفوظ است.</p>
-        </div>
-    </div>
+    <p>© 2025 همه حقوق محفوظ است</p>
 </footer>
+
 <script src="../../src/js/bootstrap.bundle.min.js"></script>
 <script src="../../src/js/chatbot/chatbot.js"></script>
 </body>
