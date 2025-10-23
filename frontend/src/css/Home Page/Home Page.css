@@ -2,8 +2,10 @@
 body {
   font-family: 'Vazir', Arial, sans-serif;
   direction: rtl;
+  text-align: right;
   margin: 0;
   padding: 0;
+  padding-top: 80px;
   overflow-x: hidden;
 }
 
@@ -36,7 +38,10 @@ nav {
   display: flex;
   align-items: center;
 }
-
+.navbar.scrolled {
+  background-color: #1e1e76 !important;
+  transition: background-color 0.3s ease;
+}
 /* تصویر */
 .welcome-image img {
   width: 100%;
@@ -55,15 +60,9 @@ nav {
 #welcome {
   line-height: 1.8;
   padding: 30px;
-  /*background-color: rgba(255,255,255,0.85);*/
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-/*#welcome:hover {*/
-/*    transform: translateY(-8px);*/
-/*    box-shadow: 0 20px 40px rgba(0,0,0,0.2);*/
-/*}*/
 
 #welcome h2 {
   color: #1e1e76;
@@ -87,6 +86,9 @@ nav {
 
   #welcome {
     padding: 20px;
+  }
+  body {
+    padding-top: 100px;
   }
 }
 
@@ -787,7 +789,10 @@ nav {
   color: #ffd6f7;
   text-decoration: underline;
 }
-
+.footer-links{
+  padding-right: 0;
+  margin-right: 0;
+}
 /* آیکون‌های شبکه‌های اجتماعی */
 .footer-icon {
   display: inline-block;
