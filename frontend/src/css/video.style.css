@@ -6,6 +6,33 @@ body {
   padding-top: 70px; /* space for fixed navbar */
   overflow-x: hidden;
 }
+.custom-navbar {
+    background: linear-gradient(135deg, #0d6efd, #007bff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 15px 15px;
+    padding: 0.6rem 1rem;
+  }
+
+  .navbar-brand {
+    letter-spacing: 0.5px;
+  }
+
+  .nav-link {
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #ffd700 !important;
+    transform: scale(1.05);
+  }
+
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
 
 /*  Video section */
 .VideoPart {
@@ -20,8 +47,8 @@ body {
 }
 
 /*  Navbar */
-.navbar {
-  background: linear-gradient(135deg, #1e1e76, #4b4bc3, #707ff5, #a195f9, #f2a1f2);
+.navbar { background: linear-gradient(135deg, #1e1e76, #4b4bc3, #707ff5, #a195f9, #f2a1f2);
+ 
 }
 
 .navbar-brand img {
@@ -210,70 +237,6 @@ body {
   opacity: 1;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* مدیا کیوری برای بخش ویدیو ها  */
-/* @media (max-width: 480px) {
-  .navbar {
-    width: 630px;
-  }
-  .maintext {
-    width: 630px;
-  }
-  .headofImg {
-    display: block;
-    height: 200px;
-    width: 200px;
-  }
-  .row {
-    display: inline;
-  }
-  .col {
-    width: 300px;
-    margin-right: 70px;
-  }
-  .footer {
-    width: 630px;
-  }
-  .Chatbotbtn {
-    position: absolute;
-    right: 300px;
-  }
-  #footer {
-    margin-right: 170px;
-  }
-} */
-/* @media (max-width: 480px) {
-  .navbar {
-    position: absolute;
-    background-color: white;
-    margin-bottom: 0px;
-  }
-  #headtext {
-    margin-top: 0px;
-  }
-  .row {
-    margin-right: 150px;
-    width: 300px;
-  }
-  .col {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .headofImg {
-    display: inline;
-    height: 300px;
-    width: 100%;
-  }
-  .Chatbotbtn {
-    position: absolute;
-    right: 0px;
-    margin: 10px;
-=======
-=======
->>>>>>> 72d2c1fb5486bd88b7acff8f67c11c6039d7e4f6
-/* Responsive tweaks */
 @media (max-width: 768px) {
   .video {
     height: 40vh;
