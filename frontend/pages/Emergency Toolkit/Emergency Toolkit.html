@@ -1,70 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>جعبه ابزار اضطراری</title>
-    <link
-      rel="stylesheet"
-      href="../../src/css/Emergency Toolkit/Emergency Toolkit.css"
-    />
-  </head>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جعبه ابزار اضطراری</title>
+  <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../../src/css/Emergency Toolkit/Emergency Toolkit.css">
+</head>
+<body>
 
-  <body>
-    <header>
-      <h1>جعبه ابزار اضطراری</h1>
-    </header>
-    <main class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="card-container">
-            <h2>در صورت هک شدن/آزار و اذیت چه باید کرد؟</h2>
-            <section class="row">
-              <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
-                <div class="card">
-                  <p>حساب های امن</p>
-                  <ul>
-                    <li>تغییر دادن رمز های عبور</li>
-                    <li>فعال کردن احراز هویت دو مرحله‌ای</li>
-                    <li>بروز رسانی سوالات امنیتی</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
-                <div class="card">
-                  <p>گزارش حادثه</p>
-                  <ul>
-                    <li>تماس با مقامات (مثلاً پلیس محلی)</li>
-                    <li>
-                      گزارش به پلتفرم/ارائه‌دهندگان (مثلاً رسانه‌های اجتماعی،
-                      ایمیل)
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
-                <div class="card">
-                  <p>دستگاه های ایمن</p>
-                  <ul>
-                    <li>قفل کردن دستگاه ها</li>
-                    <li>پاک کردن داده های حساس</li>
-                    <li>بروز رسانی نرم افزار آنتی ویروس</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-            <section id="action">
-              <h3>اقدامات سریع</h3>
-              <button>
-                <a href="../SecurityofDevices.html">ایمن قفل کردن دستگاه </a>
-              </button>
-              <button>
-                <a href="../ManagePassword.html">مدیریت حساب ها</a>
-              </button>
-            </section>
-          </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark pt-3 fixed-top shadow-sm">
+  <div class="container">
+    <!-- Logo -->
+    <a href="#" class="navbar-brand">
+      <img
+              src="../../assets/images/لوگوی_صدا-removebg-preview.png"
+              alt="صدا"
+              height="60"
+              width="auto"
+      />
+    </a>
+    <div class="container-fluid m-0 p-0">
+      <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav">
+
+      </div>
+      <ul class="navbar-nav text-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="../../pages/Home%20Page/Home%20Page.html">خانه</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+
+
+<header class="text-center mt-5 pt-5">
+  <h1 class="display-5 text-primary">جعبه ابزار اضطراری</h1>
+  <p class="text-muted">در مواقع اضطراری برای حفظ امنیت حساب‌ها و دستگاه‌ها چه اقداماتی باید انجام دهید</p>
+</header>
+
+<main class="container my-5">
+  <!-- Cards Section -->
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+      <div class="card emergency-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">حساب‌های امن</h5>
+          <ul>
+            <li>تغییر رمزهای عبور</li>
+            <li>فعال کردن احراز هویت دو مرحله‌ای</li>
+            <li>بروز رسانی سوالات امنیتی</li>
+          </ul>
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card emergency-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">گزارش حادثه</h5>
+          <ul>
+            <li>تماس با مقامات (مثلاً پلیس)</li>
+            <li>گزارش به پلتفرم‌ها (مثلاً شبکه‌های اجتماعی، ایمیل)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card emergency-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">دستگاه‌های ایمن</h5>
+          <ul>
+            <li>قفل کردن دستگاه‌ها</li>
+            <li>پاک کردن داده‌های حساس</li>
+            <li>بروز رسانی نرم‌افزار آنتی ویروس</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <section class="text-center mt-5">
+    <h3 class="text-primary mb-3">اقدامات سریع</h3>
+    <a href="../SecurityofDevices.html" class="btn btn-gradient me-2 mb-2">ایمن قفل کردن دستگاه</a>
+    <a href="../ManagePassword.html" class="btn btn-gradient mb-2">مدیریت حساب‌ها</a>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-links">
+    <a href="../Home%20Page/Home%20Page.html">خانه</a>
+    <a href="../Home%20Page/Home%20Page.html#about-section">درباره ما</a>
+    <a href="../Home%20Page/Home%20Page.html#services-section">خدمات</a>
+    <a href="../../pages/chabot/chatbot.html">چت بات</a>
+    <a href="../Home%20Page/Home%20Page.html#course-section">ویدیو های اموزشی</a>
+  </div>
+  <p>© 2025 همه حقوق محفوظ است</p>
+</footer>
+
+
+</body>
 </html>
