@@ -7,32 +7,32 @@ body {
   overflow-x: hidden;
 }
 .custom-navbar {
-    background: linear-gradient(135deg, #0d6efd, #007bff);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    border-radius: 0 0 15px 15px;
-    padding: 0.6rem 1rem;
-  }
+  background: linear-gradient(135deg, #0d6efd, #007bff);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 15px 15px;
+  padding: 0.6rem 1rem;
+}
 
-  .navbar-brand {
-    letter-spacing: 0.5px;
-  }
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
 
-  .nav-link {
-    transition: all 0.3s ease;
-  }
+.nav-link {
+  transition: all 0.3s ease;
+}
 
-  .nav-link:hover {
-    color: #ffd700 !important;
-    transform: scale(1.05);
-  }
+.nav-link:hover {
+  color: #ffd700 !important;
+  transform: scale(1.05);
+}
 
-  .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
+.navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 
 /*  Video section */
 .VideoPart {
@@ -47,8 +47,15 @@ body {
 }
 
 /*  Navbar */
-.navbar { background: linear-gradient(135deg, #1e1e76, #4b4bc3, #707ff5, #a195f9, #f2a1f2);
- 
+.navbar {
+  background: linear-gradient(
+    135deg,
+    #1e1e76,
+    #4b4bc3,
+    #707ff5,
+    #a195f9,
+    #f2a1f2
+  );
 }
 
 .navbar-brand img {
@@ -209,7 +216,6 @@ body {
   }
 }
 
-
 /* Chatbot button */
 .Chatbotbtn button {
   background-color: #1e1e76;
@@ -240,10 +246,6 @@ body {
 @media (max-width: 768px) {
   .video {
     height: 40vh;
-<<<<<<< HEAD
->>>>>>> f6db75a703db237eb9f4f75a502c19122601defc
-=======
->>>>>>> 72d2c1fb5486bd88b7acff8f67c11c6039d7e4f6
   }
 
   .videoMain {
