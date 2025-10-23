@@ -12,7 +12,7 @@ html, body {
 /* main should take remaining space */
 main {
   flex: 1;
-  padding-top: 70px; /* for fixed navbar */
+  padding-top: 70px;
 }
 
 /* navbar style */

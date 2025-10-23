@@ -1,54 +1,109 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>آزمون: حریم خصوصی انلای</title>
-  <link rel="stylesheet" href="../quiz/quiz.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>آزمون: حریم خصوصی انلای</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../quiz/quiz.css">
 </head>
 <body>
-  <div class="quiz-card">
-    <div class="progress-bar">
-      <div class="progress-fill" id="progress"></div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark pt-3 fixed-top shadow-sm">
+    <div class="container">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">
+            <img
+                    src="../../../assets/images/لوگوی_صدا-removebg-preview.png"
+                    alt="صدا"
+                    height="60"
+                    width="auto"
+            />
+        </a>
+        <div class="container-fluid m-0 p-0">
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="navbarNav">
+
+            </div>
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../../../pages/Home%20Page/Home%20Page.html">خانه</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <h1>آزمون: حریم خصوصی انلاین</h1>
+</nav>
 
-    <div class="question-text" id="question-text"></div>
-    <div class="options" id="options"></div>
 
-    <div class="score-card" id="score-card">
-      <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
-      <div class="message" id="message"></div>
-      <a href="../../Home Page/Home Page.html" class="back-btn">باز گشت به صفحه اصلی</a>
+<main class="container mt-5">
+    <div class="quiz-card ">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress"></div>
+        </div>
+        <h1>آزمون: حریم خصوصی انلاین</h1>
+
+        <div class="question-text" id="question-text"></div>
+        <div class="options" id="options"></div>
+
+        <div class="score-card" id="score-card">
+            <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
+            <div class="message" id="message"></div>
+            <a href="../../Home Page/Home Page.html" class="back-btn">باز گشت به صفحه اصلی</a>
+        </div>
     </div>
-  </div>
+</main>
+<footer>
+    <div class="footer-links">
+        <a href="../../Home%20Page/Home%20Page.html">خانه</a>
+        <a href="../../Home%20Page/Home%20Page.html#about-section">درباره ما</a>
+        <a href="../../Home%20Page/Home%20Page.html#services-section">خدمات</a>
+        <a href="../../../pages/chabot/chatbot.html">چت بات</a>
+        <a href="../../Home%20Page/Home%20Page.html#course-section">ویدیو های اموزشی</a>
+    </div>
+    <p>© 2025 همه حقوق محفوظ است</p>
+</footer>
 
-  
-  <script>
+
+<script>
     window.quizQuestions = [
-      {
-        text:"حریم خصوصی آنلاین چیست؟",
-        options: ["ارسال پیام","محافظت از اطلاعات شخصی در اینترنت","خرید انلاین","بازی در اینترنت"],
-        correct: 1
-      },
-      {
-        text:"چرا حریم خصوصی مهم است؟",
-        options: ["برای افزایش دنبال کننده ها","برای جلوگیری از سوءاستفاده انلاین","برای زیبا شدن پروفایل","برای داشتن اینترنت سریع تر"],
-        correct: 1
-      },
-      {  
-        text:"چگونه میتوان از اطلاعات شخصی محافظت کرد؟",
-        options: ["با باز کردن لینک ناشناس","با استمفاده از رمز قوی","با اشتراک گذاشتن رمز با دوستان","با اشتراک گذاشتن همه چیز در اینترنت"],
-        correct: 1
-      },
-      {
-        text:"اگر کسی اطلاعاتت را پخش کند جه میکنی؟",
-        options: ["اطلاعات او را هم پخش میکنی","به بزرگتر یا مسوول گزارش میدهی","با او دعوا میکنی ","سکوت میکنی "],
-        correct: 1
-      },
+        {
+            text: "حریم خصوصی آنلاین چیست؟",
+            options: ["ارسال پیام", "محافظت از اطلاعات شخصی در اینترنت", "خرید انلاین", "بازی در اینترنت"],
+            correct: 1
+        },
+        {
+            text: "چرا حریم خصوصی مهم است؟",
+            options: ["برای افزایش دنبال کننده ها", "برای جلوگیری از سوءاستفاده انلاین", "برای زیبا شدن پروفایل", "برای داشتن اینترنت سریع تر"],
+            correct: 1
+        },
+        {
+            text: "چگونه میتوان از اطلاعات شخصی محافظت کرد؟",
+            options: ["با باز کردن لینک ناشناس", "با استمفاده از رمز قوی", "با اشتراک گذاشتن رمز با دوستان", "با اشتراک گذاشتن همه چیز در اینترنت"],
+            correct: 1
+        },
+        {
+            text: "اگر کسی اطلاعاتت را پخش کند جه میکنی؟",
+            options: ["اطلاعات او را هم پخش میکنی", "به بزرگتر یا مسوول گزارش میدهی", "با او دعوا میکنی ", "سکوت میکنی "],
+            correct: 1
+        },
     ];
 
-  </script>
-  <script src="../quiz/quiz.js"></script>
+</script>
+<script src="../quiz/quiz.js"></script>
 </body>
 </html>

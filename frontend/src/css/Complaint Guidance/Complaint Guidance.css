@@ -6,11 +6,11 @@ html, body {
 }
 
 main {
-  flex: 1; /* main فضای باقی مانده را پر می‌کند */
-  padding-top: 80px; /* فاصله از navbar */
+  flex: 1;
+  padding-top: 80px;
 }
 .navbar-brand .logo {
-  height: 40px; /* ارتفاع لوگو */
+  height: 40px;
   width: auto;
   vertical-align: middle;
 }

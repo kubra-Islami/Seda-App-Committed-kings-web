@@ -1,82 +1,135 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>آزمون: آپدیت سیستم‌ها و برنامه‌ها</title>
-  <link rel="stylesheet" href="../quiz/quiz.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>آزمون: آپدیت سیستم‌ها و برنامه‌ها</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../quiz/quiz.css">
 </head>
 <body>
-  <div class="quiz-card">
-    <div class="progress-bar">
-      <div class="progress-fill" id="progress"></div>
-    </div>
-    <h1>آزمون: آپدیت سیستم‌ها و برنامه‌ها</h1>
-    <div class="question-text" id="question-text"></div>
-    <div class="options" id="options"></div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark pt-3 fixed-top shadow-sm">
+    <div class="container">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">
+            <img
+                    src="../../../assets/images/لوگوی_صدا-removebg-preview.png"
+                    alt="صدا"
+                    height="60"
+                    width="auto"
+            />
+        </a>
+        <div class="container-fluid m-0 p-0">
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="navbarNav">
 
-    <div class="score-card" id="score-card">
-      <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
-      <div class="message" id="message"></div>
-      <a href="../../Home Page/Home Page.html" class="back-btn">باز گشت به صفحه اصلی</a>
+            </div>
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../../../pages/Home%20Page/Home%20Page.html">خانه</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
+</nav>
+<main class="container mt-5">
 
-  <script>
+    <div class="quiz-card">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress"></div>
+        </div>
+        <h1>آزمون: آپدیت سیستم‌ها و برنامه‌ها</h1>
+        <div class="question-text" id="question-text"></div>
+        <div class="options" id="options"></div>
+
+        <div class="score-card" id="score-card">
+            <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
+            <div class="message" id="message"></div>
+            <a href="../../Home Page/Home Page.html" class="back-btn">باز گشت به صفحه اصلی</a>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-links">
+        <a href="../../Home%20Page/Home%20Page.html">خانه</a>
+        <a href="../../Home%20Page/Home%20Page.html#about-section">درباره ما</a>
+        <a href="../../Home%20Page/Home%20Page.html#services-section">خدمات</a>
+        <a href="../../../pages/chabot/chatbot.html">چت بات</a>
+        <a href="../../Home%20Page/Home%20Page.html#course-section">ویدیو های اموزشی</a>
+    </div>
+    <p>© 2025 همه حقوق محفوظ است</p>
+</footer>
+<script>
     window.quizQuestions = [
-      {
-        text: "هدف اصلی از آپدیت منظم سیستم‌عامل و برنامه‌ها چیست؟",
-        options: [
-          "زیباتر کردن ظاهر سیستم",
-          "رفع آسیب‌پذیری‌ها و افزایش امنیت",
-          "کاهش سرعت دستگاه",
-          "حذف اطلاعات قدیمی"
-        ],
-        correct: 1
-      },
-      {
-        text: "کدام گزینه در مورد به‌روزرسانی خودکار (Auto Update) درست است؟",
-        options: [
-          "باعث افزایش خطر هک می‌شود",
-          "به‌طور خودکار آخرین نسخه‌ها را نصب می‌کند",
-          "تنها ظاهر برنامه‌ها را تغییر می‌دهد",
-          "برای دستگاه‌های جدید ضروری نیست"
-        ],
-        correct: 1
-      },
-      {
-        text: "چرا باید از منابع رسمی برای دانلود آپدیت استفاده کرد؟",
-        options: [
-          "چون سریع‌تر دانلود می‌شوند",
-          "برای جلوگیری از نصب نرم‌افزارهای آلوده و جعلی",
-          "چون رایگان‌تر هستند",
-          "برای کاهش حجم مصرفی اینترنت"
-        ],
-        correct: 1
-      },
-      {
-        text: "یکی از اقدامات مهم پس از آپدیت سیستم چیست؟",
-        options: [
-          "پاک کردن تمام داده‌ها",
-          "راه‌اندازی مجدد دستگاه",
-          "خاموش کردن آنتی‌ویروس",
-          "قطع اتصال از اینترنت"
-        ],
-        correct: 1
-      },
-      {
-        text: "اگر آپدیت‌ها نصب نشوند، چه خطری وجود دارد؟",
-        options: [
-          "دستگاه زیباتر می‌شود",
-          "احتمال نفوذ بدافزارها و هکرها افزایش می‌یابد",
-          "عمر باتری افزایش می‌یابد",
-          "کارایی سیستم بهتر می‌شود"
-        ],
-        correct: 1
-      }
+        {
+            text: "هدف اصلی از آپدیت منظم سیستم‌عامل و برنامه‌ها چیست؟",
+            options: [
+                "زیباتر کردن ظاهر سیستم",
+                "رفع آسیب‌پذیری‌ها و افزایش امنیت",
+                "کاهش سرعت دستگاه",
+                "حذف اطلاعات قدیمی"
+            ],
+            correct: 1
+        },
+        {
+            text: "کدام گزینه در مورد به‌روزرسانی خودکار (Auto Update) درست است؟",
+            options: [
+                "باعث افزایش خطر هک می‌شود",
+                "به‌طور خودکار آخرین نسخه‌ها را نصب می‌کند",
+                "تنها ظاهر برنامه‌ها را تغییر می‌دهد",
+                "برای دستگاه‌های جدید ضروری نیست"
+            ],
+            correct: 1
+        },
+        {
+            text: "چرا باید از منابع رسمی برای دانلود آپدیت استفاده کرد؟",
+            options: [
+                "چون سریع‌تر دانلود می‌شوند",
+                "برای جلوگیری از نصب نرم‌افزارهای آلوده و جعلی",
+                "چون رایگان‌تر هستند",
+                "برای کاهش حجم مصرفی اینترنت"
+            ],
+            correct: 1
+        },
+        {
+            text: "یکی از اقدامات مهم پس از آپدیت سیستم چیست؟",
+            options: [
+                "پاک کردن تمام داده‌ها",
+                "راه‌اندازی مجدد دستگاه",
+                "خاموش کردن آنتی‌ویروس",
+                "قطع اتصال از اینترنت"
+            ],
+            correct: 1
+        },
+        {
+            text: "اگر آپدیت‌ها نصب نشوند، چه خطری وجود دارد؟",
+            options: [
+                "دستگاه زیباتر می‌شود",
+                "احتمال نفوذ بدافزارها و هکرها افزایش می‌یابد",
+                "عمر باتری افزایش می‌یابد",
+                "کارایی سیستم بهتر می‌شود"
+            ],
+            correct: 1
+        }
     ];
-  </script>
+</script>
 
-  <script src="../quiz/quiz.js"></script>
+<script src="../quiz/quiz.js"></script>
 </body>
 </html>

@@ -1,82 +1,137 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>آزمون: محافظت از اطلاعات شخصی</title>
-  <link rel="stylesheet" href="../quiz/quiz.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>آزمون: محافظت از اطلاعات شخصی</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../quiz/quiz.css">
 </head>
 <body>
-  <div class="quiz-card">
-    <div class="progress-bar">
-      <div class="progress-fill" id="progress"></div>
-    </div>
-    <h1>آزمون: محافظت از اطلاعات شخصی</h1>
-    <div class="question-text" id="question-text"></div>
-    <div class="options" id="options"></div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark pt-3 fixed-top shadow-sm">
+    <div class="container">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">
+            <img
+                    src="../../../assets/images/لوگوی_صدا-removebg-preview.png"
+                    alt="صدا"
+                    height="60"
+                    width="auto"
+            />
+        </a>
+        <div class="container-fluid m-0 p-0">
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="navbarNav">
 
-    <div class="score-card" id="score-card">
-      <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
-      <div class="message" id="message"></div>
-<a href="../../Home Page/Home Page.html" class="back-btn">باز گشت به صفحه اصلی</a>
+            </div>
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../../../pages/Home%20Page/Home%20Page.html">خانه</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
+</nav>
+
+
+<main class="container mt-5">
+    <div class="quiz-card">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress"></div>
+        </div>
+        <h1>آزمون: محافظت از اطلاعات شخصی</h1>
+        <div class="question-text" id="question-text"></div>
+        <div class="options" id="options"></div>
+
+        <div class="score-card" id="score-card">
+            <div id="score-text">نتیجه: ۰ از ۱۰۰</div>
+            <div class="message" id="message"></div>
+            <a href="../../Home Page/Home Page.html" class="back-btn">باز گشت به صفحه اصلی</a>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-links">
+        <a href="../../Home%20Page/Home%20Page.html">خانه</a>
+        <a href="../../Home%20Page/Home%20Page.html#about-section">درباره ما</a>
+        <a href="../../Home%20Page/Home%20Page.html#services-section">خدمات</a>
+        <a href="../../../pages/chabot/chatbot.html">چت بات</a>
+        <a href="../../Home%20Page/Home%20Page.html#course-section">ویدیو های اموزشی</a>
+    </div>
+    <p>© 2025 همه حقوق محفوظ است</p>
+</footer>
 <script>
-  window.quizQuestions = [
-    {
-      text: "کدام گزینه بهترین روش برای محافظت از رمز عبور است؟",
-      options: [
-        "نوشتن رمز در دفترچه",
-        "به اشتراک گذاشتن با دوستان",
-        "استفاده از رمز قوی و منحصربه‌فرد",
-        "ذخیره رمز در شبکه‌های اجتماعی"
-      ],
-      correct: 2
-    },
-    {
-      text: "در صورت دریافت پیام مشکوک از فرد ناشناس، چه باید کرد؟",
-      options: [
-        "باز کردن لینک داخل پیام",
-        "پاسخ دادن سریع",
-        "گزارش دادن یا حذف پیام",
-        "ارسال پیام برای دیگران"
-      ],
-      correct: 2
-    },
-    {
-      text: "کدام مورد نشانه‌ی یک وب‌سایت امن است؟",
-      options: [
-        "آدرس با http شروع شود",
-        "آدرس با https شروع شود و قفل کنار آن باشد",
-        "نداشتن آدرس وب مشخص",
-        "رنگ‌های جذاب و تبلیغات زیاد"
-      ],
-      correct: 1
-    },
-    {
-      text: "چرا نباید اطلاعات شخصی خود را در فضای مجازی منتشر کنیم؟",
-      options: [
-        "چون باعث خطر و سوءاستفاده می‌شود",
-        "چون اینترنت کند می‌شود",
-        "چون دیگران خوششان نمی‌آید",
-        "چون باعث کاهش حافظه گوشی می‌شود"
-      ],
-      correct: 0
-    },
-    {
-      text: "استفاده از احراز هویت دو مرحله‌ای چه کمکی می‌کند؟",
-      options: [
-        "باعث می‌شود ورود آسان‌تر شود",
-        "به امنیت حساب کمک می‌کند",
-        "رمز عبور حذف شود",
-        "نیاز به اینترنت نداشته باشد"
-      ],
-      correct: 1
-    }
-  ];
+    window.quizQuestions = [
+        {
+            text: "کدام گزینه بهترین روش برای محافظت از رمز عبور است؟",
+            options: [
+                "نوشتن رمز در دفترچه",
+                "به اشتراک گذاشتن با دوستان",
+                "استفاده از رمز قوی و منحصربه‌فرد",
+                "ذخیره رمز در شبکه‌های اجتماعی"
+            ],
+            correct: 2
+        },
+        {
+            text: "در صورت دریافت پیام مشکوک از فرد ناشناس، چه باید کرد؟",
+            options: [
+                "باز کردن لینک داخل پیام",
+                "پاسخ دادن سریع",
+                "گزارش دادن یا حذف پیام",
+                "ارسال پیام برای دیگران"
+            ],
+            correct: 2
+        },
+        {
+            text: "کدام مورد نشانه‌ی یک وب‌سایت امن است؟",
+            options: [
+                "آدرس با http شروع شود",
+                "آدرس با https شروع شود و قفل کنار آن باشد",
+                "نداشتن آدرس وب مشخص",
+                "رنگ‌های جذاب و تبلیغات زیاد"
+            ],
+            correct: 1
+        },
+        {
+            text: "چرا نباید اطلاعات شخصی خود را در فضای مجازی منتشر کنیم؟",
+            options: [
+                "چون باعث خطر و سوءاستفاده می‌شود",
+                "چون اینترنت کند می‌شود",
+                "چون دیگران خوششان نمی‌آید",
+                "چون باعث کاهش حافظه گوشی می‌شود"
+            ],
+            correct: 0
+        },
+        {
+            text: "استفاده از احراز هویت دو مرحله‌ای چه کمکی می‌کند؟",
+            options: [
+                "باعث می‌شود ورود آسان‌تر شود",
+                "به امنیت حساب کمک می‌کند",
+                "رمز عبور حذف شود",
+                "نیاز به اینترنت نداشته باشد"
+            ],
+            correct: 1
+        }
+    ];
 </script>
 
-  </script>
-  <script src="../quiz/quiz.js"></script>
+</script>
+<script src="../quiz/quiz.js"></script>
 </body>
 </html>
