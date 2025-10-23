@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>آموزش ها</title>
+    <title>محتوای آموزشی</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -11,26 +11,26 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../src/css/videoLibrary.style.css" />
+    <link rel="stylesheet" href="../src/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-      dir="rtl"
+      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm custom-navbar"
     >
       <div class="container-fluid">
-        <a class="navbar-brand text-white fw-bold" href="#headCourse"
-          >محتوای آموزشی</a
-        >
+        <!-- برند -->
+        <a class="navbar-brand fw-bold" href="#headCourse">محتوای آموزشی</a>
+
+        <!-- دکمه Toggle برای موبایل -->
         <button
           class="navbar-toggler"
           type="button"
@@ -43,238 +43,262 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- لینک‌ها -->
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">خانه</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./Home Page/Home Page.html"
+                >خانه</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">برگشت</a>
+              <a class="nav-link" href="Home Page/Home Page.html#course"
+                >برگشت</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="d-flex" id="head">
-      <div class="p-2 flex-grow-1" id="headtext">
-        <h1 class="pinkcolor">
-          امنیت شبکه و اینترنت (Network & Internet Safety)
-        </h1>
-        <p>
-          <br />
-          امنیت شبکه و اینترنت مجموعه‌ای از روش‌ها و تکنولوژی‌ها است که برای
-          محافظت از داده‌ها<br />
-          ، سیستم‌ها و ارتباطات آنلاین در برابر دسترسی غیرمجاز، حملات هکری و
-          تهدیدات دیجیتال استفاده<br />
-          می‌شود. هدف آن حفظ حریم خصوصی، اطلاعات شخصی و عملکرد امن سیستم‌ها است.
-          این امنیت <br />شامل پیشگیری از ویروس‌ها، بدافزارها، فیشینگ و نفوذ
-          غیرمجاز می‌شود. استفاده از ابزارهایی مانند <br />فایروال، رمزگذاری و
-          VPN، و رفتار امن کاربران، پایه‌های اصلی آن هستند.<br />
-          به طور خلاصه، امنیت شبکه تضمین می‌کند که اطلاعات و خدمات دیجیتال قابل
-          اعتماد و محافظت‌<br />شده باقی بمانند.
-        </p>
-        <br />
+    <div class="container-fluid text-center py-5" id="digital-security-section">
+      <div class="row align-items-center justify-content-center g-4">
+        <!-- بخش متن -->
+        <div class="col-lg-6 col-md-10 text-lg-start text-center" id="col1">
+          <h1 class="fw-bold mb-3">
+            امنیت شبکه و اینترنت (Network & Internet Safety)
+          </h1>
+          <p class="text-muted mb-4">
+            در دنیای دیجیتال امروزی، استفاده ایمن از اینترنت و شبکه‌ها بسیار
+            اهمیت دارد. از اتصال به شبکه‌های عمومی و ناامن خودداری کنید،
+            نرم‌افزارهای امنیتی به‌روز نصب کنید و همواره مراقب لینک‌ها و
+            فایل‌های مشکوک باشید. با رعایت اصول امنیت اینترنت، می‌توانید از سرقت
+            داده‌ها و حملات سایبری جلوگیری کنید و با اطمینان کامل از سرویس‌ها و
+            امکانات آنلاین بهره‌مند شوید.
+          </p>
+          <a href="#learnmore" class="btn btn-primary">شروع یادگیری</a>
+        </div>
 
-        <div class="p-2">
+        <!-- بخش تصویر -->
+        <div class="col-lg-6 col-md-10 text-center">
           <img
-            class="headofImg"
             src="../components/image/section 3 img 1.webp"
+            class="img-fluid rounded"
+            alt="Digital Security"
           />
         </div>
       </div>
     </div>
 
-    <div class="maintext">
-      <p class="maintextPara">
-        <br />
-        در این بخش شما با اصول پایه امنیت شبکه و اینترنت آشنا می‌شوید و
-        مهارت‌های لازم برای <br />محافظت از خود هنگام استفاده از شبکه‌ها و مرور
-        وب را یاد می‌گیرید. موضوعات اصلی این <br />بخش شامل موارد زیر است:
+    <section id="learning-section" class="py-5 text-center">
+      <div id="para" class="mx-auto mb-4">
+        <h3 class="text-center fw-bold">چطور این یادگیری را شروع کنم؟</h3>
+      </div>
+
+      <div
+        class="container d-flex flex-wrap justify-content-center align-items-center gap-4"
+        id="container-steps"
+      >
+        <div class="card shadow-sm" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">- گام 1:</h5>
+            <p class="card-text">موضوع مورد علاقه‌ات را انتخاب کن</p>
+          </div>
+        </div>
+
+        <div class="card shadow-sm" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">- گام 2:</h5>
+            <p class="card-text">روی دکمه «شروع یادگیری» کلیک کن</p>
+          </div>
+        </div>
+
+        <div class="card shadow-sm" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">- گام 3:</h5>
+            <p class="card-text">ویدیوها و متون آموزشی را دنبال کن</p>
+          </div>
+        </div>
+
+        <div class="card shadow-sm" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">- گام 4:</h5>
+            <p class="card-text">در اخیر آزمون بده</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- عنوان کلی بخش -->
+    <div class="section-header text-center px-3 px-md-5 mb-4">
+      <h2 class="fw-bold pt-5 text-primary-emphasis">
+        مبانی آموزش انترنت و شبکه
+      </h2>
+      <p class="text-muted fs-6 fs-md-5 mx-auto" style="max-width: 700px">
+        با مطالعه این بخش، می‌توانید مهارت‌های پایه‌ای در استفاده ایمن از
+        اینترنت، مدیریت شبکه‌ها و جلوگیری از تهدیدات سایبری را بیاموزید.
       </p>
-      <h5 class="MainHeader">۱. استفاده امن از Wi-Fi عمومی</h5>
-      <p>
-        در این بخش یاد می‌گیرید چگونه هنگام اتصال به شبکه‌های Wi-Fi عمومی،
-        اطلاعات خود را<br />
-        امن نگه دارید. موضوعات اصلی شامل:
-      </p>
-      <ul>
-        <li>استفاده از شبکه‌های امن و رمزگذاری‌شده</li>
-        <li>بررسی اعتبار شبکه قبل از اتصال</li>
-        <li>فعال کردن فایروال و تنظیمات امنیتی دستگاه</li>
-      </ul>
-      <h5 class="MainHeader">2:VPN</h5>
-      <p>
-        در این بخش با ابزارهای افزایش امنیت مرور وب و حفظ حریم خصوصی آشنا
-        می‌شوید. موضوعات اصلی شامل:
-      </p>
-      <ul>
-        <li>
-          استفاده از VPN برای رمزگذاری ترافیک اینترنت و مخفی نگه داشتن
-          فعالیت‌های آنلاین
-        </li>
-        <li>انتخاب VPN معتبر و امن</li>
-        <li>جلوگیری از ردیابی فعالیت‌ها توسط سایت‌ها و تبلیغات</li>
-      </ul>
-      <h5 class="MainHeader">
-        ۳. تشخیص سایت‌های جعلی و فیشینگ (Detecting Fake & Phishing Sites)
-      </h5>
-      <p>
-        در این بخش می‌آموزید چگونه سایت‌ها و لینک‌های جعلی را شناسایی کرده و از
-        فریب خوردن جلوگیری کنید. موضوعات اصلی شامل:
-      </p>
-      <ul>
-        <li>بررسی آدرس URL و علامت‌های امنیتی سایت</li>
-        <li>شناسایی پیام‌ها و ایمیل‌های فیشینگ</li>
-        <li>
-          استفاده از ابزارها و افزونه‌های امنیتی برای شناسایی سایت‌های جعلی
-        </li>
-      </ul>
-      <p>با مطالعه و استفاده از این بخش، شما قادر خواهید بود:</p>
-      <ul>
-        <li>هنگام استفاده از شبکه‌های عمومی، امنیت اطلاعات خود را حفظ کنید</li>
-        <li>مرور وب و فعالیت آنلاین خود را امن‌تر کنید</li>
-        <li>
-          سایت‌های جعلی و فیشینگ را شناسایی کرده و از دسترسی غیرمجاز به داده‌ها
-          جلوگیری کنید
-        </li>
-        <li>
-          پایه‌ای قوی برای ورود به بخش‌های پیشرفته‌تر امنیت دیجیتال داشته باشید
-        </li>
-      </ul>
     </div>
-    <div class="container" id="container">
-      <div class="row">
-        <div class="col col-md-3">
-          <img
-            src="../components/image/section 3 img 2.jpg"
-            width="297px"
-            height="160px"
-          />
-          <h5 class="colHeader">استفاده امن از وایفای عمومی</h5>
-          <p class="colPara">
+
+    <!-- کانتینر کارت‌ها -->
+    <div
+      class="container d-flex flex-wrap justify-content-center gap-4"
+      id="container1"
+    >
+      <!-- کارت 1 -->
+      <div class="card custom-card" style="">
+        <img
+          src="../components/image/section 3 img 2.jpg "
+          class="card-img-top"
+          alt="اهمیت امنیت دیجیتال"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">استفاده امن از وایفای عمومی</h5>
+          <p class="card-text">
             در Wi-Fi عمومی، از انجام تراکنش‌های مالی خودداری کنید، فقط به
             شبکه‌های امن متصل شوید و تنظیمات امنیتی دستگاه را فعال کنید.
           </p>
-          <a href="./internetWifi.html"
-            ><button class="colbtn0">بیشتر بدانید</button></a
-          >
+          <a href="./internetWifi.html" class="btn btn-primary">شروع یادگیری</a>
         </div>
-        <div class="col col-md-3">
-          <img
-            src="../components/image/section 3 img 3.jpg"
-            width="297px"
-            height="160px"
-          />
-          <h5 class="colHeader">VPN</h5>
-          <p class="colPara">
+      </div>
+
+      <!-- کارت 2 -->
+      <div class="card custom-card" style="">
+        <img
+          src="../components/image/section 3 img 3.jpg "
+          class="card-img-top"
+          alt="حریم خصوصی آنلاین"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">VPN</h5>
+          <p class="card-text">
             با استفاده از VPN و مرورگرهای امن، ترافیک اینترنت خود را رمزگذاری
             کنید و فعالیت‌های آنلاین را مخفی نگه دارید
           </p>
-          <a href="./internetVPN.html"
-            ><button class="colbtn0">بیشتر بدانید</button></a
-          >
+          <a href="./internetVPN.html" class="btn btn-primary">شروع یادگیری</a>
         </div>
-        <div class="col col-md-3">
-          <img
-            src="../components/image/section 3 img 4.jpg"
-            width="297px"
-            height="160px"
-          />
-          <h5 class="colHeader">تشخیص سایت‌های جعلی و فیشینگ</h5>
-          <p class="colPara">
+      </div>
+
+      <!-- کارت 3 -->
+      <div class="card custom-card" style="">
+        <img
+          src="../components/image/section4 img4.png"
+          class="card-img-top"
+          alt="خطرات رایج در اینترنت"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">تشخیص سایت‌های جعلی و فیشینگ</h5>
+          <p class="card-text">
             با بررسی آدرس سایت، شناسایی پیام‌های فیشینگ و استفاده از ابزارهای
             امنیتی، از ورود به سایت‌های جعلی جلوگیری کنید.
           </p>
-          <a href="./internetPhishing.html"
-            ><button class="btn0">بیشتر بدانید</button></a
+          <a href="./internetPhishing.html" class="btn btn-primary"
+            >شروع یادگیری</a
           >
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="Chatbotbtn">
-        <a href="../pages/chabot/chatbot.html"
-          ><button class="button">ارتباط با پشتیبانی</button></a
-        >
-      </div>
-      <div class="footerMark">
-        <a
-          href="https://www.instagram.com/username"
-          target="_blank"
-          class="social instagram"
-        >
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a
-          href="https://www.facebook.com/username"
-          target="_blank"
-          class="social facebook"
-        >
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a
-          href="https://twitter.com/username"
-          target="_blank"
-          class="social twitter"
-        >
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/username"
-          target="_blank"
-          class="social linkedin"
-        >
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="tel:+123456789" target="_blank" class="social phone">
-          <i class="fa-solid fa-phone"></i>
-        </a>
-      </div>
-      <div class="courses">
-        <h2 id="headCourse">محتوای آموزشی</h2>
-        <ul>
-          <li class="courselist">
-            <a href="video-library.html" target="_blank" class="course"
-              >آشنایی با امنیت دیجیتال</a
-            >
-          </li>
-          <li class="courselist">
-            <a
-              href="video-library.passowrdPart.html"
-              target="_blank"
-              class="course"
-              >آشنایی با رمز عبور و استفاده آن</a
-            >
-          </li>
-          <li class="courselist">
-            <a href="socialPrivacySecurity.html" target="_blank" class="course"
-              >امنیت شبکه های اجتماعی و پیام رسان ها</a
-            >
-          </li>
-          <li class="courselist">
-            <a href="SecurityofDevices.html" target="_blank" class="course"
-              >امنیت دستگاه ها</a
-            >
-          </li>
-          <li class="courselist">
-            <a href="Threat Management.html" target="_blank" class="course"
-              >مدیریت تهدیدات و گزارش دهی</a
-            >
-          </li>
-          <li class="courselist">
-            <a href="SafeWayforChildern.html" target="_blank" class="course"
-              >رهنمایی ایمنی برای خانواده و کودکان</a
-            >
-          </li>
-          <li class="courselist">
-            <a href="SoftwarePart.html" target="_blank" class="course"
-              >نرم‌افزارهای مخرب و اپلیکیشن‌های خطرناک
-            </a>
-          </li>
-        </ul>
+
+    <!-- Footer Section -->
+    <div class="footer container-fluid py-5">
+      <div class="row justify-content-center align-items-start g-4">
+        <!-- دکمه پشتیبانی -->
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+          <a href="../pages/chabot/chatbot.html">
+            <button class="footer-btn">ارتباط با پشتیبانی</button>
+          </a>
+        </div>
+
+        <!-- شبکه‌های اجتماعی -->
+        <div class="col-12 col-md-4 d-flex justify-content-center flex-wrap">
+          <a
+            href="https://www.instagram.com/username"
+            target="_blank"
+            class="social instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/username"
+            target="_blank"
+            class="social facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://twitter.com/username"
+            target="_blank"
+            class="social twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/username"
+            target="_blank"
+            class="social linkedin"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="tel:+123456789" class="social phone"
+            ><i class="fa-solid fa-phone"></i
+          ></a>
+        </div>
+
+        <!-- لینک دوره‌ها -->
+        <div class="col-12 col-md-4 courses text-center text-md-start">
+          <h2 id="headCourse">محتوای آموزشی</h2>
+          <ul class="list-unstyled p-0">
+            <li class="courselist">
+              <a
+                href="video-library.passowrdPart.html"
+                target="_blank"
+                class="course"
+                >مدیریت حساب‌ها و رمزهای عبور</a
+              >
+            </li>
+            <li class="courselist">
+              <a href="internetSection.html" target="_blank" class="course"
+                >امنیت شبکه و اینترنت</a
+              >
+            </li>
+            <li class="courselist">
+              <a href="socialMediaSecurity.html" target="_blank" class="course"
+                >امنیت شبکه‌های اجتماعی و پیام‌رسان‌ها</a
+              >
+            </li>
+            <li class="courselist">
+              <a href="SecurityofDevices.html" target="_blank" class="course"
+                >امنیت دستگاه‌ها</a
+              >
+            </li>
+            <li class="courselist">
+              <a href="Threat Management.html" target="_blank" class="course"
+                >مدیریت تهدیدات و گزارش‌دهی</a
+              >
+            </li>
+            <li class="courselist">
+              <a href="SafeWayforChildern.html" target="_blank" class="course"
+                >رهنمایی ایمنی برای خانواده و کودکان</a
+              >
+            </li>
+            <li class="courselist">
+              <a href="SoftwarePart.html" target="_blank" class="course"
+                >نرم‌افزارهای مخرب و اپلیکیشن‌های خطرناک</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <p id="footer">© 2025 صدا همه حقوق محفوظ است</p>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>

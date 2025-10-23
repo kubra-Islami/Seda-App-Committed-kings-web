@@ -3,33 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>آموزش ها</title>
-    <link rel="stylesheet" href="../src/css/videoLibrary.style.css" />
+    <title>محتوای آموزشی</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../src/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-      dir="rtl"
+      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm custom-navbar"
     >
       <div class="container-fluid">
-        <a class="navbar-brand text-white fw-bold" href="#headCourse"
-          >محتوای آموزشی</a
-        >
+        <!-- برند -->
+        <a class="navbar-brand fw-bold" href="#headCourse">محتوای آموزشی</a>
+
+        <!-- دکمه Toggle برای موبایل -->
         <button
           class="navbar-toggler"
           type="button"
@@ -42,217 +43,265 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- لینک‌ها -->
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">خانه</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./Home Page/Home Page.html"
+                >خانه</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">برگشت</a>
+              <a class="nav-link" href="Home Page/Home Page.html#course"
+                >برگشت</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="d-flex" id="head">
-      <div class="p-2 flex-grow-1" id="headtext">
-        <h1 class="pinkcolor">امنیت دستگاه‌ها (Device Security)</h1>
-        <p>
-          امنیت دستگاه‌ها بخش اساسی از حفظ حریم خصوصی و محافظت در برابر تهدیدات
-          دیجیتال است.<br />
-          کاربران باید اطمینان حاصل کنند که تلفن، لپ‌تاپ و تبلت آن‌ها در برابر
-          بدافزار، هک و دسترسی<br />
-          غیرمجاز ایمن هستند. استفاده از رمز عبور قوی، قفل اثرانگشت یا تشخیص
-          چهره، نصب آنتی‌ویروس <br />و به‌روزرسانی منظم سیستم‌عامل از گام‌های
-          ضروری است. علاوه بر این، دانلود برنامه‌ها امنیت<br />
-          دستگاه‌ها بخش اساسی از حفظ حریم خصوصی و محافظت در برابر تهدیدات
-          دیجیتال است. کاربران<br />
-          باید اطمینان حاصل کنند که تلفن، لپ‌تاپ و تبلت آن‌ها در برابر بدافزار،
-          هک و دسترسی غیرمجاز <br />ایمن هستند. استفاده از رمز عبور قوی، قفل
-          اثرانگشت یا تشخیص چهره، نصب آنتی‌ویروس و<br />
-          به‌روزرسانی منظم سیستم‌عامل از گام‌های ضروری است. علاوه بر این، دانلود
-          برنامه‌ها تنها از منابع <br />معتبر مانند Google Play یا App Store
-          توصیه می‌شود. با رعایت این اقدامات، دستگاه‌های شما از<br />
-          خطرات سایبری در امان مانده و اطلاعات شخصی‌تان محفوظ می‌ماند.
-        </p>
-        <br />
+    <div class="container-fluid text-center py-5" id="digital-security-section">
+      <div class="row align-items-center justify-content-center g-4">
+        <!-- بخش متن -->
+        <div class="col-lg-6 col-md-10 text-lg-start text-center" id="col1">
+          <h1 class="fw-bold mb-3">امنیت دستگاه‌ها (Device Security)</h1>
+          <p class="text-muted mb-4">
+            در دنیای دیجیتال امروزی، محافظت از دستگاه‌های خود مانند تلفن، لپ‌تاپ
+            و تبلت بسیار مهم است. از نصب نرم‌افزارهای معتبر و به‌روز اطمینان
+            حاصل کنید، تنظیمات امنیتی دستگاه خود را فعال نگه دارید و از اتصال به
+            شبکه‌های ناامن خودداری کنید. با رعایت اصول امنیت دستگاه، می‌توانید
+            اطلاعات شخصی خود را ایمن نگه دارید، از حملات سایبری جلوگیری کنید و
+            با اطمینان کامل از سرویس‌ها و اپلیکیشن‌های دیجیتال استفاده کنید.
+          </p>
+          <a href="#learnmore" class="btn btn-primary">شروع یادگیری</a>
+        </div>
 
-        <div class="p-2">
-          <img class="headofImg" src="../components/image/section5 img1.jpg" />
+        <!-- بخش تصویر -->
+        <div class="col-lg-6 col-md-10 text-center">
+          <img
+            src="../components/image/سکشن اول  1.webp"
+            class="img-fluid rounded"
+            alt="Digital Security"
+          />
         </div>
       </div>
     </div>
 
-    <div class="maintext">
-      <p class="maintextPara">
-        <br />
-        <br />
-        این بخش به شما کمک می‌کند کامپیوتر، موبایل و سایر دستگاه‌های دیجیتال خود
-        را ایمن نگه<br />
-        دارید و از دسترسی غیرمجاز یا از دست رفتن اطلاعات جلوگیری کنید.<br />
-        موضوعات اصلی این بخش شامل:
-      </p>
-      <h5 class="MainHeader">
-        1: آپدیت سیستم‌ها و برنامه‌ها (System & App Updates)
-      </h5>
-      <ul>
-        <li>نصب نرم‌افزارهای معتبر ضدویروس و ضدبدافزار</li>
-        <li>فعال کردن به‌روزرسانی خودکار برای حفظ امنیت دستگاه</li>
-      </ul>
-      <h5 class="MainHeader">
-        2: استفاده از آنتی‌ویروس و ابزارهای امنیتی (Antivirus & Security Tools)
-      </h5>
-      <ul>
-        <li>نصب نرم‌افزارهای معتبر ضدویروس و ضدبدافزار</li>
-        <li>
-          انجام اسکن دوره‌ای برای شناسایی فایل‌های مشکوک و تهدیدهای امنیتی
-        </li>
-      </ul>
-      <h5 class="MainHeader">3: پشتیبان‌گیری از داده‌ها (Data Backup)</h5>
+    <section id="learning-section" class="py-5 text-center">
+      <div id="para" class="mx-auto mb-4">
+        <h3 class="text-center fw-bold">چطور این یادگیری را شروع کنم؟</h3>
+      </div>
 
-      <ul>
-        <li>
-          ذخیره نسخه پشتیبان از اطلاعات مهم روی هارد اکسترنال یا سرویس‌های ابری
-          امن
-        </li>
-        <li>
-          بررسی منظم فایل‌های پشتیبان و اطمینان از قابل بازیابی بودن آن‌ها
-        </li>
-      </ul>
+      <div
+        class="container d-flex flex-wrap justify-content-center align-items-center gap-4"
+        id="container-steps"
+      >
+        <div class="card shadow-sm" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">- گام 1:</h5>
+            <p class="card-text">موضوع مورد علاقه‌ات را انتخاب کن</p>
+          </div>
+        </div>
+
+        <div class="card shadow-sm" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">- گام 2:</h5>
+            <p class="card-text">روی دکمه «شروع یادگیری» کلیک کن</p>
+          </div>
+        </div>
+
+        <div class="card shadow-sm" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">- گام 3:</h5>
+            <p class="card-text">ویدیوها و متون آموزشی را دنبال کن</p>
+          </div>
+        </div>
+
+        <div class="card shadow-sm" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">- گام 4:</h5>
+            <p class="card-text">در اخیر آزمون بده</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- عنوان کلی بخش -->
+    <div class="section-header text-center px-3 px-md-5 mb-4">
+      <h2 class="fw-bold pt-5 text-primary-emphasis">
+        مبانی آموزش امنیت دستگاه ها
+      </h2>
+      <p class="text-muted fs-6 fs-md-5 mx-auto" style="max-width: 700px">
+        با مطالعه این بخش، می‌توانید مهارت‌های پایه‌ای در محافظت از دستگاه‌های
+        دیجیتال خود، مدیریت تنظیمات امنیتی و جلوگیری از تهدیدات سایبری را
+        بیاموزید.
+      </p>
     </div>
-    <div class="container" id="container">
-      <div class="row">
-        <div class="col col-md-3">
-          <img
-            src="../components/image/section5 img2.jpg"
-            width="297px"
-            height="160px"
-          />
-          <h5 class="colHeader">آپدیت سیستم‌ها و برنامه‌ها</h5>
-          <p class="colPara">
+
+    <!-- کانتینر کارت‌ها -->
+    <div
+      class="container d-flex flex-wrap justify-content-center gap-4"
+      id="container1"
+    >
+      <!-- کارت 1 -->
+      <div class="card custom-card" style="">
+        <img
+          src="../components/image/section5 img2.jpg"
+          class="card-img-top"
+          alt="اهمیت امنیت دیجیتال"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">آپدیت سیستم‌ها و برنامه‌ها</h5>
+          <p class="card-text">
             با نصب به‌روزرسانی‌ها و فعال کردن به‌روزرسانی خودکار، دستگاه خود را
             همیشه امن نگه دارید.
           </p>
-          <a href="./systemUpdateDevice.html"
-            ><button class="colbtn0">بیشتر بدانید</button></a
+          <a href="./systemUpdateDevice.html" class="btn btn-primary"
+            >شروع یادگیری</a
           >
         </div>
-        <div class="col col-md-3">
-          <img
-            src="../components/image/section5 img3.jpg"
-            width="297px"
-            height="160px"
-          />
-          <h5 class="colHeader">استفاده از آنتی‌ویروس و ابزارهای امنیتی</h5>
-          <p class="colPara">
+      </div>
+
+      <!-- کارت 2 -->
+      <div class="card custom-card" style="">
+        <img
+          src="../components/image/section5 img3.jpg"
+          class="card-img-top"
+          alt="حریم خصوصی آنلاین"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">استفاده از آنتی‌ویروس و ابزارهای امنیتی</h5>
+          <p class="card-text">
             با نصب آنتی‌ویروس معتبر و انجام اسکن‌های دوره‌ای، دستگاه خود را از
             بدافزارها محافظت کنید
           </p>
-          <a href="./AntiVIrusDevice.html"
-            ><button class="colbtn0">بیشتر بدانید</button></a
+          <a href="./AntiVIrusDevice.html" class="btn btn-primary"
+            >شروع یادگیری</a
           >
         </div>
-        <div class="col col-md-3">
-          <img
-            src="../components/image/section5 img4.webp"
-            width="297px"
-            height="160px"
-          />
-          <h5 class="colHeader">پشتیبان‌گیری از داده‌ها</h5>
-          <p class="colPara">
+      </div>
+
+      <!-- کارت 3 -->
+      <div class="card custom-card" style="">
+        <img
+          src="../components/image/section5 img4.webp"
+          class="card-img-top"
+          alt="خطرات رایج در اینترنت"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">پشتیبان‌گیری از داده‌ها</h5>
+          <p class="card-text">
             با پشتیبان‌گیری منظم از اطلاعات مهم روی هارد اکسترنال یا سرویس‌های
             ابری امن، داده‌های خود را همیشه محافظت و قابل بازیابی نگه دارید.
           </p>
-          <a href="./DataBackupDevice.html"
-            ><button class="btn0">بیشتر بدانید</button></a
+          <a href="./DataBackupDevice.html" class="btn btn-primary"
+            >شروع یادگیری</a
           >
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="Chatbotbtn">
-        <a href="../pages/chabot/chatbot.html"
-          ><button class="button">ارتباط با پشتیبانی</button></a
-        >
-      </div>
-      <div class="footerMark">
-        <a
-          href="https://www.instagram.com/username"
-          target="_blank"
-          class="social instagram"
-        >
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a
-          href="https://www.facebook.com/username"
-          target="_blank"
-          class="social facebook"
-        >
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a
-          href="https://twitter.com/username"
-          target="_blank"
-          class="social twitter"
-        >
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/username"
-          target="_blank"
-          class="social linkedin"
-        >
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="tel:+123456789" target="_blank" class="social phone">
-          <i class="fa-solid fa-phone"></i>
-        </a>
-      </div>
-      <div class="courses">
-        <h2 id="headCourse">محتوای آموزشی</h2>
-        <ul>
-          <li class="courselist">
-            <a href="video-library.html" target="_blank" class="course"
-              >آشنایی با امنیت دیجیتال</a
-            >
-          </li>
-          <li class="courselist">
-            <a
-              href="video-library.passowrdPart.html"
-              target="_blank"
-              class="course"
-              >آشنایی با رمز عبور و استفاده آن</a
-            >
-          </li>
-          <li class="courselist">
-            <a href="socialMediaSecurity.html" target="_blank" class="course"
-              >امنیت شبکه های اجتماعی و پیام رسان ها</a
-            >
-          </li>
-          <li class="courselist">
-            <a href="internetSection.html" target="_blank" class="course"
-              >امنیت شبکه و اینترنت
-            </a>
-          </li>
-          <li class="courselist">
-            <a href="Threat Management.html" target="_blank" class="course"
-              >مدیریت تهدیدات و گزارش دهی</a
-            >
-          </li>
-          <li class="courselist">
-            <a href="SafeWayforChildern.html" target="_blank" class="course"
-              >رهنمایی ایمنی برای خانواده و کودکان</a
-            >
-          </li>
-          <li class="courselist">
-            <a href="SoftwarePart.html" target="_blank" class="course"
-              >نرم‌افزارهای مخرب و اپلیکیشن‌های خطرناک
-            </a>
-          </li>
-        </ul>
+
+    <!-- Footer Section -->
+    <div class="footer container-fluid py-5">
+      <div class="row justify-content-center align-items-start g-4">
+        <!-- دکمه پشتیبانی -->
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+          <a href="../pages/chabot/chatbot.html">
+            <button class="footer-btn">ارتباط با پشتیبانی</button>
+          </a>
+        </div>
+
+        <!-- شبکه‌های اجتماعی -->
+        <div class="col-12 col-md-4 d-flex justify-content-center flex-wrap">
+          <a
+            href="https://www.instagram.com/username"
+            target="_blank"
+            class="social instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/username"
+            target="_blank"
+            class="social facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://twitter.com/username"
+            target="_blank"
+            class="social twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/username"
+            target="_blank"
+            class="social linkedin"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="tel:+123456789" class="social phone"
+            ><i class="fa-solid fa-phone"></i
+          ></a>
+        </div>
+
+        <!-- لینک دوره‌ها -->
+        <div class="col-12 col-md-4 courses text-center text-md-start">
+          <h2 id="headCourse">محتوای آموزشی</h2>
+          <ul class="list-unstyled p-0">
+            <li class="courselist">
+              <a
+                href="video-library.passowrdPart.html"
+                target="_blank"
+                class="course"
+                >مدیریت حساب‌ها و رمزهای عبور</a
+              >
+            </li>
+            <li class="courselist">
+              <a href="internetSection.html" target="_blank" class="course"
+                >امنیت شبکه و اینترنت</a
+              >
+            </li>
+            <li class="courselist">
+              <a href="socialMediaSecurity.html" target="_blank" class="course"
+                >امنیت شبکه‌های اجتماعی و پیام‌رسان‌ها</a
+              >
+            </li>
+            <li class="courselist">
+              <a href="SecurityofDevices.html" target="_blank" class="course"
+                >امنیت دستگاه‌ها</a
+              >
+            </li>
+            <li class="courselist">
+              <a href="Threat Management.html" target="_blank" class="course"
+                >مدیریت تهدیدات و گزارش‌دهی</a
+              >
+            </li>
+            <li class="courselist">
+              <a href="SafeWayforChildern.html" target="_blank" class="course"
+                >رهنمایی ایمنی برای خانواده و کودکان</a
+              >
+            </li>
+            <li class="courselist">
+              <a href="SoftwarePart.html" target="_blank" class="course"
+                >نرم‌افزارهای مخرب و اپلیکیشن‌های خطرناک</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <p id="footer">© 2025 صدا همه حقوق محفوظ است</p>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>

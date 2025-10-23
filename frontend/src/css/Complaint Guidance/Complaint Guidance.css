@@ -1,18 +1,4 @@
- /* body style */
- /*body {*/
- /* background: linear-gradient(*/
- /*   135deg,*/
- /*   #707ff5,   !* بنفش روشن *!*/
- /*   #f2a1f2    !* صورتی ملایم *!*/
- /* );*/
- /*  font-family: 'Vazir', Arial, sans-serif;*/
- /*  direction: rtl;*/
- /*  box-sizing: border-box;*/
- /*  margin: 0;*/
- /*  padding: 0;*/
- /*  overflow-x: hidden;*/
- /*}*/
- /* ===== Navbar ===== */
+/* ===== Navbar ===== */
  .custom-navbar {
    background-color: white;
    transition: all 0.3s ease;
@@ -96,8 +82,6 @@
      color: white;
    }
  }
-
-
 .card-container {
   max-width: 900px;
   margin: 40px auto;
