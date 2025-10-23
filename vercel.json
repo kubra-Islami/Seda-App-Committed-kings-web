@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/pages/homePage/splash.html",
+      "permanent": false
+    }
+  ]
+}
