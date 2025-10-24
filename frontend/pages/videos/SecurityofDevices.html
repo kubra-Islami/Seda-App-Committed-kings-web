@@ -16,7 +16,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../src/css/home.css" />
+    <link rel="stylesheet" href="../../src/css/home.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -27,16 +27,15 @@
       class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm custom-navbar"
     >
       <div class="container-fluid">
+        <!-- برند -->
         <a href="#" class="navbar-brand">
           <img
-            src="../assets/images/لوگوی_صدا-removebg-preview.png"
+            src="../../assets/images/لوگوی_صدا-removebg-preview.png"
             alt="صدا"
             height="60"
             width="auto"
           />
         </a>
-
-        <!-- برند -->
         <a class="navbar-brand fw-bold" href="#headCourse">محتوای آموزشی</a>
 
         <!-- دکمه Toggle برای موبایل -->
@@ -59,12 +58,12 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="Home Page/Home Page.html"
+                href="../HomePage/HomePage.html"
                 >خانه</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="HomePage/HomePage.html#course"
+              <a class="nav-link" href="../HomePage/HomePage.html#course"
                 >برگشت</a
               >
             </li>
@@ -77,13 +76,14 @@
       <div class="row align-items-center justify-content-center g-4">
         <!-- بخش متن -->
         <div class="col-lg-6 col-md-10 text-lg-start text-center" id="col1">
-          <h1 class="fw-bold mb-3">اهمیت امنیت دیجیتال</h1>
+          <h1 class="fw-bold mb-3">امنیت دستگاه‌ها (Device Security)</h1>
           <p class="text-muted mb-4">
-            دنیا دیجیتال خود را محافظت کنید در دنیای متصل امروزی، امنیت دیجیتال
-            از همیشه مهم‌تر است. داده‌های خود را ایمن نگه دارید، به حریم خصوصی
-            احترام بگذارید و از خطرات آنلاین آگاه باشید. با درک و رعایت امنیت
-            دیجیتال، می‌توانید با اطمینان در مسابقات شرکت کنید، با دوستان خود
-            به‌صورت ایمن همکاری کنید و بیشترین بهره را از دنیای آنلاین ببرید.
+            در دنیای دیجیتال امروزی، محافظت از دستگاه‌های خود مانند تلفن، لپ‌تاپ
+            و تبلت بسیار مهم است. از نصب نرم‌افزارهای معتبر و به‌روز اطمینان
+            حاصل کنید، تنظیمات امنیتی دستگاه خود را فعال نگه دارید و از اتصال به
+            شبکه‌های ناامن خودداری کنید. با رعایت اصول امنیت دستگاه، می‌توانید
+            اطلاعات شخصی خود را ایمن نگه دارید، از حملات سایبری جلوگیری کنید و
+            با اطمینان کامل از سرویس‌ها و اپلیکیشن‌های دیجیتال استفاده کنید.
           </p>
           <a href="#learnmore" class="btn btn-primary">شروع یادگیری</a>
         </div>
@@ -91,7 +91,7 @@
         <!-- بخش تصویر -->
         <div class="col-lg-6 col-md-10 text-center">
           <img
-            src="../assets/images/password2_img.png"
+            src="../../assets/images/سکشن%20اول%20%201.webp"
             class="img-fluid rounded"
             alt="Digital Security"
           />
@@ -128,6 +128,7 @@
             <p class="card-text">ویدیوها و متون آموزشی را دنبال کن</p>
           </div>
         </div>
+
         <div class="card shadow-sm" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">- گام 4:</h5>
@@ -138,13 +139,14 @@
     </section>
 
     <!-- عنوان کلی بخش -->
-    <div class="section-header text-center px-3 px-md-5 mb-4">
+    <div class="section-header text-center px-3 px-md-5 mb-4" id="learnmore">
       <h2 class="fw-bold pt-5 text-primary-emphasis">
-        مبانی آموزش امنیت دیجیتال
+        مبانی آموزش امنیت دستگاه ها
       </h2>
       <p class="text-muted fs-6 fs-md-5 mx-auto" style="max-width: 700px">
-        با مطالعه این بخش، می‌توانید مهارت‌های پایه‌ای در امنیت دیجیتال، حریم
-        خصوصی و خطرات اینترنتی را بیاموزید.
+        با مطالعه این بخش، می‌توانید مهارت‌های پایه‌ای در محافظت از دستگاه‌های
+        دیجیتال خود، مدیریت تنظیمات امنیتی و جلوگیری از تهدیدات سایبری را
+        بیاموزید.
       </p>
     </div>
 
@@ -154,20 +156,19 @@
       id="container1"
     >
       <!-- کارت 1 -->
-      <div class="card custom-card" style="" id="learnmore">
+      <div class="card custom-card" style="">
         <img
-          src="../assets/images/سکشن%20اول%20عکس%20اول.png"
+          src="../../assets/images/section5%20img2.jpg"
           class="card-img-top"
           alt="اهمیت امنیت دیجیتال"
         />
         <div class="card-body text-center">
-          <h5 class="card-title">اهمیت امنیت دیجیتال</h5>
+          <h5 class="card-title">آپدیت سیستم‌ها و برنامه‌ها</h5>
           <p class="card-text">
-            اطلاعات شخصی خود را به‌طور کامل محافظت کنید و با تهدیدهای آنلاین
-            آشنا شوید تا امنیت و سلامت زندگی دیجیتال خود را تضمین کرده و از
-            خطرات احتمالی پیشگیری نمایید.
+            با نصب به‌روزرسانی‌ها و فعال کردن به‌روزرسانی خودکار، دستگاه خود را
+            همیشه امن نگه دارید.
           </p>
-          <a href="./degital-safety.html" class="btn btn-primary"
+          <a href="systemUpdateDevice.html" class="btn btn-primary"
             >شروع یادگیری</a
           >
         </div>
@@ -176,18 +177,17 @@
       <!-- کارت 2 -->
       <div class="card custom-card" style="">
         <img
-          src="../assets/images/سکشن%20اول%20عکس%20سوم.jpg"
+          src="../../assets/images/section5%20img3.jpg"
           class="card-img-top"
           alt="حریم خصوصی آنلاین"
         />
         <div class="card-body text-center">
-          <h5 class="card-title">حریم خصوصی آنلاین</h5>
+          <h5 class="card-title">استفاده از آنتی‌ویروس و ابزارهای امنیتی</h5>
           <p class="card-text">
-            آگاهی دقیق از داده‌هایی که به اشتراک می‌گذارید و مدیریت کنترل
-            دسترسی‌ها و تنظیمات حریم خصوصی در حساب‌ها و اپلیکیشن‌ها، نقش مهمی در
-            حفاظت مؤثر از اطلاعات شخصی دارد.
+            با نصب آنتی‌ویروس معتبر و انجام اسکن‌های دوره‌ای، دستگاه خود را از
+            بدافزارها محافظت کنید
           </p>
-          <a href="./Privacy-Policy.html" class="btn btn-primary"
+          <a href="AntiVIrusDevice.html" class="btn btn-primary"
             >شروع یادگیری</a
           >
         </div>
@@ -196,18 +196,17 @@
       <!-- کارت 3 -->
       <div class="card custom-card" style="">
         <img
-          src="../assets/images/سکشن%20اول%20عکس%20دوم.jpg"
+          src="../../assets/images/section5%20img4.webp"
           class="card-img-top"
           alt="خطرات رایج در اینترنت"
         />
         <div class="card-body text-center">
-          <h5 class="card-title">خطرات رایج در فضای اینترنت</h5>
+          <h5 class="card-title">پشتیبان‌گیری از داده‌ها</h5>
           <p class="card-text">
-            کاربران در فضای اینترنت با تهدیداتی مانند بدافزارها، لینک‌های جعلی و
-            حملات فیشینگ مواجه می‌شوند که می‌تواند منجر به سرقت و سوءاستفاده از
-            اطلاعات شخصی آنان گردد.
+            با پشتیبان‌گیری منظم از اطلاعات مهم روی هارد اکسترنال یا سرویس‌های
+            ابری امن، داده‌های خود را همیشه محافظت و قابل بازیابی نگه دارید.
           </p>
-          <a href="comman-internet-risk.html" class="btn btn-primary"
+          <a href="DataBackupDevice.html" class="btn btn-primary"
             >شروع یادگیری</a
           >
         </div>
@@ -219,7 +218,7 @@
       <div class="row justify-content-center align-items-start g-4">
         <!-- دکمه پشتیبانی -->
         <div class="col-12 col-md-4 d-flex justify-content-center">
-          <a href="../pages/chabot/chatbot.html">
+          <a href="../chabot/chatbot.html">
             <button class="footer-btn">ارتباط با پشتیبانی</button>
           </a>
         </div>
@@ -254,6 +253,7 @@
             ><i class="fa-solid fa-phone"></i
           ></a>
         </div>
+
         <!-- لینک دوره‌ها -->
         <div class="col-12 col-md-4 courses text-center text-md-start">
           <h2 id="headCourse">محتوای آموزشی</h2>
@@ -282,7 +282,7 @@
               >
             </li>
             <li class="courselist">
-              <a href="Threat Manahement.html" target="_blank" class="course"
+              <a href="Threat%20Manahement.htmlml" target="_blank" class="course"
                 >مدیریت تهدیدات و گزارش‌دهی</a
               >
             </li>
