@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -27,43 +27,54 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark pt-3 fixed-top shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-3 fixed-top shadow-sm">
     <div class="container">
         <!-- Logo -->
-        <a href="#" class="navbar-brand">
+        <a href="#" class="navbar-brand d-flex align-items-center">
             <img
                     src="../../assets/images/لوگوی_صدا-removebg-preview.png"
                     alt="صدا"
-                    height="60"
-                    width="auto"
+                    height="50"
+                    class="me-2"
             />
         </a>
-        <div class="container-fluid m-0 p-0">
-            <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarText"
-                    aria-controls="navbarText"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-                    class="collapse navbar-collapse justify-content-end"
-                    id="navbarNav">
 
-            </div>
+        <!-- Toggle button -->
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav text-center">
                 <li class="nav-item">
-                    <a class="nav-link active" href="../../pages/Home%20Page/Home%20Page.html">خانه</a>
+                    <a class="nav-link active" href="../HomePage/HomePage.html">خانه</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../HomePage/HomePage.html#about-section">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../HomePage/HomePage.html#services-section">خدمات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">چت بات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../HomePage/HomePage.html#course-section">ویدیوهای آموزشی</a>
                 </li>
             </ul>
         </div>
     </div>
-    </div>
 </nav>
+
 
 <!-- Main Content -->
 <main>
@@ -86,11 +97,11 @@
 </main>
 <footer>
     <div class="footer-links">
-        <a href="../Home%20Page/Home%20Page.html">خانه</a>
-        <a href="../Home%20Page/Home%20Page.html#about-section">درباره ما</a>
-        <a href="../Home%20Page/Home%20Page.html#services-section">خدمات</a>
+        <a href="../HomePage/HomePage.html">خانه</a>
+        <a href="../HomePage/HomePage.html#about-section">درباره ما</a>
+        <a href="../HomePage/HomePage.html#services-section">خدمات</a>
         <a href="#">چت بات</a>
-        <a href="../Home%20Page/Home%20Page.html#course-section">ویدیو های اموزشی</a>
+        <a href="../HomePage/HomePage.html#course-section">ویدیو های اموزشی</a>
     </div>
     <p>© 2025 همه حقوق محفوظ است</p>
 </footer>

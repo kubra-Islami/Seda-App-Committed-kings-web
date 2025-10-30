@@ -22,7 +22,7 @@ app.post("/chat", async (req, res) => {
             model: "gpt-4o-mini",
             messages: [{ role: "user", content: message }]
         });
-
+        res.setHeader("Content-Type", "application/json; charset=utf-8");
         res.json({ reply: response.choices[0].message.content });
     } catch (error) {
         console.error("OpenAI Error:", error);
