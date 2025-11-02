@@ -96,7 +96,7 @@ nav {
 
 /* home section style */
 #home-section {
-  background-color: #f5f5ff;
+  /*background-color: #f5f5ff;*/
   padding: 60px 15px;
 }
 
@@ -272,7 +272,7 @@ nav {
 #chatbot-section {
   color: #1e1e76;
   padding: 40px 0;
-  width: 90%;
+  width: 100%;
 }
 
 #chatbot-section .row {
@@ -504,7 +504,7 @@ nav {
 #services-section {
   background-color: #707ff5;
   color: #1e1e76;
-  border-radius: 50px;
+  /*border-radius: 50px;*/
   /*width: 90%;*/
   align-items: center;
   /*margin: 100px 60px 0 0 !important;*/

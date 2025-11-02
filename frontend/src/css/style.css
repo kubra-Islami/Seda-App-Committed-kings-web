@@ -1,25 +1,29 @@
 /*       استایل‌های کلی سایت          */
 
-:root{
+:root {
     --purple-darker-1-color: rgb(30, 30, 118);
     --purple-darker-2-color: rgb(75, 75, 195);
     --purple-color: rgb(112, 127, 245);
-    --purple-light:rgb(161, 149, 249);
-    --pink:rgb(242, 161, 242);
+    --purple-light: rgb(161, 149, 249);
+    --pink: rgb(242, 161, 242);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+}
 body {
     font-family: 'Vazir', Arial, sans-serif;
     direction: rtl;
     margin: 0;
-    padding: 0;
-    padding-top: 80px;
+    padding: 80px 0 0 0;
     overflow-x: hidden;
 }
 
 /* nav style */
-.navbar { background: linear-gradient(135deg, #1e1e76, #4b4bc3, #707ff5, #a195f9, #f2a1f2);
-
+.navbar {
+    background: linear-gradient(135deg, #1e1e76, #4b4bc3, #707ff5, #a195f9, #f2a1f2);
 }
 
 .navbar-brand img {
@@ -41,6 +45,7 @@ footer {
     padding: 40px 20px;
     margin-top: auto;
 }
+
 /* make navbar items centered and stacked on mobile */
 @media (max-width: 768px) {
     .navbar-nav {
@@ -48,6 +53,7 @@ footer {
         padding-top: 1rem;
     }
 }
+
 footer .footer-links {
     display: flex;
     flex-wrap: wrap;
