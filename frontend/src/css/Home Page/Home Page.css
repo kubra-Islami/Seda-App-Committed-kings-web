@@ -762,6 +762,12 @@ nav {
   background: linear-gradient(135deg, #1e1e76, #4b4bc3);
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 3rem 1rem;
+}
+
+/* Footer Widgets */
+.footer-widget {
+  margin-bottom: 2rem;
 }
 
 .footer-widget h5 {
@@ -777,27 +783,30 @@ nav {
 .footer-widget ul li {
   font-size: 0.95rem;
   margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  padding: 0;
+  margin: 0;
 }
 
 .footer-links a {
   color: #fff;
   text-decoration: none;
-  transition: 0.3s;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .footer-links a:hover {
   color: #ffd6f7;
   text-decoration: underline;
 }
-.footer-links{
-  padding-right: 0;
-  margin-right: 0;
-}
-/* آیکون‌های شبکه‌های اجتماعی */
+
+/* Social Icons */
 .footer-icon {
   display: inline-block;
   font-size: 1.2rem;
-  margin: 0 5px;
+  margin: 0 6px;
   padding: 10px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
@@ -805,14 +814,53 @@ nav {
 }
 
 .footer-icon:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   background-color: #fff;
   color: #f2a1f2;
 }
 
-/* موبایل */
-@media (max-width: 767px) {
+/* Responsive Design */
+@media (max-width: 991px) {
   .footer-widget {
-    text-align: center !important;
+    text-align: center;
+  }
+
+  .footer-widget h5 {
+    display: block;
+    margin: 0 auto 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer-section {
+    padding: 2rem 1rem;
+  }
+
+  .footer-widget {
+    text-align: center;
+  }
+
+  .footer-links li {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .footer-links {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-widget p {
+    font-size: 0.9rem;
+  }
+
+  .footer-widget h5 {
+    font-size: 1rem;
+  }
+
+  .footer-links li {
+    display: block;
+    margin-bottom: 8px;
   }
 }
